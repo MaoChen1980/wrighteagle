@@ -27,12 +27,12 @@ first: d
 all: d r
 
 d:
-	cd ${DEBUG}; make all
+	cd ${DEBUG}; make -j all
 
 r:
-	cd ${RELEASE}; make all
+	cd ${RELEASE}; make -j all
 
 clean:
-	cd ${DEBUG}; make -j 6 clean
-	cd ${RELEASE}; make -j 6 clean
+	cd ${DEBUG}; make  clean
+	cd ${RELEASE}; make clean
 	rm -f core*
