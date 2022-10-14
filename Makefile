@@ -22,17 +22,17 @@
 DEBUG = Debug
 RELEASE = Release
 
-first: debug
+first: d
 
-all: debug release
+all: d r
 
-debug:
-	cd ${DEBUG}; make -j all
+d:
+	cd ${DEBUG}; make all
 
-release:
-	cd ${RELEASE}; make -j all
+r:
+	cd ${RELEASE}; make all
 
 clean:
-	cd ${DEBUG}; make clean
-	cd ${RELEASE}; make clean
+	cd ${DEBUG}; make -j 6 clean
+	cd ${RELEASE}; make -j 6 clean
 	rm -f core*

@@ -56,7 +56,7 @@ void Coach::SendOptionToServer() {
     UDPSocket::instance().Send("(eye on)");
     WaitFor(200);
   }
-  vector<pair<int, double>> a;
+  vector<pair<int, double> > a;
   for (int i = 0; i <= 17;
        ++i) { //这里的18不知道如何去引用PlayerParam::DEFAULT_PLAYER_TYPES
     a.push_back(pair<int, double>(
@@ -92,8 +92,8 @@ void Coach::SendOptionToServer() {
   if (mpObserver->Teammate_Fullstate(PlayerParam::instance().ourGoalieUnum())
           .IsAlive()) {
     double maxAcceleration = 0;
-    vector<pair<int, double>>::iterator goalie;
-    for (vector<pair<int, double>>::iterator it = a.begin(); it != a.end();
+    vector<pair<int, double> >::iterator goalie;
+    for (vector<pair<int, double> >::iterator it = a.begin(); it != a.end();
          it++) {
       if (PlayerParam::instance().HeteroPlayer((*it).first).dashPowerRate() >
           maxAcceleration) {

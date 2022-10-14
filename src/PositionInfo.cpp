@@ -258,7 +258,7 @@ const list<KeyPlayerInfo> &PositionInfo::GetXSortOpponent() {
 AngleDeg PositionInfo::GetShootAngle(AngleDeg left, AngleDeg right,
                                      const PlayerState &state,
                                      AngleDeg &interval) {
-  vector<pair<Unum, AngleDeg>> tmp;
+  vector<pair<Unum, AngleDeg> > tmp;
   for (vector<PlayerState *>::const_iterator it =
            mpWorldState->GetPlayerList().begin();
        it != mpWorldState->GetPlayerList().end(); ++it) {
@@ -273,9 +273,9 @@ AngleDeg PositionInfo::GetShootAngle(AngleDeg left, AngleDeg right,
   }
   if (tmp.size() != 0) {
     sort(tmp.begin(), tmp.end(), PlayerDirCompare());
-    vector<pair<int, AngleDeg>> dis;
+    vector<pair<int, AngleDeg> > dis;
     int i = 0;
-    vector<pair<int, AngleDeg>>::const_iterator it;
+    vector<pair<int, AngleDeg> >::const_iterator it;
     for (it = tmp.begin(); it != tmp.end(); ++it) {
       if (i == 0) {
         dis.push_back(pair<int, AngleDeg>(
@@ -320,7 +320,7 @@ AngleDeg PositionInfo::GetShootAngle(AngleDeg left, AngleDeg right,
 vector<Unum>
 PositionInfo::GetClosePlayerToPoint(const Vector &bp,
                                     const Unum &exclude_unum) const {
-  vector<pair<Unum, double>> tmp;
+  vector<pair<Unum, double> > tmp;
 
   for (vector<PlayerState *>::const_iterator it =
            mpWorldState->GetPlayerList().begin();
@@ -335,7 +335,7 @@ PositionInfo::GetClosePlayerToPoint(const Vector &bp,
   sort(tmp.begin(), tmp.end(), PlayerDistCompare());
 
   vector<Unum> ret;
-  for (vector<pair<Unum, double>>::iterator it = tmp.begin(); it != tmp.end();
+  for (vector<pair<Unum, double> >::iterator it = tmp.begin(); it != tmp.end();
        ++it) {
     ret.push_back(it->first);
   }

@@ -44,6 +44,8 @@
 #include <iostream>
 #include <map>
 
+using namespace std;
+
 inline bool IsInvalid(const double &x) {
 #ifndef WIN32
   return std::isnan(x) || std::isinf(x);
@@ -115,10 +117,14 @@ inline double Cos(const AngleDeg &x) { return cos(Deg2Rad(x)); }
 inline SinCosT SinCos(const AngleDeg &x) {
   double sine, cosine;
 
-  sincos(Deg2Rad(x), &sine, &cosine); // faster way to calculate sine and cosine
-                                      // of the same angle x simultaneously
+	#ifdef __APPLE__
+		__sincos(Deg2Rad(x), & sine, & cosine); //faster way to calculate sine and cosine of the same angle x simultaneously
+	#else
+		sincos(Deg2Rad(x), & sine, & cosine); //faster way to calculate sine and cosine of the same angle x simultaneously
+	#endif
 
-  return std::make_pair(sine, cosine);
+	return std::make_pair(sine, cosine);
+
 }
 
 inline const double &Sin(const SinCosT &value) { return value.first; }
@@ -276,7 +282,14 @@ public:
     return _M_instance[i];
   }
 
-  void bzero() { memset(_M_instance, 0, sizeof(_M_instance)); }
+  void bzero() {
+
+    #ifdef __APPLE__
+      memset((void *)_M_instance, 0, sizeof(_M_instance));    
+    #else
+      memset(_M_instance, 0, sizeof(_M_instance));
+    #endif
+	}
 
   void fill(const _Tp &x) {
     std::fill(_M_instance, _M_instance + (_Nm ? _Nm : 1), x);

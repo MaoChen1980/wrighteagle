@@ -180,11 +180,11 @@ private:
   unsigned int mTrainTime;  //训练场景所在rcg的时间
   unsigned int mTrainCount; //总共训练次数
   char mTrainRcg[128];
-  vector<vector<Trainer::PlayerState>> mPlayerStatesList;
+  vector<vector<Trainer::PlayerState> > mPlayerStatesList;
   unsigned int mInitialTime;
   vector<Unum> mNeedOpponentList;
   Trainer::Condition *mpEndCondition;
-  vector<pair<Vector, Vector>> mBallStateList;
+  vector<pair<Vector, Vector> > mBallStateList;
   vector<ServerPlayMode> mServerPlayModeList;
   ServerPlayMode mCurrentServerPlayMode;
   unsigned int mLastStopTime;

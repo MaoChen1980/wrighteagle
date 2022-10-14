@@ -117,7 +117,7 @@ private:
   bool mCanTackleStopBall;
   AngleDeg mTackleStopBallAngle;
 
-  std::map<int, std::vector<std::pair<int, int>>>
+  std::map<int, std::vector<std::pair<int, int> > >
       mDirMap; //记录铲到某一方向所需铲球角度的上界和下届，后面会根据这个上下界结算出所需铲球角度（局部线性估计）
 };
 

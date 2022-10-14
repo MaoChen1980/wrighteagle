@@ -475,7 +475,7 @@ private:
   FormationBase *mpTeammateFormation;
   FormationBase *mpOpponentFormation;
 
-  std::stack<std::pair<FormationType, FormationType>> mFormationTypeStack;
+  std::stack<std::pair<FormationType, FormationType> > mFormationTypeStack;
 
 public:
   friend class Instance;

@@ -911,7 +911,7 @@ void Trainer::InitializeStadium() {
     //it->mPlayerType);让教练自己选择异构吧
   }
 
-  for (vector<vector<Trainer::PlayerState>>::iterator it =
+  for (vector<vector<Trainer::PlayerState> >::iterator it =
            mPlayerStatesList.begin();
        it != mPlayerStatesList.end(); it++) {
     for (std::vector<Trainer::PlayerState>::iterator it2 = it->begin();
