@@ -52,8 +52,8 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - ♻️ 自动选择
       - loadbalance
+      - ♻️ 自动选择
       - DIRECT
       - 距离下次重置剩余：25 天
       - 「官 网」sspnet.net
@@ -101,10 +101,9 @@ proxy-groups:
   - name: loadbalance
     type: load-balance
     url: http://www.gstatic.com/generate_204
-    interval: 33
-    strategy: consistent-hashing #round-robin 
+    interval: 27
+    strategy: consistent-hashing #round-robin #
     proxies:
-      - V-101 | 香港
       - V-102 | 香港
       - V-103 | 香港
       - V-104 | 香港
@@ -361,6 +360,7 @@ rules:
  - IP-CIDR6,fc00::/7,🎯 全球直连,no-resolve
  - IP-CIDR6,fe80::/10,🎯 全球直连,no-resolve
  - IP-CIDR6,fd00::/8,🎯 全球直连,no-resolve
+ - DOMAIN-KEYWORD,cdn.,🎯 全球直连
  - DOMAIN,router.asus.com,🎯 全球直连
  - DOMAIN-SUFFIX,hiwifi.com,🎯 全球直连
  - DOMAIN-SUFFIX,leike.cc,🎯 全球直连
@@ -1924,5 +1924,6 @@ rules:
  - IP-CIDR,101.198.128.0/18,🎯 全球直连,no-resolve
  - IP-CIDR,101.198.192.0/19,🎯 全球直连,no-resolve
  - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,127.0.0.0/8,DIRECT
  - GEOIP,CN,🎯 全球直连
  - MATCH,🐟 漏网之鱼
