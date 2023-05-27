@@ -747,6 +747,9 @@ rules:
  - DOMAIN-SUFFIX,tw,🚀 节点选择
  - DOMAIN-SUFFIX,uk,🚀 节点选择
  - DOMAIN-SUFFIX,us,🚀 节点选择
+ - DOMAIN-SUFFIX,co,🚀 节点选择
+ - DOMAIN-SUFFIX,xxx,🚀 节点选择
+ - DOMAIN-SUFFIX,ai,🚀 节点选择 
  - DOMAIN-KEYWORD,1e100,🚀 节点选择
  - DOMAIN-KEYWORD,abema,🚀 节点选择
  - DOMAIN-KEYWORD,appledaily,🚀 节点选择
