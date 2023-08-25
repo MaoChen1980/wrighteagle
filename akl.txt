@@ -71,6 +71,8 @@ proxy-groups:
     type: select
     proxies:
       - loadbalance
+      - loadbalance2
+      - loadbalance3
       - ♻️ 自动选择
       - DIRECT
       - 距离下次重置剩余：25 天
@@ -131,6 +133,28 @@ proxy-groups:
       - V-113 | 香港
       - V-114 | 香港
       - V-115 | 香港
+  - name: loadbalance2
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 27
+    strategy: consistent-hashing #round-robin #
+    proxies:
+      - V-401 | 日本
+      - V-402 | 日本
+      - V-403 | 日本
+      - V-411 | 日本
+      - V-412 | 日本
+      - V-413 | 日本
+  - name: loadbalance3
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 27
+    strategy: consistent-hashing #round-robin #
+    proxies:
+      - V-301 | 台湾
+      - V-302 | 台湾
+      - V-311 | 台湾
+      - V-312 | 台湾
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
