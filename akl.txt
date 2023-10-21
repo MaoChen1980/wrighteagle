@@ -97,19 +97,7 @@ proxies:
   - { name: S-601｜德国, type: ss, server: dnsa.zz01.zzssptop.com, port: 16601, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
   - { name: S-611｜英国, type: ss, server: dnsa.zz01.zzssptop.com, port: 16611, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
   - { name: S-621｜俄罗斯, type: ss, server: dnsa.zz01.zzssptop.com, port: 16621, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-631｜菲律宾, type: ss, server: dnsa.zz01.zzssptop.com, port: 16631, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-641｜澳洲, type: ss, server: dnsa.zz01.zzssptop.com, port: 16641, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-651｜马来西亚, type: ss, server: dnsa.zz01.zzssptop.com, port: 16651, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-661｜越南, type: ss, server: dnsa.zz01.zzssptop.com, port: 16661, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: 'S-701｜阿根廷*', type: ss, server: dnsa.zz01.zzssptop.com, port: 16701, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: 'S-702｜巴西*', type: ss, server: dnsa.zz01.zzssptop.com, port: 16702, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: 'S-703｜土耳其*', type: ss, server: dnsa.zz01.zzssptop.com, port: 16703, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-704｜韩国, type: ss, server: dnsa.zz01.zzssptop.com, port: 16704, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-705｜巴基斯坦, type: ss, server: dnsa.zz01.zzssptop.com, port: 16705, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: V-631｜菲律宾, type: ss, server: dnsa.zz01.zzssptop.com, port: 17631, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: 'V-701 | 阿根廷*', type: ss, server: dnsa.zz01.zzssptop.com, port: 17701, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: 'V-702 | 巴西*', type: ss, server: dnsa.zz01.zzssptop.com, port: 17702, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: 'V-703 | 土耳其*', type: ss, server: dnsa.zz01.zzssptop.com, port: 17703, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
+
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -174,10 +162,6 @@ proxy-groups:
       - S-601｜德国
       - S-611｜英国
       - S-621｜俄罗斯
-      - S-631 | 菲律宾
-      - S-701｜阿根廷*
-      - S-702｜巴西*
-      - S-703｜土耳其*
   - name: loadbalance
     type: load-balance
     url: http://www.gstatic.com/generate_204
