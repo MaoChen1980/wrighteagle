@@ -2851,7 +2851,6 @@ rules:
  - DOMAIN-SUFFIX,mobilelog.upqzfile.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mobileservice.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,mon.zijieapi.com,🛑 全球拦截
- - DOMAIN-SUFFIX,monitor.music.qq.com,🛑 全球拦截
  - DOMAIN-SUFFIX,monitor.uu.qq.com,🛑 全球拦截
  - DOMAIN-SUFFIX,monsetting.toutiao.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mssdk.volces.com,🛑 全球拦截
@@ -2907,9 +2906,6 @@ rules:
  - DOMAIN-SUFFIX,roi.soulapp.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,rpt.gdt.qq.com,🛑 全球拦截
  - DOMAIN-SUFFIX,rtb.voiceads.cn,🛑 全球拦截
- - DOMAIN-SUFFIX,s1.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,s2.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,s3.qq.com,🛑 全球拦截
  - DOMAIN-SUFFIX,samsung-com.112.2o7.net,🛑 全球拦截
  - DOMAIN-SUFFIX,samsungads.com,🛑 全球拦截
  - DOMAIN-SUFFIX,sanme2.taisantech.com,🛑 全球拦截
@@ -2921,7 +2917,6 @@ rules:
  - DOMAIN-SUFFIX,sdkconf.avlyun.com,🛑 全球拦截
  - DOMAIN-SUFFIX,sdkconfig.ad.intl.xiaomi.com,🛑 全球拦截
  - DOMAIN-SUFFIX,sdkconfig.ad.xiaomi.com,🛑 全球拦截
- - DOMAIN-SUFFIX,sdkconfig.video.qq.com,🛑 全球拦截
  - DOMAIN-SUFFIX,sdkoptedge.chinanetcenter.com,🛑 全球拦截
  - DOMAIN-SUFFIX,sdktmp.hubcloud.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,sdownload.stargame.com,🛑 全球拦截
@@ -2977,7 +2972,6 @@ rules:
  - DOMAIN-SUFFIX,tnc3-bjlgy.bytedance.com,🛑 全球拦截
  - DOMAIN-SUFFIX,tnc3-bjlgy.toutiaoapi.com,🛑 全球拦截
  - DOMAIN-SUFFIX,toblog.ctobsnssdk.com,🛑 全球拦截
- - DOMAIN-SUFFIX,trace.qq.com,🛑 全球拦截
  - DOMAIN-SUFFIX,track.lc.quark.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,track.uc.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,tracker.ai.xiaomi.com,🛑 全球拦截
@@ -3000,7 +2994,6 @@ rules:
  - DOMAIN-SUFFIX,umsns.com,🛑 全球拦截
  - DOMAIN-SUFFIX,union.baidu.com,🛑 全球拦截
  - DOMAIN-SUFFIX,update.avlyun.sec.miui.com,🛑 全球拦截
- - DOMAIN-SUFFIX,us.l.qq.com,🛑 全球拦截
  - DOMAIN-SUFFIX,v.adintl.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,v.adx.hubcloud.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,v1-ad.video.yximgs.com,🛑 全球拦截
@@ -3008,7 +3001,6 @@ rules:
  - DOMAIN-SUFFIX,v2.gdt.qq.com,🛑 全球拦截
  - DOMAIN-SUFFIX,v3-ad.video.yximgs.com,🛑 全球拦截
  - DOMAIN-SUFFIX,video-dsp.pddpic.com,🛑 全球拦截
- - DOMAIN-SUFFIX,vlive.qqvideo.tc.qq.com,🛑 全球拦截
  - DOMAIN-SUFFIX,vungle.com,🛑 全球拦截
  - DOMAIN-SUFFIX,w.l.qq.com,🛑 全球拦截
  - DOMAIN-SUFFIX,w1.askwai.com,🛑 全球拦截
@@ -3044,11 +3036,7 @@ rules:
  - DOMAIN-SUFFIX,win.gdt.qq.com,🛑 全球拦截
  - DOMAIN-SUFFIX,wn.x.jd.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ws-keyboard.shouji.sogou.com,🛑 全球拦截
- - DOMAIN-SUFFIX,ws.sj.qq.com,🛑 全球拦截
  - DOMAIN-SUFFIX,www42.zskwai.com,🛑 全球拦截
- - DOMAIN-SUFFIX,wxa.wxs.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,wxsnsdy.wxs.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,wxsnsdythumb.wxs.qq.com,🛑 全球拦截
  - DOMAIN-SUFFIX,xc.gdt.qq.com,🛑 全球拦截
  - DOMAIN-SUFFIX,xlivrdr.com,🛑 全球拦截
  - DOMAIN-SUFFIX,xlmzc.cnjp-exp.com,🛑 全球拦截
