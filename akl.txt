@@ -3084,6 +3084,43 @@ rules:
  - DOMAIN-SUFFIX,zeus.ad.xiaomi.com,🛑 全球拦截
 
 
+# Sina
+ - DOMAIN-SUFFIX,ad.sina.com.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,adbox.sina.com.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,add.sina.com.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,adimg.mobile.sina.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,adm.sina.com.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,alitui.weibo.com.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,biz.weibo.com.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,cre.dp.sina.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,dcads.sina.com.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,dd.sina.com.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,dmp.sina.com.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,game.weibo.com.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,gw5.push.mcp.weibo.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,leju.sina.com.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,log.mix.sina.com.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,mobileads.dx.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,newspush.sinajs.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,pay.mobile.sina.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,sax.mobile.sina.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,sax.sina.com.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,saxd.sina.com.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,sdkapp.mobile.sina.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,sdkapp.uve.weibo.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,sdkclick.mobile.sina.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,slog.sina.com.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,trends.mobile.sina.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,tui.weibo.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,u1.img.mobile.sina.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,wax.weibo.com.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,wbapp.mobile.sina.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,wbapp.uve.weibo.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,wbclick.mobile.sina.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,wbpctips.mobile.sina.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,zymo.mps.weibo.com,🛑 全球拦截
+
+
  - DOMAIN-SUFFIX,.com.cn,🎯 全球直连
  - DOMAIN-SUFFIX,.cn,🎯 全球直连
 
