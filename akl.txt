@@ -3120,6 +3120,109 @@ rules:
  - DOMAIN-SUFFIX,wbpctips.mobile.sina.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,zymo.mps.weibo.com,🛑 全球拦截
 
+ - DOMAIN-SUFFIX,ads-twitter.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,ads.twitter.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,analytics.twitter.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,p.twitter.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,scribe.twitter.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,syndication-o.twitter.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,syndication.twitter.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,tellapart.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,urls.api.twitter.com,🛑 全球拦截
+
+ - DOMAIN-SUFFIX,ad.docer.wps.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,adm.zookingsoft.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,bannera.kingsoft-office-service.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,bole.shangshufang.ksosoft.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,counter.kingsoft.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,docerad.wps.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,gou.wps.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,hoplink.ksosoft.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,ic.ksosoft.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,img.gou.wpscdn.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,info.wps.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,ios-informationplatform.wps.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,minfo.wps.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,mo.res.wpscdn.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,news.docer.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,notify.wps.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,pc.uf.ksosoft.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,pcfg.wps.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,pixiu.shangshufang.ksosoft.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,push.wps.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,rating6.kingsoft-office-service.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,up.wps.kingsoft.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,wpsweb-dc.wps.cn,🛑 全球拦截
+
+ - DOMAIN-SUFFIX,ad.m.iqiyi.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,afp.iqiyi.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,c.uaa.iqiyi.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,cloudpush.iqiyi.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,cm.passport.iqiyi.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,cupid.iqiyi.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,emoticon.sns.iqiyi.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,gamecenter.iqiyi.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,ifacelog.iqiyi.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,mbdlog.iqiyi.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,meta.video.qiyi.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,msg.71.am,🛑 全球拦截
+ - DOMAIN-SUFFIX,msg1.video.qiyi.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,msg2.video.qiyi.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,paopao.iqiyi.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,paopaod.qiyipic.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,policy.video.iqiyi.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,yuedu.iqiyi.com,🛑 全球拦截
+
+ - DOMAIN-SUFFIX,a-dxk.play.api.3g.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,actives.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,ad.api.3g.tudou.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,ad.api.3g.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,ad.api.mobile.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,ad.mobile.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,adcontrol.tudou.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,adplay.tudou.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,b.smartvideo.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,c.yes.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,dev-push.m.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,dl.g.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,dmapp.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,e.stat.ykimg.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,gamex.mobile.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,goods.tudou.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,hudong.pl.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,hz.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,iwstat.tudou.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,iyes.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,l.ykimg.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,l.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,lstat.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,lvip.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,mobilemsg.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,msg.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,myes.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,nstat.tudou.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,p-log.ykimg.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,p.l.ykimg.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,p.l.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,passport-log.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,push.m.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,r.l.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,s.p.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,sdk.m.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,stat.tudou.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,stat.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,stats.tudou.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,store.tv.api.3g.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,store.xl.api.3g.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,tdrec.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,test.ott.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,v.l.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,val.api.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,wan.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,ykatr.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,ykrec.youku.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,ykrectab.youku.com,🛑 全球拦截
+
 
  - DOMAIN-SUFFIX,.com.cn,🎯 全球直连
  - DOMAIN-SUFFIX,.cn,🎯 全球直连
