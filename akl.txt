@@ -202,7 +202,7 @@ proxy-groups:
   - name: loadbalance
     type: load-balance
     url: http://www.gstatic.com/generate_204
-    interval: 27
+    interval: 127
     strategy: consistent-hashing #round-robin #
     proxies:
       - S-101｜香港
@@ -228,7 +228,7 @@ proxy-groups:
   - name: loadbalance2
     type: load-balance
     url: http://www.gstatic.com/generate_204
-    interval: 27
+    interval: 127
     strategy: consistent-hashing #round-robin #
     proxies:
       - S-401｜日本
@@ -238,7 +238,7 @@ proxy-groups:
   - name: loadbalance3
     type: load-balance
     url: http://www.gstatic.com/generate_204
-    interval: 27
+    interval: 127
     strategy: consistent-hashing #round-robin #
     proxies:
       - S-201｜新加坡
