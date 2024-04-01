@@ -50,7 +50,7 @@ dns:
     - 114.114.114.114
     - 223.5.5.5
 
-  enhanced-mode: fake-ip
+  enhanced-mode: redir-host
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - '+.*'
