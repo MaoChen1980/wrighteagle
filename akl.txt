@@ -17,33 +17,6 @@ store-selected: true
 dns:
   enable: true
   listen: 0.0.0.0:1053
-  nameserver-policy:
-    '*.tw': 1.1.1.1
-    'testflight.apple.com': 8.8.8.8
-    '*.tmall.com': 223.5.5.5
-    '*.taobao.com': 223.5.5.5
-    '*.alicdn.com': 223.5.5.5
-    '*.aliyun.com': 223.5.5.5
-    '*.alipay*.com': 223.5.5.5
-    '*.alibaba*.com': 223.5.5.5
-    '*.alimama*.com': 223.5.5.5
-    '*.qq.com': 119.29.29.29
-    '*.tencent.com': 119.29.29.29
-    '*.weixin.com': 119.29.29.29
-    '*.qpic.cn': 119.29.29.29
-    '*.jd.com': 119.29.29.29
-    '*.bilibili.com': 119.29.29.29
-    'hdslb.com': 119.29.29.29
-    '*.163.com': 119.29.29.29
-    '*.126.com': 119.29.29.29
-    '*.126.net': 119.29.29.29
-    '*.127.net': 119.29.29.29
-    '*.netease.com': 119.29.29.29
-    '*.10010.com': 119.29.29.29
-    '*.unicompayment.com': 119.29.29.29
-    '*.ximalaya.com': 119.29.29.29
-    '*.baidu.com': 119.29.29.29
-    '*.bdstatic.com': 119.29.29.29
   use-hosts: true
   ipv6: false
   default-nameserver:
@@ -51,8 +24,8 @@ dns:
     - 223.5.5.5
 
   enhanced-mode: redir-host
-  nameserver: [127.0.0.1,114.114.114.114]
-  fallback: [1.0.0.1, 8.8.4.4,94.140.14.14]
+  nameserver: [114.114.114.114]
+  fallback: [1.0.0.1, 8.8.4.4]
   fallback-filter:
     geoip: true
     geoip-core: CN
@@ -68,8 +41,7 @@ dns:
       - +.github.com
       - +.githubusercontent.com
 hosts:
-   'time.android.com': 203.107.6.88
-   'time.facebook.com': 203.107.6.88
+
 proxies:
   - { name: S-101｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 16101, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
   - { name: S-102｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 16102, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
@@ -198,7 +170,7 @@ proxy-groups:
   - name: loadbalance
     type: load-balance
     url: http://www.gstatic.com/generate_204
-    interval: 15
+    interval: 155
     strategy: consistent-hashing #round-robin #
     proxies:
       - S-101｜香港
@@ -224,7 +196,7 @@ proxy-groups:
   - name: loadbalance2
     type: load-balance
     url: http://www.gstatic.com/generate_204
-    interval: 40
+    interval: 255
     strategy: consistent-hashing #round-robin #consistent-hashing #
     proxies:
       - S-401｜日本
@@ -234,7 +206,7 @@ proxy-groups:
   - name: loadbalance3
     type: load-balance
     url: http://www.gstatic.com/generate_204
-    interval: 20
+    interval: 355
     strategy: consistent-hashing #round-robin #consistent-hashing #
     proxies:
       - S-201｜新加坡
