@@ -92,7 +92,6 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - loadbalance
       - loadbalance2
       - loadbalance3
       - ♻️ 自动选择
