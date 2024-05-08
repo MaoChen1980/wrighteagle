@@ -49,6 +49,26 @@ dns:
 hosts:
 
 proxies:
+  - { name: S-101｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 16101, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
+  - { name: S-102｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 16102, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
+  - { name: S-103｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 16103, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
+  - { name: S-104｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 16104, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
+  - { name: S-105｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 16105, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
+  - { name: S-111｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 16101, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
+  - { name: S-112｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 16102, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
+  - { name: S-113｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 16103, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
+  - { name: S-114｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 16104, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
+  - { name: S-115｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 16105, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
+  - { name: V-101｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 17101, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
+  - { name: V-102｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 17102, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
+  - { name: V-103｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 17103, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
+  - { name: V-104｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 17104, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
+  - { name: V-105｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 17105, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
+  - { name: V-111｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 17101, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
+  - { name: V-112｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 17102, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
+  - { name: V-113｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 17103, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
+  - { name: V-114｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 17104, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
+  - { name: V-115｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 17105, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
   - { name: S-201｜新加坡, type: ss, server: dnsa.zz01.zzssptop.com, port: 16201, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
   - { name: S-202｜新加坡, type: ss, server: dnsa.zz01.zzssptop.com, port: 16202, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
   - { name: S-203｜新加坡, type: ss, server: dnsa.zz01.zzssptop.com, port: 16203, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
@@ -92,8 +112,10 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - loadbalance2
-      - loadbalance3
+      - loadbalanceHK
+      - loadbalanceJP
+      - loadbalanceSG
+      - loadbalanceTW
       - ♻️ 自动选择
       - DIRECT
       - S-201｜新加坡
@@ -128,10 +150,33 @@ proxy-groups:
       - S-502｜美国
       - S-511｜美国
       - S-512｜美国
-      - S-601｜德国
-      - S-611｜英国
-      - S-621｜俄罗斯
-  - name: loadbalance2
+  - name: loadbalanceHK
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 152
+    strategy: consistent-hashing #round-robin #
+    proxies:
+      - S-101｜香港
+      - S-102｜香港
+      - S-103｜香港
+      - S-104｜香港
+      - S-105｜香港
+      - S-111｜香港
+      - S-112｜香港
+      - S-113｜香港
+      - S-114｜香港
+      - S-115｜香港
+      - V-101｜香港
+      - V-102｜香港
+      - V-103｜香港
+      - V-104｜香港
+      - V-105｜香港
+      - V-111｜香港
+      - V-112｜香港
+      - V-113｜香港
+      - V-114｜香港
+      - V-115｜香港
+  - name: loadbalanceJP
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 255
@@ -141,7 +186,21 @@ proxy-groups:
       - S-402｜日本
       - S-411｜日本
       - S-412｜日本
-  - name: loadbalance3
+  - name: loadbalanceTW
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 255
+    strategy: consistent-hashing #round-robin #consistent-hashing #
+    proxies:
+      - S-301｜台湾
+      - S-302｜台湾
+      - S-311｜台湾
+      - S-312｜台湾
+      - V-301｜台湾
+      - V-302｜台湾
+      - V-311｜台湾
+      - V-312｜台湾
+  - name: loadbalanceSG
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 355
@@ -166,9 +225,29 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 331
     tolerance: 50
     proxies:
+      - S-101｜香港
+      - S-102｜香港
+      - S-103｜香港
+      - S-104｜香港
+      - S-105｜香港
+      - S-111｜香港
+      - S-112｜香港
+      - S-113｜香港
+      - S-114｜香港
+      - S-115｜香港
+      - V-101｜香港
+      - V-102｜香港
+      - V-103｜香港
+      - V-104｜香港
+      - V-105｜香港
+      - V-111｜香港
+      - V-112｜香港
+      - V-113｜香港
+      - V-114｜香港
+      - V-115｜香港
       - S-201｜新加坡
       - S-202｜新加坡
       - S-203｜新加坡
