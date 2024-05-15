@@ -29,92 +29,89 @@ dns:
   nameserver-policy:
     '+.ccsu.cn': '218.196.40.9'
   nameserver:
-    #- 180.76.76.76 # 百度DNS
-    #- 119.29.29.29 # 腾讯DNS
+    - 180.76.76.76 # 百度DNS
+    - 119.29.29.29 # 腾讯DNS
     #- 117.50.11.11 # ONE DNS拦截版 恶意网站拦截、广告过滤
-    #- 114.114.114.114 # 114DNS
+    - 114.114.114.114 # 114DNS
     - https://dns.alidns.com/dns-query # 阿里 DoH DNS
     - https://doh.pub/dns-query #腾讯DNSPod DOH
     #- https://dns.rubyfish.cn/dns-query # 红鱼 DoH DNS
     #- https://dns.nextdns.io/dns-query # NextDNS DOH
     #- https://doh.360.cn/dns-query # 360 DoH DNS
   fallback:
-    #- 8.8.8.8 # Google DNS
-    #- 1.1.1.1 # Cloudflare DNS
-    #- https://dns.alidns.com/dns-query # 阿里 DoH DNS
+    - 8.8.8.8 # Google DNS
+    - 1.1.1.1 # Cloudflare DNS
+    - https://dns.alidns.com/dns-query # 阿里 DoH DNS
     #- https://dns.rubyfish.cn/dns-query # 红鱼 DoH DNS
     #- https://dns.nextdns.io/dns-query # NextDNS DOH
     #- https://cloudflare-dns.com/dns-query # Cloudflare DoH DNS
-    - tls://b.iqiq.io:853              # iQDNS DoT
-    - https://i.233py.com/dns-query    # GEEKDNS China DoH
+    #- tls://b.iqiq.io:853              # iQDNS DoT
+    #- https://i.233py.com/dns-query    # GEEKDNS China DoH
     - https://doh.opendns.com/dns-query # OpenDNS DoH
     #- https://doh.dns.sb/dns-query # DNS.sb DoH
-    #- https://dns.google/dns-query # Google DoH DNS
+    - https://dns.google/dns-query # Google DoH DNS
   fallback-filter:
     geoip: true # 默认
     ipcidr: # 在这个网段内的 IP 地址会被考虑为被污染的 IP
       - 240.0.0.0/4
 
 proxies:
-  - { name: S-101｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 16101, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-102｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 16102, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-103｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 16103, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-104｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 16104, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-105｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 16105, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-111｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 16101, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-112｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 16102, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-113｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 16103, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-114｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 16104, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-115｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 16105, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: V-101｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 17101, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: V-102｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 17102, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: V-103｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 17103, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: V-104｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 17104, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: V-105｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 17105, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: V-111｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 17101, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: V-112｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 17102, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: V-113｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 17103, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: V-114｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 17104, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: V-115｜香港, type: ss, server: dnsa.zz01.zzssptop.com, port: 17105, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-201｜新加坡, type: ss, server: dnsa.zz01.zzssptop.com, port: 16201, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-202｜新加坡, type: ss, server: dnsa.zz01.zzssptop.com, port: 16202, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-203｜新加坡, type: ss, server: dnsa.zz01.zzssptop.com, port: 16203, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-204｜新加坡, type: ss, server: dnsa.zz01.zzssptop.com, port: 16204, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-211｜新加坡, type: ss, server: dnsa.zz01.zzssptop.com, port: 16201, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-212｜新加坡, type: ss, server: dnsa.zz01.zzssptop.com, port: 16202, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-213｜新加坡, type: ss, server: dnsa.zz01.zzssptop.com, port: 16203, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-214｜新加坡, type: ss, server: dnsa.zz01.zzssptop.com, port: 16204, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: V-201｜新加坡, type: ss, server: dnsa.zz01.zzssptop.com, port: 17201, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: V-202｜新加坡, type: ss, server: dnsa.zz01.zzssptop.com, port: 17202, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: V-203｜新加坡, type: ss, server: dnsa.zz01.zzssptop.com, port: 17203, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: V-204｜新加坡, type: ss, server: dnsa.zz01.zzssptop.com, port: 17204, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: V-211｜新加坡, type: ss, server: dnsa.zz01.zzssptop.com, port: 17201, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: V-212｜新加坡, type: ss, server: dnsa.zz01.zzssptop.com, port: 17202, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: V-213｜新加坡, type: ss, server: dnsa.zz01.zzssptop.com, port: 17203, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: V-214｜新加坡, type: ss, server: dnsa.zz01.zzssptop.com, port: 17204, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-301｜台湾, type: ss, server: dnsa.zz01.zzssptop.com, port: 16301, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-302｜台湾, type: ss, server: dnsa.zz01.zzssptop.com, port: 16302, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-311｜台湾, type: ss, server: dnsa.zz01.zzssptop.com, port: 16301, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-312｜台湾, type: ss, server: dnsa.zz01.zzssptop.com, port: 16302, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: V-301｜台湾, type: ss, server: dnsa.zz01.zzssptop.com, port: 17301, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: V-302｜台湾, type: ss, server: dnsa.zz01.zzssptop.com, port: 17302, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: V-311｜台湾, type: ss, server: dnsa.zz01.zzssptop.com, port: 17301, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: V-312｜台湾, type: ss, server: dnsa.zz01.zzssptop.com, port: 17302, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-401｜日本, type: ss, server: dnsa.zz01.zzssptop.com, port: 16401, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-402｜日本, type: ss, server: dnsa.zz01.zzssptop.com, port: 16402, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-411｜日本, type: ss, server: dnsa.zz01.zzssptop.com, port: 16401, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-412｜日本, type: ss, server: dnsa.zz01.zzssptop.com, port: 16402, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-403｜日本, type: ss, server: dnsa.zz01.zzssptop.com, port: 16403, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-501｜美国, type: ss, server: dnsa.zz01.zzssptop.com, port: 16501, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-502｜美国, type: ss, server: dnsa.zz01.zzssptop.com, port: 16502, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-511｜美国, type: ss, server: dnsa.zz01.zzssptop.com, port: 16501, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-512｜美国, type: ss, server: dnsa.zz01.zzssptop.com, port: 16502, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-503｜美国, type: ss, server: dnsa.zz01.zzssptop.com, port: 16503, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-504｜美国, type: ss, server: dnsa.zz01.zzssptop.com, port: 16504, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-601｜德国, type: ss, server: dnsa.zz01.zzssptop.com, port: 16601, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-611｜英国, type: ss, server: dnsa.zz01.zzssptop.com, port: 16611, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-  - { name: S-621｜俄罗斯, type: ss, server: dnsa.zz01.zzssptop.com, port: 16621, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31, udp: true }
-
+  - {name: S-101｜香港, server: hk01.dns.sspa.zzssptop.com, port: 16101, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-102｜香港, server: hk02.dns.sspa.zzssptop.com, port: 16102, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-103｜香港, server: hk03.dns.sspa.zzssptop.com, port: 16103, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-104｜香港, server: hk04.dns.sspa.zzssptop.com, port: 16104, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-105｜香港, server: hk05.dns.sspa.zzssptop.com, port: 16105, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-111｜香港, server: hk11.dns.sspa.zzssptop.com, port: 16101, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-112｜香港, server: hk12.dns.sspa.zzssptop.com, port: 16102, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-113｜香港, server: hk13.dns.sspa.zzssptop.com, port: 16103, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-114｜香港, server: hk14.dns.sspa.zzssptop.com, port: 16104, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-115｜香港, server: hk15.dns.sspa.zzssptop.com, port: 16105, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: V-101｜香港, server: hk01.dns.sspa.zzssptop.com, port: 17101, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: V-102｜香港, server: hk02.dns.sspa.zzssptop.com, port: 17102, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: V-103｜香港, server: hk03.dns.sspa.zzssptop.com, port: 17103, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: V-104｜香港, server: hk04.dns.sspa.zzssptop.com, port: 17104, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: V-105｜香港, server: hk05.dns.sspa.zzssptop.com, port: 17105, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: V-111｜香港, server: hk11.dns.sspa.zzssptop.com, port: 17101, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: V-112｜香港, server: hk12.dns.sspa.zzssptop.com, port: 17102, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: V-113｜香港, server: hk13.dns.sspa.zzssptop.com, port: 17103, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: V-114｜香港, server: hk14.dns.sspa.zzssptop.com, port: 17104, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: V-115｜香港, server: hk15.dns.sspa.zzssptop.com, port: 17105, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-201｜新加坡, server: sg01.dns.sspa.zzssptop.com, port: 16201, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-202｜新加坡, server: sg02.dns.sspa.zzssptop.com, port: 16202, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-203｜新加坡, server: sg03.dns.sspa.zzssptop.com, port: 16203, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-204｜新加坡, server: sg04.dns.sspa.zzssptop.com, port: 16204, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-211｜新加坡, server: sg11.dns.sspa.zzssptop.com, port: 16201, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-212｜新加坡, server: sg12.dns.sspa.zzssptop.com, port: 16202, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-213｜新加坡, server: sg13.dns.sspa.zzssptop.com, port: 16203, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-214｜新加坡, server: sg14.dns.sspa.zzssptop.com, port: 16204, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: V-201｜新加坡, server: sg01.dns.sspa.zzssptop.com, port: 17201, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: V-202｜新加坡, server: sg02.dns.sspa.zzssptop.com, port: 17202, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: V-203｜新加坡, server: sg03.dns.sspa.zzssptop.com, port: 17203, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: V-204｜新加坡, server: sg04.dns.sspa.zzssptop.com, port: 17204, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: V-211｜新加坡, server: sg11.dns.sspa.zzssptop.com, port: 17201, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: V-212｜新加坡, server: sg12.dns.sspa.zzssptop.com, port: 17202, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: V-213｜新加坡, server: sg13.dns.sspa.zzssptop.com, port: 17203, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: V-214｜新加坡, server: sg14.dns.sspa.zzssptop.com, port: 17204, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-301｜台湾, server: tw1.dns.sspa.zzssptop.com, port: 16301, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-302｜台湾, server: tw2.dns.sspa.zzssptop.com, port: 16302, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-311｜台湾, server: tw11.dns.sspa.zzssptop.com, port: 16301, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-312｜台湾, server: tw12.dns.sspa.zzssptop.com, port: 16302, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: V-301｜台湾, server: tw01.dns.sspa.zzssptop.com, port: 17301, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: V-302｜台湾, server: tw02.dns.sspa.zzssptop.com, port: 17302, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: V-311｜台湾, server: tw11.dns.sspa.zzssptop.com, port: 17301, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: V-312｜台湾, server: tw12.dns.sspa.zzssptop.com, port: 17302, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-401｜日本, server: jp1.dns.sspa.zzssptop.com, port: 16401, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-402｜日本, server: jp2.dns.sspa.zzssptop.com, port: 16402, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-411｜日本, server: jp11.dns.sspa.zzssptop.com, port: 16401, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-412｜日本, server: jp12.dns.sspa.zzssptop.com, port: 16402, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-403｜日本, server: jp03.dns.sspa.zzssptop.com, port: 16403, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-404｜日本, server: jp04.dns.sspa.zzssptop.com, port: 16404, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-501｜美国, server: us01.dns.sspa.zzssptop.com, port: 16501, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-502｜美国, server: us02.dns.sspa.zzssptop.com, port: 16502, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-511｜美国, server: us03.dns.sspa.zzssptop.com, port: 16501, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-512｜美国, server: us12.dns.sspa.zzssptop.com, port: 16502, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-503｜美国, server: us03.dns.sspa.zzssptop.com, port: 16503, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
+  - {name: S-504｜美国, server: us04.dns.sspa.zzssptop.com, port: 16504, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -155,12 +152,13 @@ proxy-groups:
       - S-412｜日本
       - S-501｜美国
       - S-502｜美国
+      - S-503｜美国
+      - S-504｜美国
       - S-511｜美国
       - S-512｜美国
   - name: loadbalanceHK
     type: load-balance
     url: http://www.gstatic.com/generate_204
-    interval: 152
     strategy: consistent-hashing #round-robin #
     proxies:
       - S-101｜香港
@@ -186,7 +184,6 @@ proxy-groups:
   - name: loadbalanceJP
     type: load-balance
     url: http://www.gstatic.com/generate_204
-    interval: 255
     strategy: consistent-hashing #round-robin #consistent-hashing #
     proxies:
       - S-401｜日本
@@ -196,7 +193,6 @@ proxy-groups:
   - name: loadbalanceTW
     type: load-balance
     url: http://www.gstatic.com/generate_204
-    interval: 255
     strategy: consistent-hashing #round-robin #consistent-hashing #
     proxies:
       - S-301｜台湾
@@ -210,7 +206,6 @@ proxy-groups:
   - name: loadbalanceSG
     type: load-balance
     url: http://www.gstatic.com/generate_204
-    interval: 355
     strategy: consistent-hashing #round-robin #consistent-hashing #
     proxies:
       - S-201｜新加坡
@@ -235,54 +230,6 @@ proxy-groups:
     interval: 331
     tolerance: 50
     proxies:
-      - S-101｜香港
-      - S-102｜香港
-      - S-103｜香港
-      - S-104｜香港
-      - S-105｜香港
-      - S-111｜香港
-      - S-112｜香港
-      - S-113｜香港
-      - S-114｜香港
-      - S-115｜香港
-      - V-101｜香港
-      - V-102｜香港
-      - V-103｜香港
-      - V-104｜香港
-      - V-105｜香港
-      - V-111｜香港
-      - V-112｜香港
-      - V-113｜香港
-      - V-114｜香港
-      - V-115｜香港
-      - S-201｜新加坡
-      - S-202｜新加坡
-      - S-203｜新加坡
-      - S-204｜新加坡
-      - S-211｜新加坡
-      - S-212｜新加坡
-      - S-213｜新加坡
-      - S-214｜新加坡
-      - V-201｜新加坡
-      - V-202｜新加坡
-      - V-203｜新加坡
-      - V-204｜新加坡
-      - V-211｜新加坡
-      - V-212｜新加坡
-      - V-213｜新加坡
-      - V-214｜新加坡
-      - S-301｜台湾
-      - S-302｜台湾
-      - S-311｜台湾
-      - S-312｜台湾
-      - V-301｜台湾
-      - V-302｜台湾
-      - V-311｜台湾
-      - V-312｜台湾
-      - S-401｜日本
-      - S-402｜日本
-      - S-411｜日本
-      - S-412｜日本
       - S-501｜美国
       - S-502｜美国
       - S-511｜美国
