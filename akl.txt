@@ -232,11 +232,10 @@ proxy-groups:
     proxies:
       - S-501｜美国
       - S-502｜美国
+      - S-503｜美国
+      - S-504｜美国
       - S-511｜美国
       - S-512｜美国
-      - S-601｜德国
-      - S-611｜英国
-      - S-621｜俄罗斯
   - name: 🎯 全球直连
     type: select
     proxies:
