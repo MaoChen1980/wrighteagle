@@ -158,6 +158,8 @@ proxy-groups:
       - S-512｜美国
   - name: loadbalanceHK
     type: load-balance
+    interval: 300
+    tolerance: 50
     url: http://www.gstatic.com/generate_204
     strategy: consistent-hashing #round-robin #
     proxies:
@@ -183,6 +185,8 @@ proxy-groups:
       - V-115｜香港
   - name: loadbalanceJP
     type: load-balance
+    interval: 300
+    tolerance: 50
     url: http://www.gstatic.com/generate_204
     strategy: consistent-hashing #round-robin #consistent-hashing #
     proxies:
@@ -192,6 +196,8 @@ proxy-groups:
       - S-412｜日本
   - name: loadbalanceTW
     type: load-balance
+    interval: 300
+    tolerance: 50
     url: http://www.gstatic.com/generate_204
     strategy: consistent-hashing #round-robin #consistent-hashing #
     proxies:
@@ -205,6 +211,8 @@ proxy-groups:
       - V-312｜台湾
   - name: loadbalanceSG
     type: load-balance
+    interval: 300
+    tolerance: 50
     url: http://www.gstatic.com/generate_204
     strategy: consistent-hashing #round-robin #consistent-hashing #
     proxies:
@@ -227,7 +235,7 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
-    interval: 331
+    interval: 300
     tolerance: 50
     proxies:
       - S-501｜美国
