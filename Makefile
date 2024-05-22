@@ -27,10 +27,10 @@ first: d
 all: d r
 
 d:
-	cd ${DEBUG}; make -j 3 all
+	cd ${DEBUG}; make -j7 all
 
 r:
-	cd ${RELEASE}; make -j 3 all
+	cd ${RELEASE}; make -j7 all
 
 clean:
 	cd ${DEBUG}; make  clean
