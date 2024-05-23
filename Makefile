@@ -19,20 +19,24 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 
-DEBUG = Debug
-RELEASE = Release
+# Use environment variables or default values
+DEBUG ?= Debug
+RELEASE ?= Release
+
+# Dynamically determine the number of parallel jobs based on the system
+NUM_JOBS ?= $(shell nproc)
 
 first: d
 
 all: d r
 
 d:
-	cd ${DEBUG}; make -j7 all
+	@cd ${DEBUG} && $(MAKE) -j${NUM_JOBS} all || true
 
 r:
-	cd ${RELEASE}; make -j7 all
+	@cd ${RELEASE} && $(MAKE) -j${NUM_JOBS} all || true
 
 clean:
-	cd ${DEBUG}; make  clean
-	cd ${RELEASE}; make clean
-	rm -f core*
+	@cd ${DEBUG} && $(MAKE) clean || true
+	@cd ${RELEASE} && $(MAKE) clean || true
+	@rm -f $(shell find . -type f -name 'core*') || true
