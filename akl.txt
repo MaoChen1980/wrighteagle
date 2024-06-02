@@ -162,7 +162,7 @@ proxy-groups:
     interval: 121
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-    strategy: consistent-hashing #round-robin #
+    strategy: round-robin #consistent-hashing #
     proxies:
       - S-101｜香港
       - S-102｜香港
@@ -186,10 +186,10 @@ proxy-groups:
       - V-115｜香港
   - name: loadbalanceJP
     type: load-balance
-    interval: 1222
+    interval: 125
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-    strategy: consistent-hashing #round-robin #consistent-hashing #
+    strategy: round-robin #consistent-hashing #
     proxies:
       - S-401｜日本
       - S-402｜日本
@@ -200,7 +200,7 @@ proxy-groups:
     interval: 1223
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-    strategy: consistent-hashing #round-robin #consistent-hashing #
+    strategy: round-robin #consistent-hashing #
     proxies:
       - S-301｜台湾
       - S-302｜台湾
@@ -215,7 +215,7 @@ proxy-groups:
     interval: 122
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-    strategy: consistent-hashing #round-robin #consistent-hashing #
+    strategy: round-robin #consistent-hashing #
     proxies:
       - S-201｜新加坡
       - S-202｜新加坡
