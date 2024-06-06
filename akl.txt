@@ -201,7 +201,7 @@ proxy-groups:
     interval: 122
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-    strategy: consistent-hashing #
+    strategy:  round-robin # consistent-hashing #
     proxies:
       - S-201｜新加坡
       - S-202｜新加坡
