@@ -10,31 +10,23 @@ external-controller: :9999
 external-ui: ui
 secret:
 tun: {enable: false}
-experimental: {ignore-resolve-fail: true, interface-name: en0}
 
 store-selected: true
 
 dns:
-  enable: true # 是否启用dns false
+  enable: false # 是否启用dns false
   ipv6: false
   enhanced-mode: redir-host # 模式：redir-host或fake-ip
   default-nameserver:
-    - 223.5.5.5 # 阿里DNS
     - 119.29.29.29 # 腾讯DNS
     - 114.114.114.114 # 腾讯DNS
-
   nameserver:
-    #- 117.50.11.11 # ONE DNS拦截版 恶意网站拦截、广告过滤
     - 114.114.114.114 # 114DNS
-    - https://dns.alidns.com/dns-query # 阿里 DoH DNS
-    - https://doh.pub/dns-query #腾讯DNSPod DOH
-    - https://223.5.5.5/dns-query
   fallback:
     - 8.8.8.8 # Google DNS
     - 1.1.1.1 # Cloudflare DNS
     - tls://1.1.1.1:853
     - tls://1.0.0.1:853
-    - 101.6.6.6:5353
     - tls://dns.google:853
   fallback-filter:
     geoip: true
@@ -270,7 +262,7 @@ rules:
  - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
  - IP-CIDR,100.64.0.0/10,🎯 全球直连,no-resolve
  - IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
- - IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
+ - IP-CIDR,172.16.0.0/16,🎯 全球直连,no-resolve
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
  - IP-CIDR,198.18.0.0/16,🎯 全球直连,no-resolve
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
@@ -488,27 +480,15 @@ rules:
  - DOMAIN-SUFFIX,mzstatic.com,🍎 苹果服务
  - DOMAIN-KEYWORD,porn,🚀 节点选择
  - DOMAIN-KEYWORD,91porn,🚀 节点选择
- - DOMAIN-KEYWORD,1e100,🚀 节点选择
- - DOMAIN-KEYWORD,abema,🚀 节点选择
- - DOMAIN-KEYWORD,appledaily,🚀 节点选择
- - DOMAIN-KEYWORD,avtb,🚀 节点选择
- - DOMAIN-KEYWORD,beetalk,🚀 节点选择
  - DOMAIN-KEYWORD,blogspot,🚀 节点选择
  - DOMAIN-KEYWORD,dropbox,🚀 节点选择
  - DOMAIN-KEYWORD,facebook,🚀 节点选择
- - DOMAIN-KEYWORD,fbcdn,🚀 节点选择
- - DOMAIN-KEYWORD,github,🚀 节点选择
  - DOMAIN-KEYWORD,gmail,🚀 节点选择
  - DOMAIN-KEYWORD,google,🚀 节点选择
  - DOMAIN-KEYWORD,instagram,🚀 节点选择
- - DOMAIN-KEYWORD,porn,🚀 节点选择
  - DOMAIN-KEYWORD,sci-hub,🚀 节点选择
- - DOMAIN-KEYWORD,spotify,🚀 节点选择
  - DOMAIN-KEYWORD,telegram,🚀 节点选择
- - DOMAIN-KEYWORD,twitter,🚀 节点选择
- - DOMAIN-KEYWORD,whatsapp,🚀 节点选择
  - DOMAIN-KEYWORD,youtube,🚀 节点选择
- - DOMAIN-KEYWORD,porn,🚀 节点选择
 
  - DOMAIN-SUFFIX,.com.cn,🎯 全球直连
  - DOMAIN-SUFFIX,.cn,🎯 全球直连
