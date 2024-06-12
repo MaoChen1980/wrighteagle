@@ -25,9 +25,6 @@ dns:
   fallback:
     - 8.8.8.8 # Google DNS
     - 1.1.1.1 # Cloudflare DNS
-    - tls://1.1.1.1:853
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
   fallback-filter:
     geoip: true
     geoip-code: CN
@@ -138,8 +135,7 @@ proxy-groups:
   - name: loadbalanceHK
     type: load-balance
     interval: 121
-    tolerance: 50
-    url: http://www.gstatic.com/generate_204
+    url: http://www.google.com/generate_204
     strategy: consistent-hashing #
     proxies:
       - S-101｜香港
@@ -165,8 +161,7 @@ proxy-groups:
   - name: loadbalanceJP
     type: load-balance
     interval: 125
-    tolerance: 50
-    url: http://www.gstatic.com/generate_204
+    url: http://www.google.com/generate_204
     strategy: consistent-hashing #
     proxies:
       - S-401｜日本
@@ -176,8 +171,7 @@ proxy-groups:
   - name: loadbalanceTW
     type: load-balance
     interval: 1223
-    tolerance: 50
-    url: http://www.gstatic.com/generate_204
+    url: http://www.google.com/generate_204
     strategy: consistent-hashing #
     proxies:
       - S-301｜台湾
@@ -191,8 +185,7 @@ proxy-groups:
   - name: loadbalanceSG
     type: load-balance
     interval: 122
-    tolerance: 50
-    url: http://www.gstatic.com/generate_204
+    url: http://www.google.com/generate_204
     strategy:  round-robin # consistent-hashing #
     proxies:
       - S-201｜新加坡
@@ -213,7 +206,7 @@ proxy-groups:
       - V-214｜新加坡
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: http://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
