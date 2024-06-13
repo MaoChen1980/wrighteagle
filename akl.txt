@@ -133,10 +133,10 @@ proxy-groups:
       - S-511｜美国
       - S-512｜美国
   - name: loadbalanceHK
-    type: load-balance
-    interval: 121
+    type: url-test
     url: http://www.google.com/generate_204
-    strategy: consistent-hashing #
+    interval: 300
+    tolerance: 50
     proxies:
       - S-101｜香港
       - S-102｜香港
@@ -159,20 +159,20 @@ proxy-groups:
       - V-114｜香港
       - V-115｜香港
   - name: loadbalanceJP
-    type: load-balance
-    interval: 125
+    type: url-test
     url: http://www.google.com/generate_204
-    strategy: consistent-hashing #
+    interval: 300
+    tolerance: 50
     proxies:
       - S-401｜日本
       - S-402｜日本
       - S-411｜日本
       - S-412｜日本
   - name: loadbalanceTW
-    type: load-balance
-    interval: 1223
+    type: url-test
     url: http://www.google.com/generate_204
-    strategy: consistent-hashing #
+    interval: 300
+    tolerance: 50
     proxies:
       - S-301｜台湾
       - S-302｜台湾
