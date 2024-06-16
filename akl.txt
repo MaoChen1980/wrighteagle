@@ -22,14 +22,23 @@ dns:
   default-nameserver:
     - 119.29.29.29 # 腾讯DNS
     - 114.114.114.114 # 腾讯DNS
+  nameserver-policy:
+    'www.baidu.com': '114.114.114.114'
+    'geosite:geolocation-!cn': [tls://8.8.4.4, https://1.0.0.1/dns-query]
+    'www.baidu.com,+.google.cn': https://doh.pub/dns-query
+    'geosite:private,apple': https://dns.alidns.com/dns-query
   nameserver:
     - 114.114.114.114 # 114DNS
   fallback:
-    - 8.8.8.8 # Google DNS
-    - 1.1.1.1 # Cloudflare DNS
+    - tls://8.8.4.4
+    - tls://1.1.1.1
+  proxy-server-nameserver:
+    - https://doh.pub/dns-query
   fallback-filter:
     geoip: true
     geoip-code: CN
+    geosite:
+      - gfw
     ipcidr:
       - 240.0.0.0/4
 
