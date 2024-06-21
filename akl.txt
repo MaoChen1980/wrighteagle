@@ -497,5 +497,6 @@ rules:
  - DOMAIN-SUFFIX,.com.cn,🎯 全球直连
  - DOMAIN-SUFFIX,.cn,🎯 全球直连
 
+ - GEOSITE,cn,🎯 全球直连
  - GEOIP,CN,🎯 全球直连
  - MATCH,🐟 漏网之鱼
