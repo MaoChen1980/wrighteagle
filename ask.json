@@ -973,6 +973,22 @@
         },
         {
             "type": "selector",
+            "tag": "kuaishou",
+            "outbounds": [
+                "REJECT",
+                "DIRECT"
+            ]
+        },
+        {
+            "type": "selector",
+            "tag": "douyin",
+            "outbounds": [
+                "REJECT",
+                "DIRECT"
+            ]
+        },
+        {
+            "type": "selector",
             "tag": "🐟 漏网之鱼",
             "outbounds": [
                 "🚀 节点选择",
@@ -10972,6 +10988,20 @@
                     "aria2"
                 ],
                 "outbound": "🎯 全球直连"
+            },
+            {
+                "domain_keyword": [
+                    "douyin"
+                ],
+                "outbound": "douyin"
+            },
+            {
+                "domain_keyword": [
+                    "kuaishou",
+                    "xigua",
+                    "huoshan"
+                ],
+                "outbound": "kuaishou"
             },
             {
                 "geoip": "cn",
