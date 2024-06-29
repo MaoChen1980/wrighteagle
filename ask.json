@@ -1236,6 +1236,20 @@
                 "outbound": "🎯 全球直连"
             },
             {
+                "domain_keyword": [
+                    "douyin"
+                ],
+                "outbound": "douyin"
+            },
+            {
+                "domain_keyword": [
+                    "kuaishou",
+                    "xigua",
+                    "huoshan"
+                ],
+                "outbound": "kuaishou"
+            },
+            {
                 "domain_suffix": [
                     "ol.epicgames.com",
                     "dizhensubao.getui.com",
@@ -10988,20 +11002,6 @@
                     "aria2"
                 ],
                 "outbound": "🎯 全球直连"
-            },
-            {
-                "domain_keyword": [
-                    "douyin"
-                ],
-                "outbound": "douyin"
-            },
-            {
-                "domain_keyword": [
-                    "kuaishou",
-                    "xigua",
-                    "huoshan"
-                ],
-                "outbound": "kuaishou"
             },
             {
                 "geoip": "cn",
