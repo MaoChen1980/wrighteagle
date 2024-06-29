@@ -1004,7 +1004,7 @@
         },
         {
             "tag": "🇭🇰 香港节点",
-            "type": "urltest",
+            "type": "selector",
             "outbounds": [
                 "🇭🇰 S-101｜香港",
                 "🇭🇰 S-102｜香港",
@@ -1027,15 +1027,9 @@
                 "🇭🇰 V-114｜香港",
                 "🇭🇰 V-115｜香港"
             ],
-            "url": "http://www.gstatic.com/generate_204",
-            "interval": "4m",
-            "tolerance": 50
         },
         {        
-            "type": "urltest",
-            "url": "http://www.gstatic.com/generate_204",
-            "interval": "8m",
-            "tolerance": 50 ,
+            "type": "selector",
             "tag": "🇯🇵 日本节点",
             "outbounds": [
                 "🇯🇵 S-401｜日本",
@@ -1047,10 +1041,7 @@
             ]
         },
         {
-            "type": "urltest",
-            "url": "http://www.gstatic.com/generate_204",
-            "interval": "5m",
-            "tolerance": 50 ,
+            "type": "selector",
             "tag": "🇺🇲 美国节点",
             "outbounds": [
                 "🇺🇸 S-501｜美国",
@@ -1062,10 +1053,7 @@
             ]
         },
         {
-            "type": "urltest",
-            "url": "http://www.gstatic.com/generate_204",
-            "interval": "6m",
-            "tolerance": 50 ,
+            "type": "selector",
             "tag": "🇸🇬 狮城节点",
             "outbounds": [
                 "🇸🇬 S-201｜新加坡",
@@ -1087,11 +1075,8 @@
             ]
         },
         {
-            "type": "urltest",
+            "type": "selector",
             "tag": "🇨🇳 台湾节点",
-            "url": "http://www.gstatic.com/generate_204",
-            "interval": "10m",
-            "tolerance": 50 ,
             "outbounds": [
                 "🇨🇳 S-301｜台湾",
                 "🇨🇳 S-302｜台湾",
