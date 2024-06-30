@@ -9,12 +9,14 @@
             {
                 "tag": "dns_proxy",
                 "address": "tls://1.1.1.1",
+                "strategy": "ipv4_only",
                 "address_resolver": "dns_resolver"
             },
             {
                 "tag": "dns_direct",
                 "address": "h3://dns.alidns.com/dns-query",
                 "address_resolver": "dns_resolver",
+                "strategy": "ipv4_only",
                 "detour": "DIRECT"
             },
             {
@@ -51,7 +53,8 @@
                 ],
                 "query_type": [
                     "A",
-                    "AAAA"
+                    "AAAA",
+                    "CNAME"
                 ],
                 "server": "dns_fakeip"
             },
@@ -80,6 +83,7 @@
         {
             "type": "mixed",
             "tag": "mixed-in",
+            "sniff": true,
             "listen": "0.0.0.0",
             "listen_port": 2080
         },
