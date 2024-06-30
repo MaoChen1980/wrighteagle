@@ -1235,7 +1235,8 @@
             },
             {
                 "domain_keyword": [
-                    "douyin"
+                    "douyin",
+                    "amemv"
                 ],
                 "outbound": "douyin"
             },
