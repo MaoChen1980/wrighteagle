@@ -144,10 +144,10 @@ proxy-groups:
       - S-511｜美国
       - S-512｜美国
   - name: loadbalanceHK
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: load-balance
+    interval: 122
+    url: http://cp.cloudflare.com/
+    strategy:  round-robin # consistent-hashing #
     proxies:
       - S-101｜香港
       - S-102｜香港
@@ -171,7 +171,7 @@ proxy-groups:
       - V-115｜香港
   - name: loadbalanceJP
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: http://cp.cloudflare.com/
     interval: 300
     tolerance: 50
     proxies:
@@ -181,7 +181,7 @@ proxy-groups:
       - S-412｜日本
   - name: loadbalanceTW
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: http://cp.cloudflare.com/
     interval: 300
     tolerance: 50
     proxies:
@@ -196,7 +196,7 @@ proxy-groups:
   - name: loadbalanceSG
     type: load-balance
     interval: 122
-    url: http://www.gstatic.com/generate_204
+    url: http://cp.cloudflare.com/
     strategy:  round-robin # consistent-hashing #
     proxies:
       - S-201｜新加坡
