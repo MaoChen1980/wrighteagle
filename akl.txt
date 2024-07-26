@@ -303,6 +303,12 @@ rules:
  - DOMAIN-SUFFIX,me.com,🍎 苹果服务
  - DOMAIN-SUFFIX,mzstatic.com,🍎 苹果服务
 
+  - DOMAIN-KEYWORD,youtubei.googleapis.com,🛑 全球拦截
+  - DOMAIN-KEYWORD,is.snssdk.com,🛑 全球拦截
+  - DOMAIN-KEYWORD,mi.gdt.qq.com,🛑 全球拦截
+  - DOMAIN-KEYWORD,open.e.kuaishou.com,🛑 全球拦截
+  - DOMAIN-KEYWORD,api-access.pangolin-sdk-toutiao.com,🛑 全球拦截
+  - DOMAIN-KEYWORD,get_ads,🛑 全球拦截
   - DOMAIN-SUFFIX,a.youdao.com,🛑 全球拦截
   - DOMAIN-SUFFIX,adgeo.corp.163.com,🛑 全球拦截
   - DOMAIN-SUFFIX,analytics.126.net,🛑 全球拦截
