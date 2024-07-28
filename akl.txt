@@ -144,10 +144,10 @@ proxy-groups:
       - S-511｜美国
       - S-512｜美国
   - name: loadbalanceHK
-    type: load-balance
-    interval: 122
+    type: url-test
     url: http://cp.cloudflare.com/
-    strategy:  round-robin # consistent-hashing #
+    interval: 27
+    tolerance: 50
     proxies:
       - S-101｜香港
       - S-102｜香港
