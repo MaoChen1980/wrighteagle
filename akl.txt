@@ -303,7 +303,6 @@ rules:
  - DOMAIN-SUFFIX,me.com,🍎 苹果服务
  - DOMAIN-SUFFIX,mzstatic.com,🍎 苹果服务
 
-  - DOMAIN-KEYWORD,youtubei.googleapis.com,🛑 全球拦截
   - DOMAIN-KEYWORD,is.snssdk.com,🛑 全球拦截
   - DOMAIN-KEYWORD,mi.gdt.qq.com,🛑 全球拦截
   - DOMAIN-KEYWORD,open.e.kuaishou.com,🛑 全球拦截
@@ -1210,12 +1209,8 @@ rules:
   - DOMAIN-SUFFIX,azabu-u.ac.jp,🛑 全球拦截
   - DOMAIN-SUFFIX,couchcoaster.jp,🛑 全球拦截
   - DOMAIN-SUFFIX,delivery.dmkt-sp.jp,🛑 全球拦截
-  - DOMAIN-SUFFIX,ehg-youtube.hitbox.com,🛑 全球拦截
   - DOMAIN-SUFFIX,nichibenren.or.jp,🛑 全球拦截
   - DOMAIN-SUFFIX,nicorette.co.kr,🛑 全球拦截
-  - DOMAIN-SUFFIX,ssl-youtube.2cnt.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,youtube.112.2o7.net,🛑 全球拦截
-  - DOMAIN-SUFFIX,youtube.2cnt.net,🛑 全球拦截
   - DOMAIN-SUFFIX,acsystem.wasu.tv,🛑 全球拦截
   - DOMAIN-SUFFIX,ads.cdn.tvb.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ads.wasu.tv,🛑 全球拦截
