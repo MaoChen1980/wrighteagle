@@ -147,7 +147,7 @@ proxy-groups:
     type: load-balance
     interval: 122
     url: http://cp.cloudflare.com/
-    strategy:  round-robin # consistent-hashing #
+    strategy:  consistent-hashing #round-robin # 
     proxies:
       - S-101｜香港
       - S-102｜香港
