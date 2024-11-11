@@ -428,14 +428,17 @@ void ServerParam::AddParams() {
 
 void ServerParam::init(int argc, char **argv) {
   // std::cout << "Parsing Server Param From Cmd Line 1st Time..." << std::endl;
-  ParseFromCmdLine(
-      argc, argv); //首先分析命令行，因为有可能命令行里面改了配置文件的路径
+  ParseFromCmdLine(argc, argv); 
+  //首先分析命令行，因为有可能命令行里面改了配置文件的路径
+  
   // std::cout << "Parsing Server Param From Config File " <<
   // M_server_conf_file.c_str() << "..." << std::endl;
+  
   ParseFromConfigFile(M_server_conf_file.c_str()); //分析配置文件
   // std::cout << "Parsing Server Param From Cmd Line 2nd Time..." << std::endl;
-  ParseFromCmdLine(
-      argc, argv); //再次分析命令行，因为命令行有权更改配置文件里面的默认设置
+  
+  ParseFromCmdLine(argc, argv); //再次分析命令行，因为命令行有权更改配置文件里面的默认设置
+  
   MaintainConsistency();
 }
 

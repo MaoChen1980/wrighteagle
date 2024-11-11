@@ -32,55 +32,71 @@
 #ifndef CLIENT_H_
 #define CLIENT_H_
 
+// 定义Client类，提供足球模拟比赛中的客户端功能接口
 class Observer;
 class WorldModel;
 class Agent;
 class Parser;
 class CommandSender;
 
+// Client类，负责与服务器的通信、解析数据、决策等
 class Client {
-  friend class Player;
-  friend class Coach;
-  friend class Trainer;
+  friend class Player;     // 允许Player类访问Client的私有和保护成员
+  friend class Coach;      // 允许Coach类访问Client的私有和保护成员
+  friend class Trainer;    // 允许Trainer类访问Client的私有和保护成员
 
-  Observer *mpObserver;
-  WorldModel *mpWorldModel;
-  Agent *mpAgent;
+  Observer *mpObserver;   // 观察者对象指针
+  WorldModel *mpWorldModel; // 世界模型对象指针
+  Agent *mpAgent;         // 球员代理对象指针
 
-  Parser *mpParser;
-  CommandSender *mpCommandSender;
+  Parser *mpParser;       // 解析器对象指针
+  CommandSender *mpCommandSender; // 命令发送器对象指针
 
 public:
-  Client();
-  virtual ~Client();
+  Client();               // Client类的构造函数
+  virtual ~Client();      // Client类的虚析构函数
 
   /**
    * 动态调试时球员入口函数
+   * 无参数
+   * 无返回值
    */
   void RunDynamicDebug();
 
   /**
    * 正常比赛时的球员入口函数
+   * 无参数
+   * 无返回值
    */
   void RunNormal();
 
   /**
    * 正常比赛时的球员主循环函数
+   * 无参数
+   * 无返回值
    */
   void MainLoop();
 
   /**
    * 创建Agent，并完成相关调用
+   * 无参数
+   * 无返回值
    */
   void ConstructAgent();
 
   /**
-   * 球员决策函数，每周期执行1次
+   * 球员决策函数，每周期执行1次。
+   * 该函数是纯虚函数，需要在派生类中实现具体的决策逻辑。
+   * 无参数
+   * 无返回值
    */
   virtual void Run() = 0;
 
   /**
-   * 给server发送一些选项，如synch_see,eye_on等
+   * 给server发送一些选项，如synch_see,eye_on等。
+   * 该函数是纯虚函数，需要在派生类中实现具体发送选项的逻辑。
+   * 无参数
+   * 无返回值
    */
   virtual void SendOptionToServer() = 0;
 };
