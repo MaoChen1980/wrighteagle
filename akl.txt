@@ -305,8 +305,10 @@ rules:
  - DOMAIN-SUFFIX,me.com,🍎 苹果服务
  - DOMAIN-SUFFIX,mzstatic.com,🍎 苹果服务
 
+ - DOMAIN-KEYWORD,ad.,🛑 全球拦截
+ - DOMAIN-KEYWORD,ads.,🛑 全球拦截
+ - DOMAIN-KEYWORD,doubleclick,🛑 全球拦截
  - DOMAIN-KEYWORD,is.snssdk.com,🛑 全球拦截
- - DOMAIN-KEYWORD,mi.gdt.qq.com,🛑 全球拦截
  - DOMAIN-KEYWORD,open.e.kuaishou.com,🛑 全球拦截
  - DOMAIN-KEYWORD,api-access.pangolin-sdk-toutiao.com,🛑 全球拦截
  - DOMAIN-KEYWORD,get_ads,🛑 全球拦截
@@ -846,31 +848,7 @@ rules:
  - DOMAIN-SUFFIX,s.qd.qingting.fm,🛑 全球拦截
  - DOMAIN-SUFFIX,s.qd.qingtingfm.com,🛑 全球拦截
  - DOMAIN-KEYWORD,omgmtaw,🛑 全球拦截
- - DOMAIN,adsmind.apdcdn.tc.qq.com,🛑 全球拦截
- - DOMAIN,adsmind.gdtimg.com,🛑 全球拦截
- - DOMAIN,adsmind.tc.qq.com,🛑 全球拦截
- - DOMAIN,pgdt.gtimg.cn,🛑 全球拦截
- - DOMAIN,pgdt.gtimg.com,🛑 全球拦截
- - DOMAIN,pgdt.ugdtimg.com,🛑 全球拦截
- - DOMAIN,splashqqlive.gtimg.com,🛑 全球拦截
- - DOMAIN,wa.gtimg.com,🛑 全球拦截
- - DOMAIN,wxsnsdy.wxs.qq.com,🛑 全球拦截
- - DOMAIN,wxsnsdythumb.wxs.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,act.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,ad.qun.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,adsfile.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,bugly.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,buluo.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,e.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,gdt.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,l.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,monitor.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,pingma.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,pingtcss.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,report.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,tajs.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,tcss.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,uu.qq.com,🛑 全球拦截
+
  - DOMAIN-SUFFIX,ebp.renren.com,🛑 全球拦截
  - DOMAIN-SUFFIX,jebe.renren.com,🛑 全球拦截
  - DOMAIN-SUFFIX,jebe.xnimg.cn,🛑 全球拦截
@@ -1132,19 +1110,7 @@ rules:
  - DOMAIN-SUFFIX,jp.as.pptv.com,🛑 全球拦截
  - DOMAIN-SUFFIX,pp2.pptv.com,🛑 全球拦截
  - DOMAIN-SUFFIX,stat.pptv.com,🛑 全球拦截
- - DOMAIN-SUFFIX,btrace.video.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,c.l.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,dp3.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,livep.l.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,lives.l.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,livew.l.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,mcgi.v.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,mdevstat.qqlive.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,omgmta1.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,p.l.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,rcgi.video.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,t.l.qq.com,🛑 全球拦截
- - DOMAIN-SUFFIX,u.l.qq.com,🛑 全球拦截
+
  - DOMAIN-SUFFIX,a-dxk.play.api.3g.youku.com,🛑 全球拦截
  - DOMAIN-SUFFIX,actives.youku.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ad.api.3g.tudou.com,🛑 全球拦截
