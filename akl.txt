@@ -312,6 +312,22 @@ rules:
  - DOMAIN-KEYWORD,open.e.kuaishou.com,🛑 全球拦截
  - DOMAIN-KEYWORD,api-access.pangolin-sdk-toutiao.com,🛑 全球拦截
  - DOMAIN-KEYWORD,get_ads,🛑 全球拦截
+
+ - DOMAIN-SUFFIX,www.googleadservices.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,www.google-analytics.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,www.googletagmanager.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,www.googletagservices.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,ad.doubleclick.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,ade.googlesyndication.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,adservice.google.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,googleads.g.doubleclick.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,pagead2.googlesyndication.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,googleads.g.doubleclick.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,ade.googlesyndication.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,fls.doubleclick.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,securepubads.g.doubleclick.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,g.doubleclick.net,🛑 全球拦截
+
  - DOMAIN-SUFFIX,a.youdao.com,🛑 全球拦截
  - DOMAIN-SUFFIX,adgeo.corp.163.com,🛑 全球拦截
  - DOMAIN-SUFFIX,analytics.126.net,🛑 全球拦截
