@@ -30,13 +30,13 @@
  ************************************************************************************/
 
 #include "actions/InterceptModel.h"
-#include "utils/Dasher.h"
-#include "utils/InterceptInfo.h"
+#include "Dasher.h"
+#include "../actions/InterceptInfo.h"
 #include "utils/Logger.h"
-#include "utils/PlayerParam.h"
-#include "utils/PlayerState.h"
+#include "params/PlayerParam.h"
+#include "perception/PlayerState.h"
 #include "utils/Plotter.h"
-#include "utils/ServerParam.h"
+#include "params/ServerParam.h"
 #include "utils/Utilities.h"
 #include <cmath>
 

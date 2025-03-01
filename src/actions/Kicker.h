@@ -32,9 +32,9 @@
 #ifndef __Kicker_H__
 #define __Kicker_H__
 
-#include "utils/Agent.h"
+#include "../core/Agent.h"
 #include "utils/Geometry.h"
-#include "utils/ServerParam.h"
+#include "../params/ServerParam.h"
 
 enum KickMode { KM_Null, KM_Hard, KM_Quick };
 

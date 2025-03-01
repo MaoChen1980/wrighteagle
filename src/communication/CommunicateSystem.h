@@ -39,7 +39,7 @@
 #include <stdint.h>
 #endif
 
-#include "../Behavior/BehaviorBase.h"
+#include "../behavior/BehaviorBase.h"
 #include "../utils/Geometry.h"
 #include "../utils/Types.h"
 

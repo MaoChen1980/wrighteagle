@@ -30,10 +30,9 @@
  ************************************************************************************/
 
 #include "actions/InterceptInfo.h"
-#include "utils/Dasher.h"
-#include "utils/InterceptModel.h"
-#include "utils/Logger.h"
-#include "utils/ServerParam.h"
+#include "Dasher.h"
+#include "../utils/Logger.h"
+#include "../params/ServerParam.h"
 
 #include <algorithm>
 #include <cstdlib>

@@ -104,11 +104,11 @@ int main(int argc, char *argv[]) {
     std::unique_ptr<Client> client; // 使用智能指针自动管理内存
 
     if (isCoach) {
-      client = std::make_unique<Coach>();
+      client.reset(new Coach());
     } else if (isTrainer) {
-      client = std::make_unique<Trainer>();
+      client.reset(new Trainer());
     } else {
-      client = std::make_unique<Player>();
+      client.reset(new Player());
     }
 
     if (client.get() == nullptr)

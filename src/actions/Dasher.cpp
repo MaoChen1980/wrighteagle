@@ -30,12 +30,12 @@
  ************************************************************************************/
 
 #include "actions/Dasher.h"
-#include "utils/Agent.h"
 #include "utils/Geometry.h"
-#include "utils/Kicker.h"
+#include "actions/Kicker.h"
 #include "utils/Logger.h"
-#include "utils/PlayerState.h"
-#include "utils/ServerParam.h"
+#include "perception/PlayerState.h"
+#include "params/ServerParam.h"
+#include "core/Agent.h"
 
 double Dasher::GETBALL_BUFFER = 0.1;
 

@@ -32,7 +32,7 @@
 #ifndef __Dasher_H__
 #define __Dasher_H__
 
-#include "utils/Agent.h"
+#include "../core/Agent.h"
 #include "utils/Geometry.h"
 #include "utils/Types.h"
 

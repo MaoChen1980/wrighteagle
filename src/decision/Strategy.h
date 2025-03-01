@@ -32,7 +32,7 @@
 #ifndef __Strategy_H__
 #define __Strategy_H__
 
-#include "../Behavior/BehaviorBase.h"
+#include "../behavior/BehaviorBase.h"
 #include "DecisionData.h"
 #include "../utils/Geometry.h"
 #include "../actions/InterceptInfo.h"

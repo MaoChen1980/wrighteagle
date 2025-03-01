@@ -32,7 +32,7 @@
 #ifndef __Tackler_H__
 #define __Tackler_H__
 
-#include "utils/Agent.h"
+#include "../core/Agent.h"
 #include "utils/Types.h"
 #include <map>
 #include <vector>
