@@ -32,8 +32,8 @@
 #ifndef __DynamicDebug_H__
 #define __DynamicDebug_H__
 
-#include "Observer.h"
-#include "PlayerParam.h"
+#include "model/Observer.h"
+#include "params/PlayerParam.h"
 #include <fstream>
 #include <iostream>
 #include <stdio.h>

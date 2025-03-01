@@ -29,13 +29,13 @@
  *EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                *
  ************************************************************************************/
 
-#include "Coach.h"
+#include "core/Coach.h"
 #include "DynamicDebug.h"
-#include "Logger.h"
-#include "Player.h"
-#include "PlayerParam.h"
-#include "ServerParam.h"
-#include "Trainer.h"
+#include "utils/Logger.h"
+#include "core/Player.h"
+#include "params/PlayerParam.h"
+#include "params/ServerParam.h"
+#include "core/Trainer.h"
 #include <cstdlib>
 #include <cstring>
 #include <iostream>
