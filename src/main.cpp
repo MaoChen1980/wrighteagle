@@ -41,6 +41,9 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+#include <memory> // 引入智能指针支持
+#include <exception> // 引入异常处理支持
+
 
 #ifndef WIN32
 #include <signal.h>
@@ -83,29 +86,50 @@ void signal_catcher(int sig) {
 void RegisterSignalHandler();
 
 //==============================================================================
+#include <memory> // 引入智能指针支持
+#include <exception> // 引入异常处理支持
+
+// 假设其他必要的头文件和命名空间声明已正确添加
+
 int main(int argc, char *argv[]) {
-  RegisterSignalHandler();
+  try {
+    RegisterSignalHandler();
 
-  ServerParam::instance().init(argc, argv);
-  PlayerParam::instance().init(argc, argv);
+    ServerParam::instance().init(argc, argv);
+    PlayerParam::instance().init(argc, argv);
 
-  Client *client = 0;
+    bool isCoach = PlayerParam::instance().isCoach();
+    bool isTrainer = PlayerParam::instance().isTrainer();
 
-  if (PlayerParam::instance().isCoach()) {
-    client = new Coach;
-  } else if (PlayerParam::instance().isTrainer()) {
-    client = new Trainer;
-  } else {
-    client = new Player;
+    std::unique_ptr<Client> client; // 使用智能指针自动管理内存
+
+    if (isCoach) {
+      client = std::make_unique<Coach>();
+    } else if (isTrainer) {
+      client = std::make_unique<Trainer>();
+    } else {
+      client = std::make_unique<Player>();
+    }
+
+    if (client.get() == nullptr)
+      throw std::runtime_error("Failed to create client");
+
+    if (PlayerParam::instance().DynamicDebugMode()) {
+      client->RunDynamicDebug(); // 进入动态调试模式
+    } else {
+      client->RunNormal(); // 进入正常比赛模式
+    }
+
+  } catch (const std::exception& e) {
+    // 异常处理: 打印异常信息，适当清理资源，确保程序不会因未处理异常而崩溃
+    std::cerr << "Exception caught: " << e.what() << std::endl;
+    // 注意：由于使用了std::unique_ptr，因此在异常抛出时，资源会自动释放
+  } catch (...) {
+    // 捕获所有未知异常
+    std::cerr << "Unknown exception caught" << std::endl;
   }
 
-  if (PlayerParam::instance().DynamicDebugMode()) {
-    client->RunDynamicDebug(); // 进入动态调试模式
-  } else {
-    client->RunNormal(); // 进入正常比赛模式
-  }
-
-  delete client;
+  // 由于使用了智能指针，这里不再需要显式释放资源
 
   return 0;
 }

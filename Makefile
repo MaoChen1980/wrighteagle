@@ -53,5 +53,8 @@ clean:
 	@cd ${DEBUG} && $(MAKE) clean || true
 	@cd ${RELEASE} && $(MAKE) clean || true
 	@rm -f $(shell find . -type f -name 'core*') || true
+<<<<<<< HEAD
 
 .PHONY: first all d r clean
+=======
+>>>>>>> 2ee67082f690d5bb8b709de9eb1f5e6d98b130d5
