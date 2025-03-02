@@ -36,6 +36,7 @@
 #include "params/PlayerParam.h"
 #include <fstream>
 #include <iostream>
+#include <memory> // 添加这行以使用 std::unique_ptr
 #include <stdio.h>
 #include <vector>
 
@@ -138,10 +139,10 @@ private:
   std::vector<Message> mMessageTable;
 
   // 下面4个指针用来在读写文件时使用
-  MessageIndexTableUnit *mpIndex;
-  timeval *mpParserTime;
-  timeval *mpDecisionTime;
-  timeval *mpCommandSendTime;
+  std::unique_ptr<MessageIndexTableUnit[]> mpIndex; // 修改为 std::unique_ptr
+  std::unique_ptr<timeval[]> mpParserTime;          // 修改为 std::unique_ptr
+  std::unique_ptr<timeval[]> mpDecisionTime;       // 修改为 std::unique_ptr
+  std::unique_ptr<timeval[]> mpCommandSendTime;    // 修改为 std::unique_ptr
 
   // 当前读取的单元
   MessageIndexTableUnit *mpCurrentIndex;
@@ -149,7 +150,7 @@ private:
   // 用于文件操作
   ThreadMutex mFileMutex;
   FILE *mpFile;
-  std::ifstream *mpFileStream;
+  std::unique_ptr<std::ifstream> mpFileStream; // 修改为 std::unique_ptr
   std::streambuf *mpStreamBuffer;
 
   bool mRunning;     // 是否正在运行

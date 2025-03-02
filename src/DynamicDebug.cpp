@@ -1,50 +1,20 @@
-/************************************************************************************
- * WrightEagle (Soccer Simulation League 2D) * BASE SOURCE CODE RELEASE 2016 *
- * Copyright (c) 1998-2016 WrightEagle 2D Soccer Simulation Team, * Multi-Agent
- *Systems Lab.,                                * School of Computer Science and
- *Technology,               * University of Science and Technology of China *
- * All rights reserved. *
- *                                                                                  *
- * Redistribution and use in source and binary forms, with or without *
- * modification, are permitted provided that the following conditions are met: *
- *     * Redistributions of source code must retain the above copyright *
- *       notice, this list of conditions and the following disclaimer. *
- *     * Redistributions in binary form must reproduce the above copyright *
- *       notice, this list of conditions and the following disclaimer in the *
- *       documentation and/or other materials provided with the distribution. *
- *     * Neither the name of the WrightEagle 2D Soccer Simulation Team nor the *
- *       names of its contributors may be used to endorse or promote products *
- *       derived from this software without specific prior written permission. *
- *                                                                                  *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- *AND  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- *IMPLIED    * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
- *PURPOSE ARE           * DISCLAIMED. IN NO EVENT SHALL WrightEagle 2D Soccer
- *Simulation Team BE LIABLE    * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
- *EXEMPLARY, OR CONSEQUENTIAL       * DAMAGES (INCLUDING, BUT NOT LIMITED TO,
- *PROCUREMENT OF SUBSTITUTE GOODS OR       * SERVICES; LOSS OF USE, DATA, OR
- *PROFITS; OR BUSINESS INTERRUPTION) HOWEVER       * CAUSED AND ON ANY THEORY OF
- *LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,    * OR TORT (INCLUDING
- *NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF * THIS SOFTWARE,
- *EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                *
- ************************************************************************************/
-
 #include "DynamicDebug.h"
 #include <cstring>
+#include <memory> // 添加这行以使用 std::make_unique
 
 //==============================================================================
 DynamicDebug::DynamicDebug() {
-  mpObserver = 0;
+  mpObserver = nullptr;
   mInitialOK = false;
 
-  mpIndex = 0;
-  mpParserTime = 0;
-  mpDecisionTime = 0;
-  mpCommandSendTime = 0;
-  mpCurrentIndex = 0;
+  mpIndex = nullptr;
+  mpParserTime = nullptr;
+  mpDecisionTime = nullptr;
+  mpCommandSendTime = nullptr;
+  mpCurrentIndex = nullptr;
 
-  mpFile = 0;
-  mpFileStream = 0;
+  mpFile = nullptr;
+  mpFileStream = nullptr;
   mpStreamBuffer = std::cin.rdbuf(); // 保存std::cin的流，后面要重定向
 
   mRunning = false;
@@ -56,21 +26,10 @@ DynamicDebug::DynamicDebug() {
 DynamicDebug::~DynamicDebug() {
   Flush();
 
-  if (mpIndex != 0) {
-    delete[] mpIndex;
-  }
-
-  if (mpParserTime != 0) {
-    delete[] mpParserTime;
-  }
-
-  if (mpDecisionTime != 0) {
-    delete[] mpDecisionTime;
-  }
-
-  if (mpCommandSendTime != 0) {
-    delete[] mpCommandSendTime;
-  }
+  mpIndex.reset();
+  mpParserTime.reset();
+  mpDecisionTime.reset();
+  mpCommandSendTime.reset();
 }
 
 //==============================================================================
@@ -85,7 +44,7 @@ void DynamicDebug::Initial(Observer *pObserver) {
     return;
   }
 
-  if (pObserver == 0) {
+  if (pObserver == nullptr) {
     PRINT_ERROR("Observer Null Pointer");
     return;
   }
@@ -94,8 +53,8 @@ void DynamicDebug::Initial(Observer *pObserver) {
 
   if (PlayerParam::instance().DynamicDebugMode() == true) // 动态调试
   {
-    mpFileStream = new std::ifstream("dynamicdebug.txt");
-    if (mpFileStream) {
+    mpFileStream = std::make_unique<std::ifstream>("dynamicdebug.txt");
+    if (mpFileStream->is_open()) {
       std::cin.rdbuf(mpFileStream->rdbuf());
     }
   } else // 正常比赛时
@@ -118,7 +77,7 @@ void DynamicDebug::Initial(Observer *pObserver) {
       }
     }
 
-    if (mpFile != 0) {
+    if (mpFile != nullptr) {
       fseek(mpFile, sizeof(mFileHead) + 2 * sizeof(char),
             SEEK_SET); // 留出mFileHead的地方，最后再填
       mFileHead.mIndexTableSize = 0;
@@ -252,39 +211,39 @@ MessageType DynamicDebug::Run(char *msg) {
       long long size;
 
       size = mFileHead.mIndexTableSize;
-      mpIndex = new MessageIndexTableUnit[size];
+      mpIndex = std::make_unique<MessageIndexTableUnit[]>(size);
       fseek(mpFile, mFileHead.mIndexTableOffset, SEEK_SET);
       if (size > 0 &&
-          fread(mpIndex, size * sizeof(MessageIndexTableUnit), 1, mpFile) < 1) {
+          fread(mpIndex.get(), size * sizeof(MessageIndexTableUnit), 1, mpFile) < 1) {
         Assert(0);
       }
 
       size = mFileHead.mParserTableSize;
-      mpParserTime = new timeval[size];
+      mpParserTime = std::make_unique<timeval[]>(size);
       fseek(mpFile, mFileHead.mParserTableOffset, SEEK_SET);
       if (size > 0 &&
-          fread(mpParserTime, size * sizeof(timeval), 1, mpFile) < 1) {
+          fread(mpParserTime.get(), size * sizeof(timeval), 1, mpFile) < 1) {
         Assert(0);
       }
 
       size = mFileHead.mDecisionTableSize;
-      mpDecisionTime = new timeval[size];
+      mpDecisionTime = std::make_unique<timeval[]>(size);
       fseek(mpFile, mFileHead.mDecisionTableOffset, SEEK_SET);
       if (size > 0 &&
-          fread(mpDecisionTime, size * sizeof(timeval), 1, mpFile) < 1) {
+          fread(mpDecisionTime.get(), size * sizeof(timeval), 1, mpFile) < 1) {
         Assert(0);
       }
 
       size = mFileHead.mCommandSendTableSize;
-      mpCommandSendTime = new timeval[size];
+      mpCommandSendTime = std::make_unique<timeval[]>(size);
       fseek(mpFile, mFileHead.mCommandSendTableOffset, SEEK_SET);
       if (size > 0 &&
-          fread(mpCommandSendTime, size * sizeof(timeval), 1, mpFile) < 1) {
+          fread(mpCommandSendTime.get(), size * sizeof(timeval), 1, mpFile) < 1) {
         Assert(0);
       }
 
       fseek(mpFile, sizeof(mFileHead) + 2 * sizeof(char), SEEK_SET);
-      mpCurrentIndex = mpIndex; // load后，第一个为初始化信息，先进行初始化
+      mpCurrentIndex = mpIndex.get(); // load后，第一个为初始化信息，先进行初始化
 
       std::cerr << "Load finished." << std::endl;
       fseek(mpFile, mpCurrentIndex->mDataOffset, SEEK_SET);
@@ -453,7 +412,7 @@ timeval DynamicDebug::GetTimeCommandSend() {
 void DynamicDebug::Flush() {
   if (PlayerParam::instance().SaveServerMessage() &&
       !PlayerParam::instance().DynamicDebugMode()) {
-    if (mpFile != 0) {
+    if (mpFile != nullptr) {
       long long i = 0; // 循环变量
       // mFileHead.mHeadFlag[0] = 'D';
       // mFileHead.mHeadFlag[1] = 'D';
@@ -475,45 +434,45 @@ void DynamicDebug::Flush() {
 
       // index table
       mFileHead.mIndexTableOffset = ftell(mpFile);
-      mpIndex = new MessageIndexTableUnit[size];
+      mpIndex = std::make_unique<MessageIndexTableUnit[]>(size);
       for (i = 0; i < size; ++i) {
         memcpy(&mpIndex[i], &mIndexTable[i], sizeof(MessageIndexTableUnit));
       }
-      fwrite(mpIndex, size * sizeof(MessageIndexTableUnit), 1, mpFile);
+      fwrite(mpIndex.get(), size * sizeof(MessageIndexTableUnit), 1, mpFile);
 
       // observer time
       mFileHead.mParserTableOffset = ftell(mpFile);
       size = mFileHead.mParserTableSize;
-      mpParserTime = new timeval[size];
+      mpParserTime = std::make_unique<timeval[]>(size);
       for (i = 0; i < size; ++i) {
         mpParserTime[i] = mParserTimeTable[i];
       }
-      fwrite(mpParserTime, size * sizeof(timeval), 1, mpFile);
+      fwrite(mpParserTime.get(), size * sizeof(timeval), 1, mpFile);
 
       // decision time
       mFileHead.mDecisionTableOffset = ftell(mpFile);
       size = mFileHead.mDecisionTableSize;
-      mpDecisionTime = new timeval[size];
+      mpDecisionTime = std::make_unique<timeval[]>(size);
       for (i = 0; i < size; ++i) {
         mpDecisionTime[i] = mDecisionTimeTable[i];
       }
-      fwrite(mpDecisionTime, size * sizeof(timeval), 1, mpFile);
+      fwrite(mpDecisionTime.get(), size * sizeof(timeval), 1, mpFile);
 
       // commandsend time
       mFileHead.mCommandSendTableOffset = ftell(mpFile);
       size = mFileHead.mCommandSendTableSize;
-      mpCommandSendTime = new timeval[size];
+      mpCommandSendTime = std::make_unique<timeval[]>(size);
       for (i = 0; i < size; ++i) {
         mpCommandSendTime[i] = mCommandSendTimeTable[i];
       }
-      fwrite(mpCommandSendTime, size * sizeof(timeval), 1, mpFile);
+      fwrite(mpCommandSendTime.get(), size * sizeof(timeval), 1, mpFile);
 
       fseek(mpFile, 0, SEEK_SET);
       fprintf(mpFile, "DD");
       fwrite(&mFileHead, sizeof(mFileHead), 1, mpFile);
     }
 
-    if (mpFile != 0) {
+    if (mpFile != nullptr) {
       fclose(mpFile);
     }
   }

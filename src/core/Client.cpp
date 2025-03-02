@@ -50,11 +50,11 @@
 #include "WorldModel.h"
 
 Client::Client() {
-  srand(time(0)); // global srand once
-  srand48(time(0));
+  srand(time(nullptr)); // global srand once
+  srand48(time(nullptr));
 
   /** Observer and World Model */
-  mpAgent = 0;
+  mpAgent = nullptr;
   mpObserver = new Observer;
   mpWorldModel = new WorldModel;
 

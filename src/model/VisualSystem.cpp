@@ -31,14 +31,14 @@
 
 #include "VisualSystem.h"
 #include "Agent.h"
-#include "BehaviorShoot.h"
-#include "Formation.h"
-#include "InterceptInfo.h"
-#include "InterceptModel.h"
-#include "Logger.h"
-#include "PositionInfo.h"
-#include "Strategy.h"
-#include "TimeTest.h"
+#include "behavior/BehaviorShoot.h"
+#include "params/Formation.h"
+#include "actions/InterceptInfo.h"
+#include "actions/InterceptModel.h"
+#include "utils/Logger.h"
+#include "perception/PositionInfo.h"
+#include "decision/Strategy.h"
+#include "utils/TimeTest.h"
 
 VisualSystem::VisualSystem() {
   mCanForceChangeViewWidth = false;

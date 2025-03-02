@@ -32,7 +32,7 @@
 #ifndef DECISIONTREE_H_
 #define DECISIONTREE_H_
 
-#include "BehaviorBase.h"
+#include "behavior/BehaviorBase.h"
 #include <list>
 
 class Agent;

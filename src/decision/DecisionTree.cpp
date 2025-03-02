@@ -30,15 +30,15 @@
  ************************************************************************************/
 
 #include "DecisionTree.h"
-#include "Agent.h"
-#include "BehaviorAttack.h"
-#include "BehaviorDefense.h"
-#include "BehaviorGoalie.h"
-#include "BehaviorIntercept.h"
-#include "BehaviorPenalty.h"
-#include "BehaviorSetplay.h"
+#include "core/Agent.h"
+#include "behavior/BehaviorAttack.h"
+#include "behavior/BehaviorDefense.h"
+#include "behavior/BehaviorGoalie.h"
+#include "behavior/BehaviorIntercept.h"
+#include "behavior/BehaviorPenalty.h"
+#include "behavior/BehaviorSetplay.h"
 #include "Strategy.h"
-#include "TimeTest.h"
+#include "utils/TimeTest.h"
 
 bool DecisionTree::Decision(Agent &agent) {
   Assert(agent.GetSelf().IsAlive());
