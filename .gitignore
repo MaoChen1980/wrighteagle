@@ -31,3 +31,5 @@
 *.app
 *.*~
 Debug/WEBase
+WrightEagle源码解析文档.md
+Release/WEBase
