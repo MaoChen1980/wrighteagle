@@ -30,15 +30,15 @@
  ************************************************************************************/
 
 #include "BehaviorMark.h"
-#include "Agent.h"
-#include "BasicCommand.h"
+#include "../core/Agent.h"
+#include "../cmd/BasicCommand.h"
 #include "BehaviorPosition.h"
-#include "Dasher.h"
-#include "Evaluation.h"
-#include "Formation.h"
-#include "Logger.h"
-#include "PositionInfo.h"
-#include "VisualSystem.h"
+#include "../actions/Dasher.h"
+#include "../decision/Evaluation.h"
+#include "../params/Formation.h"
+#include "../utils/Logger.h"
+#include "../perception/PositionInfo.h"
+#include "../model/VisualSystem.h"
 
 const BehaviorType BehaviorMarkExecuter::BEHAVIOR_TYPE = BT_Mark;
 

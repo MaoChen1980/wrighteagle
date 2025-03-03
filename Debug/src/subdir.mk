@@ -197,7 +197,7 @@ CPP_DEPS += \
 src/%.o: ../src/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -O0 -g3 -Wall -c -fmessage-length=0 -I"../src" -I"../src/actions" -I"../src/behavior" -I"../src/cmd" -I"../src/communication" -I"../src/core" -I"../src/decision" -I"../src/model" -I"../src/network" -I"../src/nn" -I"../src/params" -I"../src/perception" -I"../src/utils" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -I"../src" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

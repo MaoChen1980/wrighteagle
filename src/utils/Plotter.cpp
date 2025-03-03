@@ -30,7 +30,7 @@
  ************************************************************************************/
 
 #include "Plotter.h"
-#include "PlayerParam.h"
+#include "../params/PlayerParam.h"
 
 #include <cstdarg>
 #include <cstdio>

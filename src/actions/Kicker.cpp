@@ -33,17 +33,16 @@
 // ... 版权信息 ...
  ************************************************************************************/
 
-#include "actions/Kicker.h"
-#include "utils/Logger.h"
-#include "core/Parser.h"
-#include "utils/Utilities.h"
-#include "params/PlayerParam.h"
-#include "params/ServerParam.h"
-#include "utils/Geometry.h"
+#include "Kicker.h"
+#include "../utils/Logger.h"
+#include "../core/Parser.h"
+#include "../utils/Utilities.h"
+#include "../params/PlayerParam.h"
+#include "../params/ServerParam.h"
+#include "../utils/Geometry.h"
 
 #include <cstdlib>
 #include <fstream>
-
 #include <cstring>
 
 using namespace std;

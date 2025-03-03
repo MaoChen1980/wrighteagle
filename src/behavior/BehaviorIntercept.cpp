@@ -30,16 +30,16 @@
  ************************************************************************************/
 
 #include "BehaviorIntercept.h"
-#include "Agent.h"
+#include "../core/Agent.h"
 #include "BehaviorBase.h"
 #include "BehaviorDribble.h"
-#include "Dasher.h"
-#include "Evaluation.h"
-#include "Formation.h"
-#include "InterceptInfo.h"
-#include "Logger.h"
-#include "Strategy.h"
-#include "VisualSystem.h"
+#include "../actions/Dasher.h"
+#include "../decision/Evaluation.h"
+#include "../params/Formation.h"
+#include "../actions/InterceptInfo.h"
+#include "../utils/Logger.h"
+#include "../decision/Strategy.h"
+#include "../model/VisualSystem.h"
 #include <sstream>
 
 using namespace std;

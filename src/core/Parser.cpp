@@ -30,15 +30,15 @@
  ************************************************************************************/
 
 #include "Parser.h"
-#include "DynamicDebug.h"
-#include "Logger.h"
-#include "NetworkTest.h"
-#include "Observer.h"
-#include "PlayerParam.h"
-#include "ServerParam.h"
-#include "Thread.h"
-#include "TimeTest.h"
-#include "UDPSocket.h"
+#include "../DynamicDebug.h"
+#include "../utils/Logger.h"
+#include "../network/NetworkTest.h"
+#include "../model/Observer.h"
+#include "../params/PlayerParam.h"
+#include "../params/ServerParam.h"
+#include "../utils/Thread.h"
+#include "../utils/TimeTest.h"
+#include "../network/UDPSocket.h"
 #include <limits>
 
 char Parser::mBuf[MAX_MESSAGE];

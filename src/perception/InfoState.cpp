@@ -30,7 +30,7 @@
  ************************************************************************************/
 
 #include "InfoState.h"
-#include "InterceptInfo.h"
+#include "../actions/InterceptInfo.h"
 #include "PositionInfo.h"
 
 InfoState::InfoState(WorldState *world_state) {

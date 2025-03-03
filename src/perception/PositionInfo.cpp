@@ -30,8 +30,8 @@
  ************************************************************************************/
 
 #include "PositionInfo.h"
-#include "Utilities.h"
-#include "WorldState.h"
+#include "../utils/Utilities.h"
+#include "../model/WorldState.h"
 #include <algorithm>
 #include <cmath>
 #include <cstdlib>

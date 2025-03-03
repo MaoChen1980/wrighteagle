@@ -33,14 +33,14 @@
 #include "BehaviorIntercept.h"
 #include "BehaviorPass.h"
 #include "BehaviorShoot.h"
-#include "Dasher.h"
-#include "Evaluation.h"
-#include "Formation.h"
-#include "Geometry.h"
-#include "Kicker.h"
-#include "ServerParam.h"
-#include "Utilities.h"
-#include "VisualSystem.h"
+#include "../actions/Dasher.h"
+#include "../decision/Evaluation.h"
+#include "../params/Formation.h"
+#include "../utils/Geometry.h"
+#include "../actions/Kicker.h"
+#include "../params/ServerParam.h"
+#include "../utils/Utilities.h"
+#include "../model/VisualSystem.h"
 #include <algorithm>
 #include <stdio.h>
 using namespace std;

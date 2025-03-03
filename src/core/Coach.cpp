@@ -31,16 +31,16 @@
 
 #include "Coach.h"
 #include "Agent.h"
-#include "CommandSender.h"
-#include "DynamicDebug.h"
-#include "Formation.h"
-#include "Logger.h"
+#include "../cmd/CommandSender.h"
+#include "../DynamicDebug.h"
+#include "../params/Formation.h"
+#include "../utils/Logger.h"
 #include "Parser.h"
-#include "PlayerParam.h"
-#include "Thread.h"
-#include "TimeTest.h"
-#include "UDPSocket.h"
-#include "WorldModel.h"
+#include "../params/PlayerParam.h"
+#include "../utils/Thread.h"
+#include "../utils/TimeTest.h"
+#include "../network/UDPSocket.h"
+#include "../model/WorldModel.h"
 #include <iostream>
 #include <list>
 #include <sstream>

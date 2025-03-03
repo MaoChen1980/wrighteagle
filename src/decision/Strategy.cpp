@@ -30,14 +30,14 @@
  ************************************************************************************/
 
 #include "Strategy.h"
-#include "Dasher.h"
-#include "Formation.h"
-#include "InfoState.h"
-#include "InterceptInfo.h"
-#include "Logger.h"
-#include "PositionInfo.h"
-#include "Tackler.h"
-#include "Utilities.h"
+#include "../actions/Dasher.h"
+#include "../params/Formation.h"
+#include "../perception/InfoState.h"
+#include "../actions/InterceptInfo.h"
+#include "../utils/Logger.h"
+#include "../perception/PositionInfo.h"
+#include "../actions/Tackler.h"
+#include "../utils/Utilities.h"
 #include <vector>
 using namespace std;
 

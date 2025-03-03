@@ -36,7 +36,7 @@
 #include "BehaviorPass.h"
 #include "BehaviorPosition.h"
 #include "BehaviorShoot.h"
-#include "WorldState.h"
+#include "../model/WorldState.h"
 
 BehaviorAttackPlanner::BehaviorAttackPlanner(Agent &agent)
     : BehaviorPlannerBase<BehaviorAttackData>(agent) {}

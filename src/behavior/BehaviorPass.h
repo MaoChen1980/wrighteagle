@@ -33,7 +33,7 @@
 #define __BehaviorPass_H__
 
 #include "BehaviorBase.h"
-#include "VisualSystem.h"
+#include "../model/VisualSystem.h"
 #include <vector>
 
 class BehaviorPassExecuter : public BehaviorExecuterBase<BehaviorAttackData> {

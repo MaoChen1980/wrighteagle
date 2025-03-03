@@ -31,13 +31,13 @@
 
 #include "Analyser.h"
 #include "../core/Agent.h"
-#include "CommunicateSystem.h"
-#include "Dasher.h"
-#include "Formation.h"
-#include "InterceptInfo.h"
-#include "Logger.h"
-#include "PositionInfo.h"
-#include "VisualSystem.h"
+#include "../communication/CommunicateSystem.h"
+#include "../actions/Dasher.h"
+#include "../params/Formation.h"
+#include "../actions/InterceptInfo.h"
+#include "../utils/Logger.h"
+#include "../perception/PositionInfo.h"
+#include "../model/VisualSystem.h"
 #include <vector>
 using namespace std;
 

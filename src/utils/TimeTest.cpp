@@ -30,7 +30,7 @@
  ************************************************************************************/
 
 #include "TimeTest.h"
-#include "PlayerParam.h"
+#include "../params/PlayerParam.h"
 #include <fstream>
 
 /**

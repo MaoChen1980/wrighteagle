@@ -33,7 +33,7 @@
 #define BEHAVIORINTERCEPT_H_
 
 #include "BehaviorBase.h"
-#include "VisualSystem.h"
+#include "../model/VisualSystem.h"
 
 class BehaviorInterceptExecuter
     : public BehaviorExecuterBase<BehaviorAttackData> {

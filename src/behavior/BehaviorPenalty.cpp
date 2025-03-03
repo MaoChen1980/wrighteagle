@@ -30,15 +30,15 @@
  ************************************************************************************/
 
 #include "BehaviorPenalty.h"
-#include "Agent.h"
+#include "../core/Agent.h"
 #include "BehaviorDribble.h"
 #include "BehaviorGoalie.h"
 #include "BehaviorIntercept.h"
 #include "BehaviorShoot.h"
-#include "Dasher.h"
-#include "Kicker.h"
-#include "VisualSystem.h"
-#include "WorldState.h"
+#include "../actions/Dasher.h"
+#include "../actions/Kicker.h"
+#include "../model/VisualSystem.h"
+#include "../model/WorldState.h"
 
 const BehaviorType BehaviorPenaltyExecuter::BEHAVIOR_TYPE = BT_Penalty;
 

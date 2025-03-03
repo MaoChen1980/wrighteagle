@@ -29,8 +29,8 @@
  *EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                *
  ************************************************************************************/
 
-#include "actions/Tackler.h"
-#include "model/WorldState.h"
+#include "Tackler.h"
+#include "../model/WorldState.h"
 
 /**
  * Constructor.

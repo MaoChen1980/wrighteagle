@@ -33,14 +33,14 @@
 // ... 版权信息 ...
  ************************************************************************************/
 
-#include "actions/ActionEffector.h"
-#include "core/Agent.h"
-#include "network/NetworkTest.h"
-#include "model/Observer.h"
-#include "network/UDPSocket.h"
-#include "model/VisualSystem.h"
-#include "model/WorldState.h"
-#include "perception/PlayerState.h"
+#include "ActionEffector.h"
+#include "../core/Agent.h"
+#include "../network/NetworkTest.h"
+#include "../model/Observer.h"
+#include "../network/UDPSocket.h"
+#include "../model/VisualSystem.h"
+#include "../model/WorldState.h"
+#include "../perception/PlayerState.h"
 
 // ... 其余代码保持不变 ...
 

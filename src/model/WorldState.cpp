@@ -30,11 +30,11 @@
  ************************************************************************************/
 
 #include "WorldState.h"
-#include "ActionEffector.h"
-#include "Formation.h"
-#include "Logger.h"
+#include "../actions/ActionEffector.h"
+#include "../params/Formation.h"
+#include "../utils/Logger.h"
 #include "Observer.h"
-#include "Tackler.h"
+#include "../actions/Tackler.h"
 #include <cstdlib>
 #include <fstream>
 

@@ -30,7 +30,7 @@
  ************************************************************************************/
 
 #include "DecisionData.h"
-#include "Agent.h"
+#include "../core/Agent.h"
 
 DecisionData::DecisionData(Agent &agent)
     : mAgent(agent), mWorldState(agent.World()),

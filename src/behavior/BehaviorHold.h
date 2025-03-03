@@ -25,7 +25,7 @@
 #define __BehaviorHold_H__
 
 #include "BehaviorBase.h"
-#include "VisualSystem.h"
+#include "../model/VisualSystem.h"
 #include <vector>
 
 class BehaviorHoldExecuter : public BehaviorExecuterBase<BehaviorAttackData> {

@@ -44,7 +44,7 @@
 #include <unistd.h>
 #endif
 
-#include "Types.h"
+#include "../utils/Types.h"
 #include <iostream>
 
 class UDPSocket {

@@ -32,9 +32,9 @@
 #ifndef __InterceptInfo_H__
 #define __InterceptInfo_H__
 
-#include "perception/InfoState.h"
-#include "actions/InterceptModel.h"
-#include "utils/Types.h"
+#include "../perception/InfoState.h"
+#include "InterceptModel.h"
+#include "../utils/Types.h"
 
 enum InterceptRes { //拦截结果
   IR_None,

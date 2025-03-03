@@ -30,15 +30,15 @@
  ************************************************************************************/
 
 #include "VisualSystem.h"
-#include "Agent.h"
-#include "behavior/BehaviorShoot.h"
-#include "params/Formation.h"
-#include "actions/InterceptInfo.h"
-#include "actions/InterceptModel.h"
-#include "utils/Logger.h"
-#include "perception/PositionInfo.h"
-#include "decision/Strategy.h"
-#include "utils/TimeTest.h"
+#include "../core/Agent.h"
+#include "../behavior/BehaviorShoot.h"
+#include "../params/Formation.h"
+#include "../actions/InterceptInfo.h"
+#include "../actions/InterceptModel.h"
+#include "../utils/Logger.h"
+#include "../perception/PositionInfo.h"
+#include "../decision/Strategy.h"
+#include "../utils/TimeTest.h"
 
 VisualSystem::VisualSystem() {
   mCanForceChangeViewWidth = false;

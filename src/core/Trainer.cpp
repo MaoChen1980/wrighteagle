@@ -31,13 +31,13 @@
 
 #include "Trainer.h"
 #include "Agent.h"
-#include "DynamicDebug.h"
-#include "Logger.h"
-#include "PlayerParam.h"
-#include "Thread.h"
-#include "UDPSocket.h"
+#include "../DynamicDebug.h"
+#include "../utils/Logger.h"
+#include "../params/PlayerParam.h"
+#include "../utils/Thread.h"
+#include "../network/UDPSocket.h"
 #include "../utils/Utilities.h"
-#include "WorldModel.h"
+#include "../model/WorldModel.h"
 #include <list>
 #include <sstream>
 #include <string>
@@ -270,9 +270,6 @@ void Trainer::ChangePlayMode(PlayMode pm) {
   case PM_Opp_Offside_Kick:
     spm = isOurLeft ? SPM_OffSide_Left
                     : SPM_OffSide_Right; //我方越位，对方才能踢球
-    break;
-  case PM_Opp_Free_Kick_Fault_Kick:
-    spm = isOurLeft ? SPM_Free_Kick_Fault_Left : SPM_Free_Kick_Fault_Right;
     break;
   case PM_Opp_Back_Pass_Kick:
     spm = isOurLeft ? SPM_Back_Pass_Left : SPM_Back_Pass_Right;

@@ -23,17 +23,5 @@ C_UPPER_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-src/actions \
-src/behavior \
-src/cmd \
-src/communication \
-src/core \
-src/decision \
-src/model \
-src/network \
-src/nn \
-src/params \
-src/perception \
-src/utils \
 src
 

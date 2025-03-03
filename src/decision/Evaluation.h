@@ -32,7 +32,7 @@
 #ifndef __Evaluation_H__
 #define __Evaluation_H__
 
-#include "Geometry.h"
+#include "../utils/Geometry.h"
 class Net;
 
 class Evaluation {

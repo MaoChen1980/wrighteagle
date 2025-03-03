@@ -32,7 +32,7 @@
 #ifndef __CommandSender_H__
 #define __CommandSender_H__
 
-#include "Thread.h"
+#include "../utils/Thread.h"
 
 class Observer;
 class Agent;

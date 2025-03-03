@@ -6,13 +6,13 @@
  * All rights reserved. *
  ************************************************************************************/
 
- #include "core/Coach.h"
- #include "DynamicDebug.h"
- #include "utils/Logger.h"
- #include "core/Player.h"
- #include "params/PlayerParam.h"
- #include "params/ServerParam.h"
- #include "core/Trainer.h"
+#include "core/Coach.h"
+#include "./DynamicDebug.h"
+#include "utils/Logger.h"
+#include "core/Player.h"
+#include "params/PlayerParam.h"
+#include "params/ServerParam.h"
+#include "core/Trainer.h"
 
  #include <cstdlib>
  #include <cstring>

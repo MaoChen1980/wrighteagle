@@ -29,7 +29,7 @@
  *EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                *
  ************************************************************************************/
 
-#include "actions/InterceptInfo.h"
+#include "InterceptInfo.h"
 #include "Dasher.h"
 #include "../utils/Logger.h"
 #include "../params/ServerParam.h"

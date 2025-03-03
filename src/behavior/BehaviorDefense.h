@@ -32,7 +32,7 @@
 #ifndef BEHAVIORDEFENSE_H_
 #define BEHAVIORDEFENSE_H_
 
-#include "Analyser.h"
+#include "../decision/Analyser.h"
 #include "BehaviorBase.h"
 #include <vector>
 

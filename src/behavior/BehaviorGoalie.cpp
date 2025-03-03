@@ -30,10 +30,10 @@
  ************************************************************************************/
 
 #include "BehaviorGoalie.h"
-#include "Evaluation.h"
-#include "Logger.h"
-#include "TimeTest.h"
-#include "Utilities.h"
+#include "../decision/Evaluation.h"
+#include "../utils/Logger.h"
+#include "../utils/TimeTest.h"
+#include "../utils/Utilities.h"
 
 const BehaviorType BehaviorGoalieExecuter::BEHAVIOR_TYPE = BT_Goalie;
 

@@ -32,13 +32,13 @@
 #ifndef AGENT_H_
 #define AGENT_H_
 
-#include "actions/ActionEffector.h"
-#include "decision/Analyser.h"
-#include "params/Formation.h"
-#include "perception/InfoState.h"
-#include "perception/PositionInfo.h"
-#include "decision/Strategy.h"
-#include "model/WorldState.h"
+#include "../actions/ActionEffector.h"
+#include "../decision/Analyser.h"
+#include "../params/Formation.h"
+#include "../perception/InfoState.h"
+#include "../perception/PositionInfo.h"
+#include "../decision/Strategy.h"
+#include "../model/WorldState.h"
 
 class WorldModel;
 class ActiveBehavior;

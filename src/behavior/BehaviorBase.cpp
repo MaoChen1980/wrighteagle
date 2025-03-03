@@ -30,12 +30,12 @@
  ************************************************************************************/
 
 #include "BehaviorBase.h"
-#include "Agent.h"
-#include "Analyser.h"
-#include "InfoState.h"
-#include "Logger.h"
-#include "Strategy.h"
-#include "WorldState.h"
+#include "../core/Agent.h"
+#include "../decision/Analyser.h"
+#include "../perception/InfoState.h"
+#include "../utils/Logger.h"
+#include "../decision/Strategy.h"
+#include "../model/WorldState.h"
 
 BehaviorAttackData::BehaviorAttackData(Agent &agent)
     : mAgent(agent), mWorldState(agent.GetWorldState()),

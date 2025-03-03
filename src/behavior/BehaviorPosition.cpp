@@ -30,15 +30,15 @@
  ************************************************************************************/
 
 #include "BehaviorPosition.h"
-#include "Agent.h"
+#include "../core/Agent.h"
 #include "BehaviorPass.h"
-#include "Dasher.h"
-#include "Evaluation.h"
-#include "InterceptInfo.h"
-#include "Logger.h"
-#include "Strategy.h"
-#include "TimeTest.h"
-#include "VisualSystem.h"
+#include "../actions/Dasher.h"
+#include "../decision/Evaluation.h"
+#include "../actions/InterceptInfo.h"
+#include "../utils/Logger.h"
+#include "../decision/Strategy.h"
+#include "../utils/TimeTest.h"
+#include "../model/VisualSystem.h"
 #include <sstream>
 
 using namespace std;

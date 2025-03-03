@@ -30,9 +30,9 @@
  ************************************************************************************/
 
 #include "PlayerState.h"
-#include "ActionEffector.h"
-#include "Dasher.h"
-#include "Simulator.h"
+#include "../actions/ActionEffector.h"
+#include "../actions/Dasher.h"
+#include "../utils/Simulator.h"
 
 PlayerState::PlayerState()
     : MobileState(ServerParam::instance().playerDecay(),

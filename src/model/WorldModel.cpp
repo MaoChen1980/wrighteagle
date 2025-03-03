@@ -30,7 +30,7 @@
  ************************************************************************************/
 
 #include "WorldModel.h"
-#include "InfoState.h"
+#include "../perception/InfoState.h"
 #include "Observer.h"
 #include "WorldState.h"
 

@@ -30,7 +30,7 @@
  ************************************************************************************/
 
 #include "ServerParam.h"
-#include "Utilities.h"
+#include "../utils/Utilities.h"
 
 const int ServerParam::DEFAULT_PORT_NUMBER = 6000;
 const int ServerParam::COACH_PORT_NUMBER = 6001;

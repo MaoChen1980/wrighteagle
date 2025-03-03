@@ -33,10 +33,10 @@
 #define ANALYSER_H_
 
 #include "DecisionData.h"
-#include "utils/Geometry.h"
-#include "actions/InterceptInfo.h"
-#include "params/ServerParam.h"
-#include "utils/Utilities.h"
+#include "../utils/Geometry.h"
+#include "../actions/InterceptInfo.h"
+#include "../params/ServerParam.h"
+#include "../utils/Utilities.h"
 #include <vector>
 
 class Agent;

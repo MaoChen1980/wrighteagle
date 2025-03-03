@@ -30,8 +30,8 @@
  ************************************************************************************/
 
 #include "Utilities.h"
-#include "DynamicDebug.h"
-#include "PlayerParam.h"
+#include "../DynamicDebug.h"
+#include "../params/PlayerParam.h"
 
 #include <cstring>
 

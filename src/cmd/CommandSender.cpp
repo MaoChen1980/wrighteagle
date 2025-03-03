@@ -30,11 +30,11 @@
  ************************************************************************************/
 
 #include "CommandSender.h"
-#include "Agent.h"
-#include "DynamicDebug.h"
-#include "Logger.h"
-#include "NetworkTest.h"
-#include "Observer.h"
+#include "../core/Agent.h"
+#include "../DynamicDebug.h"
+#include "../utils/Logger.h"
+#include "../network/NetworkTest.h"
+#include "../model/Observer.h"
 
 CommandSender::CommandSender(Observer *pObserver)
     : mpObserver(pObserver), mpAgent(0) {}

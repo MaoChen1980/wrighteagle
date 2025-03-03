@@ -36,7 +36,7 @@
 #include "../utils/Geometry.h"
 #include "../utils/Types.h"
 #include "../utils/Utilities.h"
-#include "../model/WorldState.h" 
+#include "../model/WorldState.h"
 
 using namespace std;
 

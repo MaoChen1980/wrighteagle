@@ -30,20 +30,20 @@
  ************************************************************************************/
 
 #include "BehaviorShoot.h"
-#include "ActionEffector.h"
+#include "../actions/ActionEffector.h"
 #include "BehaviorBase.h"
-#include "Dasher.h"
-#include "Evaluation.h"
-#include "Geometry.h"
-#include "InterceptModel.h"
-#include "Kicker.h"
-#include "PlayerParam.h"
-#include "PositionInfo.h"
-#include "ServerParam.h"
-#include "Tackler.h"
-#include "TimeTest.h"
-#include "Utilities.h"
-#include "VisualSystem.h"
+#include "../actions/Dasher.h"
+#include "../decision/Evaluation.h"
+#include "../utils/Geometry.h"
+#include "../actions/InterceptModel.h"
+#include "../actions/Kicker.h"
+#include "../params/PlayerParam.h"
+#include "../perception/PositionInfo.h"
+#include "../params/ServerParam.h"
+#include "../actions/Tackler.h"
+#include "../utils/TimeTest.h"
+#include "../utils/Utilities.h"
+#include "../model/VisualSystem.h"
 #include <cmath>
 #include <list>
 

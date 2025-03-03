@@ -32,11 +32,11 @@
 #ifndef SIMULATOR_H_
 #define SIMULATOR_H_
 
-#include "ActionEffector.h"
+#include "../actions/ActionEffector.h"
 #include "Geometry.h"
-#include "PlayerParam.h"
-#include "PlayerState.h"
-#include "ServerParam.h"
+#include "../params/PlayerParam.h"
+#include "../perception/PlayerState.h"
+#include "../params/ServerParam.h"
 #include <vector>
 
 struct AtomicAction;

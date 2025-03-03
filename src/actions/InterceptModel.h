@@ -32,9 +32,9 @@
 #ifndef INTERCEPTMODEL_H_
 #define INTERCEPTMODEL_H_
 
-#include "utils/Geometry.h"
-#include "params/ServerParam.h"
-#include "utils/Types.h"
+#include "../utils/Geometry.h"
+#include "../params/ServerParam.h"
+#include "../utils/Types.h"
 
 class PlayerState;
 class WorldState;

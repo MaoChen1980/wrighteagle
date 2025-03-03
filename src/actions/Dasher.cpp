@@ -29,13 +29,13 @@
  *EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                *
  ************************************************************************************/
 
-#include "actions/Dasher.h"
-#include "utils/Geometry.h"
-#include "actions/Kicker.h"
-#include "utils/Logger.h"
-#include "perception/PlayerState.h"
-#include "params/ServerParam.h"
-#include "core/Agent.h"
+#include "Dasher.h"
+#include "../utils/Geometry.h"
+#include "Kicker.h"
+#include "../utils/Logger.h"
+#include "../perception/PlayerState.h"
+#include "../params/ServerParam.h"
+#include "../core/Agent.h"
 
 double Dasher::GETBALL_BUFFER = 0.1;
 

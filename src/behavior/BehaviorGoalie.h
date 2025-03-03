@@ -32,16 +32,16 @@
 #ifndef __BehaviorGoaliePlanner_H__
 #define __BehaviorGoaliePlanner_H__
 
-#include "ActionEffector.h"
+#include "../actions/ActionEffector.h"
 #include "BehaviorBase.h"
 #include "BehaviorPass.h"
-#include "Dasher.h"
-#include "Formation.h"
-#include "InterceptInfo.h"
-#include "InterceptModel.h"
-#include "Kicker.h"
-#include "Tackler.h"
-#include "VisualSystem.h"
+#include "../actions/Dasher.h"
+#include "../params/Formation.h"
+#include "../actions/InterceptInfo.h"
+#include "../actions/InterceptModel.h"
+#include "../actions/Kicker.h"
+#include "../actions/Tackler.h"
+#include "../model/VisualSystem.h"
 
 class BehaviorGoalieExecuter
     : public BehaviorExecuterBase<BehaviorDefenseData> {

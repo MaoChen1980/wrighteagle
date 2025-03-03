@@ -31,8 +31,8 @@
 
 #include "FormationTactics.h"
 #include "Formation.h"
-#include "Types.h"
-#include "Utilities.h"
+#include "../utils/Types.h"
+#include "../utils/Utilities.h"
 #include <cstdlib>
 #include <functional>
 #include <sstream>

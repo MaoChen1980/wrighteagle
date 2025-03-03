@@ -30,12 +30,12 @@
  ************************************************************************************/
 
 #include "CommunicateSystem.h"
-#include "Agent.h"
-#include "Formation.h"
-#include "Logger.h"
-#include "PlayerParam.h"
-#include "ServerParam.h"
-#include "WorldState.h"
+#include "../core/Agent.h"
+#include "../params/Formation.h"
+#include "../utils/Logger.h"
+#include "../params/PlayerParam.h"
+#include "../params/ServerParam.h"
+#include "../model/WorldState.h"
 #include <algorithm>
 #include <cmath>
 #include <iostream>

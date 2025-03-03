@@ -30,9 +30,9 @@
  ************************************************************************************/
 
 #include "Formation.h"
-#include "Agent.h"
-#include "CommunicateSystem.h"
-#include "Logger.h"
+#include "../core/Agent.h"
+#include "../communication/CommunicateSystem.h"
+#include "../utils/Logger.h"
 #include "PlayerParam.h"
 #include <fstream>
 #include <sstream>

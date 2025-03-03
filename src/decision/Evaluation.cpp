@@ -30,13 +30,13 @@
  ************************************************************************************/
 
 #include "Evaluation.h"
-#include "Agent.h"
-#include "InfoState.h"
-#include "Net.h"
-#include "PositionInfo.h"
-#include "ServerParam.h"
+#include "../core/Agent.h"
+#include "../perception/InfoState.h"
+#include "../nn/Net.h"
+#include "../perception/PositionInfo.h"
+#include "../params/ServerParam.h"
 #include "Strategy.h"
-#include "WorldState.h"
+#include "../model/WorldState.h"
 
 Evaluation::Evaluation() { mSensitivityNet = new Net("data/sensitivity.net"); }
 

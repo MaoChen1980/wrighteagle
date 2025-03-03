@@ -33,8 +33,8 @@
 #define __Dasher_H__
 
 #include "../core/Agent.h"
-#include "utils/Geometry.h"
-#include "utils/Types.h"
+#include "../utils/Geometry.h"
+#include "../utils/Types.h"
 
 struct AtomicAction;
 class PlayerState;

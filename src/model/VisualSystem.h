@@ -38,9 +38,9 @@
 
 #include "../utils/Geometry.h"
 #include "../perception/PlayerState.h"
-#include "ServerParam.h"
-#include "Types.h"
-#include "Utilities.h"
+#include "../params/ServerParam.h"
+#include "../utils/Types.h"
+#include "../utils/Utilities.h"
 #include <set>
 
 class MobileState;

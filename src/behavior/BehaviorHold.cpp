@@ -22,18 +22,18 @@
  ************************************************************************************/
 
 #include "BehaviorHold.h"
-#include "Agent.h"
-#include "CommunicateSystem.h"
-#include "Dasher.h"
-#include "Evaluation.h"
-#include "Formation.h"
-#include "Kicker.h"
-#include "Logger.h"
-#include "Strategy.h"
-#include "Types.h"
-#include "Utilities.h"
-#include "VisualSystem.h"
-#include "WorldState.h"
+#include "../core/Agent.h"
+#include "../communication/CommunicateSystem.h"
+#include "../actions/Dasher.h"
+#include "../decision/Evaluation.h"
+#include "../params/Formation.h"
+#include "../actions/Kicker.h"
+#include "../utils/Logger.h"
+#include "../decision/Strategy.h"
+#include "../utils/Types.h"
+#include "../utils/Utilities.h"
+#include "../model/VisualSystem.h"
+#include "../model/WorldState.h"
 #include <sstream>
 #include <utility>
 #include <vector>

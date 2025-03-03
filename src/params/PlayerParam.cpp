@@ -30,8 +30,8 @@
  ************************************************************************************/
 
 #include "PlayerParam.h"
-#include "ActionEffector.h"
-#include "Parser.h"
+#include "../actions/ActionEffector.h"
+#include "../core/Parser.h"
 #include "ServerParam.h"
 #include <fstream>
 

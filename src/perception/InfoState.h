@@ -32,7 +32,7 @@
 #ifndef INFOSTATE_H_
 #define INFOSTATE_H_
 
-#include "model/WorldState.h"
+#include "../model/WorldState.h"
 
 class InfoState;
 class InterceptInfo;

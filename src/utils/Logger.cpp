@@ -30,10 +30,10 @@
  ************************************************************************************/
 
 #include "Logger.h"
-#include "InterceptInfo.h"
-#include "Observer.h"
-#include "PositionInfo.h"
-#include "WorldState.h"
+#include "../actions/InterceptInfo.h"
+#include "../model/Observer.h"
+#include "../perception/PositionInfo.h"
+#include "../model/WorldState.h"
 #include <cstdio>
 #include <sstream>
 

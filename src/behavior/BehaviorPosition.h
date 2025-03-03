@@ -34,10 +34,10 @@
 
 #include "BehaviorBase.h"
 #include "BehaviorPass.h"
-#include "Formation.h"
-#include "PositionInfo.h"
-#include "VisualSystem.h"
-#include "WorldState.h"
+#include "../params/Formation.h"
+#include "../perception/PositionInfo.h"
+#include "../model/VisualSystem.h"
+#include "../model/WorldState.h"
 
 class BehaviorPositionExecuter
     : public BehaviorExecuterBase<BehaviorAttackData> {

@@ -30,15 +30,15 @@
  ************************************************************************************/
 
 #include "BehaviorDefense.h"
-#include "Agent.h"
+#include "../core/Agent.h"
 #include "BehaviorBlock.h"
 #include "BehaviorFormation.h"
 #include "BehaviorIntercept.h"
 #include "BehaviorMark.h"
-#include "Dasher.h"
-#include "Formation.h"
-#include "Logger.h"
-#include "WorldState.h"
+#include "../actions/Dasher.h"
+#include "../params/Formation.h"
+#include "../utils/Logger.h"
+#include "../model/WorldState.h"
 
 BehaviorDefensePlanner::BehaviorDefensePlanner(Agent &agent)
     : BehaviorPlannerBase<BehaviorDefenseData>(agent) {}

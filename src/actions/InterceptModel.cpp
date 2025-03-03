@@ -29,15 +29,15 @@
  *EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                *
  ************************************************************************************/
 
-#include "actions/InterceptModel.h"
+#include "InterceptModel.h"
 #include "Dasher.h"
-#include "../actions/InterceptInfo.h"
-#include "utils/Logger.h"
-#include "params/PlayerParam.h"
-#include "perception/PlayerState.h"
-#include "utils/Plotter.h"
-#include "params/ServerParam.h"
-#include "utils/Utilities.h"
+#include "InterceptInfo.h"
+#include "../utils/Logger.h"
+#include "../params/PlayerParam.h"
+#include "../perception/PlayerState.h"
+#include "../utils/Plotter.h"
+#include "../params/ServerParam.h"
+#include "../utils/Utilities.h"
 #include <cmath>
 
 const double InterceptModel::IMPOSSIBLE_BALL_SPEED = 8.0;

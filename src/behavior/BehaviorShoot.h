@@ -32,13 +32,13 @@
 #ifndef BehaviorShoot_H_
 #define BehaviorShoot_H_
 
-#include "Agent.h"
+#include "../core/Agent.h"
 #include "BehaviorBase.h"
-#include "Dasher.h"
-#include "Logger.h"
-#include "PlayerState.h"
-#include "Types.h"
-#include "VisualSystem.h"
+#include "../actions/Dasher.h"
+#include "../utils/Logger.h"
+#include "../perception/PlayerState.h"
+#include "../utils/Types.h"
+#include "../model/VisualSystem.h"
 
 class BehaviorShootExecuter : public BehaviorExecuterBase<BehaviorAttackData> {
 public:

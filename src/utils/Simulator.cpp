@@ -30,8 +30,8 @@
  ************************************************************************************/
 
 #include "Simulator.h"
-#include "ActionEffector.h"
-#include "Dasher.h"
+#include "../actions/ActionEffector.h"
+#include "../actions/Dasher.h"
 
 Simulator::Simulator() {}
 

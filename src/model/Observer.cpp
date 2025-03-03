@@ -30,8 +30,8 @@
  ************************************************************************************/
 
 #include "Observer.h"
-#include "Logger.h"
-#include "PlayerParam.h"
+#include "../utils/Logger.h"
+#include "../params/PlayerParam.h"
 #include <cstring>
 
 Observer::Observer() {

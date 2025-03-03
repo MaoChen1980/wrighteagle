@@ -32,7 +32,7 @@
 #ifndef DECISIONDATA_H_
 #define DECISIONDATA_H_
 
-#include "utils/Utilities.h"
+#include "../utils/Utilities.h"
 
 class Agent;
 class WorldState;
