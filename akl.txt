@@ -139,7 +139,7 @@ proxy-groups:
       - S-512｜美国
   - name: loadbalanceHK
     type: load-balance
-    interval:400
+    interval: 122
     url: http://www.google.com/generate_204
     strategy:  consistent-hashing #round-robin # 
     proxies:
