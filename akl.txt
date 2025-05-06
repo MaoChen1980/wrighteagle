@@ -560,6 +560,8 @@ rules:
  - DOMAIN-SUFFIX,wunderlist.com,Ⓜ️ 微软服务
  - DOMAIN-SUFFIX,yammer.com,Ⓜ️ 微软服务
  - DOMAIN-SUFFIX,yammerusercontent.com,Ⓜ️ 微软服务
+
+ - DOMAIN-KEYWORD,imgur.com,🚀 节点选择
  - DOMAIN-KEYWORD,porn,🚀 节点选择
  - DOMAIN-KEYWORD,91porn,🚀 节点选择
  - DOMAIN-KEYWORD,blogspot,🚀 节点选择
