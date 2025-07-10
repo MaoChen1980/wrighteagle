@@ -1,11 +1,13 @@
+port: 7889
+socks-port: 7891
 mixed-port: 7890
 redir-port: 7892
 tproxy-port: 7893
 authentication: [""]
 allow-lan: true
 mode: Rule
-log-level: info
-ipv6: true
+log-level: warning
+ipv6: false
 external-controller: :9999
 external-ui: ui
 secret:
@@ -14,24 +16,58 @@ experimental: {ignore-resolve-fail: true, interface-name: en0}
 sniffer: {enable: true, parse-pure-ip: true, skip-domain: [Mijia Cloud], sniff: {tls: {ports: [443, 8443]}, http: {ports: [80, 8080-8880]}, quic: {ports: [443, 8443]}}}
 find-process-mode: "off"
 routing-mark: 7894
+
+unified-delay: true
+tcp-concurrent: true
+# interface-name: en0
+global-client-fingerprint: chrome
+keep-alive-idle: 600
+keep-alive-interval: 15
+disable-keep-alive: false
+
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+# 嗅探
+sniffer:
+  enable: true
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+  force-domain:
+    - "+.v2ex.com"
+  skip-domain:
+    - "+.baidu.com"
+
+# DNS模块
 dns:
   enable: true
-  listen: :1053
-  use-hosts: true
+  listen: 0.0.0.0:1053
   ipv6: false
-  default-nameserver:
-    - 114.114.114.114
-    - 223.5.5.5
+  respect-rules: true
   enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
+  fake-ip-range: 28.0.0.1/8
+  fake-ip-filter-mode: blacklist
   fake-ip-filter:
-    - '+.*'
-  nameserver: [https://223.5.5.5/dns-query, https://doh.pub/dns-query, tls://dns.rubyfish.cn:853]
-  fallback: [tls://1.0.0.1:853, tls://8.8.4.4:853]
+    - "rule-set:private_domain,cn_domain"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - "time.*.com"
+  default-nameserver:
+    - 223.5.5.5
+  proxy-server-nameserver:
+    - https://223.5.5.5/dns-query
+  # namesever尽量用运营商提供的DNS
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
 
-hosts:
-   'time.android.com': 203.107.6.88
-   'time.facebook.com': 203.107.6.88
 proxies:
   - {name: S-101｜香港, server: hk01.dns.sspa.zzssptop.com, port: 16101, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
   - {name: S-102｜香港, server: hk02.dns.sspa.zzssptop.com, port: 16102, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
