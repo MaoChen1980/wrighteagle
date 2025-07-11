@@ -4,6 +4,10 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
+ipv6: false
+disable-keep-alive: false #不禁用保活
+keep-alive-idle: 300      #最长保活300秒,防止僵尸链接（https://github.com/MetaCubeX/mihomo/issues/921）
+
 proxies:
   - {name: 🏳️‍🌈 剩余流量：999.16 GB, server: hk.pro.sspa.zzssptop.com, port: 16101, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: hkt1.zzsspnode.com, skip-cert-verify: true}
   - {name: 距离下次重置剩余：301 天, server: hk.pro.sspa.zzssptop.com, port: 16101, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: hkt1.zzsspnode.com, skip-cert-verify: true}
@@ -4097,4 +4101,6 @@ rules:
   - IP-CIDR,101.198.208.0/20,🎯 全球直连,no-resolve
   - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
   - GEOIP,CN,🎯 全球直连
+  - GEOSITE,cn,Direct,no-resolve
+  - GEOIP,CN,Direct,no-resolve
   - MATCH,🐟 漏网之鱼
