@@ -65,7 +65,8 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - HKHK
+      - HKHKHK
+      - SGSGSG
       - ♻️ 自动选择
       - DIRECT
       - 🏳️‍🌈 剩余流量：999.16 GB
