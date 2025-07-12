@@ -2489,7 +2489,6 @@ rules:
   - DOMAIN,copilot-proxy.githubusercontent.com,🌍 国外媒体
   - DOMAIN,gemini.google.com,🌍 国外媒体
   - DOMAIN,generativelanguage.googleapis.com,🌍 国外媒体
-  - DOMAIN,sydney.bing.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ai.azure.com,🌍 国外媒体
   - DOMAIN-SUFFIX,anthropic.com,🌍 国外媒体
   - DOMAIN-SUFFIX,auth0.com,🌍 国外媒体
@@ -2903,7 +2902,6 @@ rules:
   - DOMAIN-SUFFIX,azureedge.net,🚀 节点选择
   - DOMAIN-SUFFIX,azurewebsites.net,🚀 节点选择
   - DOMAIN-SUFFIX,bandwagonhost.com,🚀 节点选择
-  - DOMAIN-SUFFIX,bing.com,🚀 节点选择
   - DOMAIN-SUFFIX,bkrtx.com,🚀 节点选择
   - DOMAIN-SUFFIX,blogcdn.com,🚀 节点选择
   - DOMAIN-SUFFIX,blogger.com,🚀 节点选择
