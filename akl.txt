@@ -6,7 +6,8 @@ log-level: info
 external-controller: :9090
 ipv6: false
 disable-keep-alive: false #不禁用保活
-keep-alive-idle: 300      #最长保活300秒,防止僵尸链接（https://github.com/MetaCubeX/mihomo/issues/921）
+keep-alive-idle: 600 
+keep-alive-interval: 30
 
 experimental:
   unified-delay: true
