@@ -289,6 +289,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
+      - REJECT
       - 🎯 全球直连
       - 🏳️‍🌈 剩余流量：999.16 GB
       - 距离下次重置剩余：301 天
@@ -351,6 +352,7 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - REJECT
       - 🏳️‍🌈 剩余流量：999.16 GB
       - 距离下次重置剩余：301 天
       - 套餐到期：2026-05-08
@@ -473,6 +475,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - REJECT
       - ♻️ 自动选择
       - 🏳️‍🌈 剩余流量：999.16 GB
       - 距离下次重置剩余：301 天
@@ -534,6 +537,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
+      - REJECT
       - 🚀 节点选择
       - ♻️ 自动选择
   - name: 🛑 全球拦截
@@ -551,6 +555,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - REJECT
       - ♻️ 自动选择
       - 🏳️‍🌈 剩余流量：999.16 GB
       - 距离下次重置剩余：301 天
