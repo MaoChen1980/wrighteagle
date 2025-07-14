@@ -6,12 +6,12 @@ log-level: info
 external-controller: :9090
 ipv6: false
 disable-keep-alive: false #不禁用保活
-keep-alive-idle: 600 
-keep-alive-interval: 30
+keep-alive-idle: 900 
+keep-alive-interval: 60
 
-experimental:
-  unified-delay: true
-  tcp-concurrent: true
+#experimental:
+  #unified-delay: true
+  #tcp-concurrent: true
 
 proxies:
   - {name: 🏳️‍🌈 剩余流量：999.16 GB, server: hk.pro.sspa.zzssptop.com, port: 16101, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: hkt1.zzsspnode.com, skip-cert-verify: true}
