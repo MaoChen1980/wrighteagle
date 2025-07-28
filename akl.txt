@@ -139,10 +139,14 @@ proxy-groups:
       - 🇭🇰 S-104 | 香港
       - 🇭🇰 V-104 | 香港
   - name: SGSGSG
-    type: load-balance
-    strategy:  consistent-hashing #round-robin # 
+    type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
+    tolerance: 50
+    #type: load-balance
+    #strategy:  consistent-hashing #round-robin # 
+    #url: http://www.gstatic.com/generate_204
+    #interval: 300
     proxies:
       - 🇸🇬 S-201 | 新加坡
       - 🇸🇬 V-201 | 新加坡
