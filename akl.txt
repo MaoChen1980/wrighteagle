@@ -124,7 +124,6 @@ proxy-groups:
       - 🇦🇷 V-701 | 阿根廷*
       - 🇧🇷 V-702 | 巴西*
       - 🇹🇷 V-703 | 土耳其*
-      - 🇨🇳 新疆用户访问 台湾01
   - name: HKHKHK
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -267,7 +266,6 @@ proxy-groups:
       - 🇦🇷 V-701 | 阿根廷*
       - 🇧🇷 V-702 | 巴西*
       - 🇹🇷 V-703 | 土耳其*
-      - 🇨🇳 新疆用户访问 台湾01
   - name: 📲 电报信息
     type: select
     proxies:
@@ -325,7 +323,6 @@ proxy-groups:
       - 🇦🇷 V-701 | 阿根廷*
       - 🇧🇷 V-702 | 巴西*
       - 🇹🇷 V-703 | 土耳其*
-      - 🇨🇳 新疆用户访问 台湾01
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -383,7 +380,6 @@ proxy-groups:
       - 🇦🇷 V-701 | 阿根廷*
       - 🇧🇷 V-702 | 巴西*
       - 🇹🇷 V-703 | 土耳其*
-      - 🇨🇳 新疆用户访问 台湾01
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -440,7 +436,6 @@ proxy-groups:
       - 🇦🇷 V-701 | 阿根廷*
       - 🇧🇷 V-702 | 巴西*
       - 🇹🇷 V-703 | 土耳其*
-      - 🇨🇳 新疆用户访问 台湾01
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -499,7 +494,6 @@ proxy-groups:
       - 🇦🇷 V-701 | 阿根廷*
       - 🇧🇷 V-702 | 巴西*
       - 🇹🇷 V-703 | 土耳其*
-      - 🇨🇳 新疆用户访问 台湾01
   - name: 🎯 全球直连
     type: select
     proxies:
