@@ -14,9 +14,6 @@ keep-alive-interval: 60
   #tcp-concurrent: true
 
 proxies:
-  - {name: 🏳️‍🌈 剩余流量：999.16 GB, server: hk.pro.sspa.zzssptop.com, port: 16101, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: hkt1.zzsspnode.com, skip-cert-verify: true}
-  - {name: 距离下次重置剩余：301 天, server: hk.pro.sspa.zzssptop.com, port: 16101, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: hkt1.zzsspnode.com, skip-cert-verify: true}
-  - {name: 套餐到期：2026-05-08, server: hk.pro.sspa.zzssptop.com, port: 16101, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: hkt1.zzsspnode.com, skip-cert-verify: true}
   - {name: 🇭🇰 S-101 | 香港, server: hk.pro.sspa.zzssptop.com, port: 16101, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: hkt1.zzsspnode.com, skip-cert-verify: true}
   - {name: 🇭🇰 V-101 | 香港, server: hk.pro.sspa.zzssptop.com, port: 16101, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: hkt1.zzsspnode.com, skip-cert-verify: true}
   - {name: 🇭🇰 S-102 | 香港, server: hk.pro.sspa.zzssptop.com, port: 16102, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: hkt2.zzsspnode.com, skip-cert-verify: true}
@@ -47,7 +44,6 @@ proxies:
   - {name: 🇺🇸 V-503 | 美国, server: us3.dns.sspa.zzssptop.com, port: 16503, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: us3.zzsspnode.com, skip-cert-verify: true}
   - {name: 🇩🇪 S-601 | 德国, server: de1.dns.sspa.zzssptop.com, port: 16601, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: de1.zzsspnode.com, skip-cert-verify: true}
   - {name: 🇬🇧 S-601 | 英国, server: uk1.dns.sspa.zzssptop.com, port: 16611, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: uk1.zzsspnode.com, skip-cert-verify: true}
-  - {name: 🇸🇬 「公 告」请定期更新订阅, server: hk.pro.sspa.zzssptop.com, port: 16104, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
   - {name: 🇨🇳 S-302｜台湾, server: tw2.dns.sspa.zzssptop.com, port: 16302, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
   - {name: 🇨🇳 V-302｜台湾, server: tw02.dns.sspa.zzssptop.com, port: 17302, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
   - {name: 🇯🇵 S-403｜日本, server: jp03.dns.sspa.zzssptop.com, port: 16403, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
@@ -69,7 +65,6 @@ proxies:
   - {name: 🇦🇷 V-701 | 阿根廷*, server: ar01.dns.sspa.zzssptop.com, port: 17701, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
   - {name: 🇧🇷 V-702 | 巴西*, server: br02.dns.sspa.zzssptop.com, port: 17702, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
   - {name: 🇹🇷 V-703 | 土耳其*, server: tr03.dns.sspa.zzssptop.com, port: 17703, type: ss, cipher: chacha20-ietf-poly1305, password: 86aa7360-5065-4623-b776-6efe905dad31}
-  - {name: 🇨🇳 新疆用户访问 台湾01, server: xj-tw1.zzsspnode.com, port: 5418, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, skip-cert-verify: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -78,9 +73,6 @@ proxy-groups:
       - SGSGSG
       - ♻️ 自动选择
       - DIRECT
-      - 🏳️‍🌈 剩余流量：999.16 GB
-      - 距离下次重置剩余：301 天
-      - 套餐到期：2026-05-08
       - 🇭🇰 S-101 | 香港
       - 🇭🇰 V-101 | 香港
       - 🇭🇰 S-102 | 香港
@@ -111,7 +103,6 @@ proxy-groups:
       - 🇺🇸 V-503 | 美国
       - 🇩🇪 S-601 | 德国
       - 🇬🇧 S-601 | 英国
-      - 🇸🇬 「公 告」请定期更新订阅
       - 🇨🇳 S-302｜台湾
       - 🇨🇳 V-302｜台湾
       - 🇯🇵 S-403｜日本
@@ -151,7 +142,7 @@ proxy-groups:
   - name: SGSGSG
     type: load-balance
     strategy:  consistent-hashing #round-robin # 
-    url: 'http://www.gstatic.com/generate_204'
+    url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - 🇸🇬 S-201 | 新加坡
@@ -168,9 +159,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🏳️‍🌈 剩余流量：999.16 GB
-      - 距离下次重置剩余：301 天
-      - 套餐到期：2026-05-08
       - 🇭🇰 S-101 | 香港
       - 🇭🇰 V-101 | 香港
       - 🇭🇰 S-102 | 香港
@@ -201,7 +189,6 @@ proxy-groups:
       - 🇺🇸 V-503 | 美国
       - 🇩🇪 S-601 | 德国
       - 🇬🇧 S-601 | 英国
-      - 🇸🇬 「公 告」请定期更新订阅
       - 🇨🇳 S-302｜台湾
       - 🇨🇳 V-302｜台湾
       - 🇯🇵 S-403｜日本
@@ -223,16 +210,12 @@ proxy-groups:
       - 🇦🇷 V-701 | 阿根廷*
       - 🇧🇷 V-702 | 巴西*
       - 🇹🇷 V-703 | 土耳其*
-      - 🇨🇳 新疆用户访问 台湾01
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🏳️‍🌈 剩余流量：999.16 GB
-      - 距离下次重置剩余：301 天
-      - 套餐到期：2026-05-08
       - 🇭🇰 S-101 | 香港
       - 🇭🇰 V-101 | 香港
       - 🇭🇰 S-102 | 香港
@@ -263,7 +246,6 @@ proxy-groups:
       - 🇺🇸 V-503 | 美国
       - 🇩🇪 S-601 | 德国
       - 🇬🇧 S-601 | 英国
-      - 🇸🇬 「公 告」请定期更新订阅
       - 🇨🇳 S-302｜台湾
       - 🇨🇳 V-302｜台湾
       - 🇯🇵 S-403｜日本
@@ -292,9 +274,6 @@ proxy-groups:
       - 🚀 节点选择
       - REJECT
       - 🎯 全球直连
-      - 🏳️‍🌈 剩余流量：999.16 GB
-      - 距离下次重置剩余：301 天
-      - 套餐到期：2026-05-08
       - 🇭🇰 S-101 | 香港
       - 🇭🇰 V-101 | 香港
       - 🇭🇰 S-102 | 香港
@@ -325,7 +304,6 @@ proxy-groups:
       - 🇺🇸 V-503 | 美国
       - 🇩🇪 S-601 | 德国
       - 🇬🇧 S-601 | 英国
-      - 🇸🇬 「公 告」请定期更新订阅
       - 🇨🇳 S-302｜台湾
       - 🇨🇳 V-302｜台湾
       - 🇯🇵 S-403｜日本
@@ -354,9 +332,6 @@ proxy-groups:
       - 🎯 全球直连
       - 🚀 节点选择
       - REJECT
-      - 🏳️‍🌈 剩余流量：999.16 GB
-      - 距离下次重置剩余：301 天
-      - 套餐到期：2026-05-08
       - 🇭🇰 S-101 | 香港
       - 🇭🇰 V-101 | 香港
       - 🇭🇰 S-102 | 香港
@@ -387,7 +362,6 @@ proxy-groups:
       - 🇺🇸 V-503 | 美国
       - 🇩🇪 S-601 | 德国
       - 🇬🇧 S-601 | 英国
-      - 🇸🇬 「公 告」请定期更新订阅
       - 🇨🇳 S-302｜台湾
       - 🇨🇳 V-302｜台湾
       - 🇯🇵 S-403｜日本
@@ -415,9 +389,6 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🏳️‍🌈 剩余流量：999.16 GB
-      - 距离下次重置剩余：301 天
-      - 套餐到期：2026-05-08
       - 🇭🇰 S-101 | 香港
       - 🇭🇰 V-101 | 香港
       - 🇭🇰 S-102 | 香港
@@ -448,7 +419,6 @@ proxy-groups:
       - 🇺🇸 V-503 | 美国
       - 🇩🇪 S-601 | 德国
       - 🇬🇧 S-601 | 英国
-      - 🇸🇬 「公 告」请定期更新订阅
       - 🇨🇳 S-302｜台湾
       - 🇨🇳 V-302｜台湾
       - 🇯🇵 S-403｜日本
@@ -478,9 +448,6 @@ proxy-groups:
       - 🎯 全球直连
       - REJECT
       - ♻️ 自动选择
-      - 🏳️‍🌈 剩余流量：999.16 GB
-      - 距离下次重置剩余：301 天
-      - 套餐到期：2026-05-08
       - 🇭🇰 S-101 | 香港
       - 🇭🇰 V-101 | 香港
       - 🇭🇰 S-102 | 香港
@@ -511,7 +478,6 @@ proxy-groups:
       - 🇺🇸 V-503 | 美国
       - 🇩🇪 S-601 | 德国
       - 🇬🇧 S-601 | 英国
-      - 🇸🇬 「公 告」请定期更新订阅
       - 🇨🇳 S-302｜台湾
       - 🇨🇳 V-302｜台湾
       - 🇯🇵 S-403｜日本
@@ -558,9 +524,6 @@ proxy-groups:
       - 🎯 全球直连
       - REJECT
       - ♻️ 自动选择
-      - 🏳️‍🌈 剩余流量：999.16 GB
-      - 距离下次重置剩余：301 天
-      - 套餐到期：2026-05-08
       - 🇭🇰 S-101 | 香港
       - 🇭🇰 V-101 | 香港
       - 🇭🇰 S-102 | 香港
@@ -591,7 +554,6 @@ proxy-groups:
       - 🇺🇸 V-503 | 美国
       - 🇩🇪 S-601 | 德国
       - 🇬🇧 S-601 | 英国
-      - 🇸🇬 「公 告」请定期更新订阅
       - 🇨🇳 S-302｜台湾
       - 🇨🇳 V-302｜台湾
       - 🇯🇵 S-403｜日本
@@ -613,7 +575,6 @@ proxy-groups:
       - 🇦🇷 V-701 | 阿根廷*
       - 🇧🇷 V-702 | 巴西*
       - 🇹🇷 V-703 | 土耳其*
-      - 🇨🇳 新疆用户访问 台湾01
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
