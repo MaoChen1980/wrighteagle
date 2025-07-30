@@ -124,7 +124,7 @@ proxy-groups:
       - 🇦🇷 V-701 | 阿根廷*
       - 🇧🇷 V-702 | 巴西*
       - 🇹🇷 V-703 | 土耳其*
-  - name: FAILAUTO
+  - name: runasfailed
     type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 300
