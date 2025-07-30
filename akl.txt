@@ -69,6 +69,7 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
+      - FBACK
       - HKHKHK
       - SGSGSG
       - ♻️ 自动选择
@@ -124,7 +125,7 @@ proxy-groups:
       - 🇦🇷 V-701 | 阿根廷*
       - 🇧🇷 V-702 | 巴西*
       - 🇹🇷 V-703 | 土耳其*
-- name: runasfailed
+  - name: FBACK
     type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 300
@@ -137,7 +138,7 @@ proxy-groups:
       - 🇸🇬 V-203 | 新加坡
       - 🇸🇬 S-204 | 新加坡
       - 🇸🇬 V-204 | 新加坡
-- name: HKHKHK
+  - name: HKHKHK
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 500
