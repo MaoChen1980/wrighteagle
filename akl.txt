@@ -124,10 +124,31 @@ proxy-groups:
       - 🇦🇷 V-701 | 阿根廷*
       - 🇧🇷 V-702 | 巴西*
       - 🇹🇷 V-703 | 土耳其*
-  - name: HKHKHK
+  - name: FAILAUTO
+    type: fallback
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - 🇭🇰 V-103 | 香港
+      - 🇭🇰 S-104 | 香港
+      - 🇭🇰 V-104 | 香港
+      - 🇸🇬 V-203 | 新加坡
+      - 🇸🇬 S-204 | 新加坡
+      - 🇸🇬 V-204 | 新加坡
+      - 🇸🇬 S-201 | 新加坡
+      - 🇸🇬 V-201 | 新加坡
+      - 🇸🇬 S-202 | 新加坡
+      - 🇸🇬 V-202 | 新加坡
+      - 🇸🇬 S-203 | 新加坡
+      - 🇭🇰 S-101 | 香港
+      - 🇭🇰 V-101 | 香港
+      - 🇭🇰 S-102 | 香港
+      - 🇭🇰 V-102 | 香港
+      - 🇭🇰 S-103 | 香港
+- name: HKHKHK
     type: url-test
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 500
     tolerance: 50
     proxies:
       - 🇭🇰 S-101 | 香港
@@ -141,7 +162,7 @@ proxy-groups:
   - name: SGSGSG
     type: url-test
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 1300
     tolerance: 50
     #type: load-balance
     #strategy:  consistent-hashing #round-robin # 
