@@ -28,8 +28,6 @@ proxies:
   - {name: 🇸🇬 V-202 | 新加坡, server: sg.pro.sspa.zzssptop.com, port: 16202, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: sg2.zzsspnode.com, skip-cert-verify: true}
   - {name: 🇸🇬 S-203 | 新加坡, server: sg.pro.sspa.zzssptop.com, port: 16203, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: sg3.zzsspnode.com, skip-cert-verify: true}
   - {name: 🇸🇬 V-203 | 新加坡, server: sg.pro.sspa.zzssptop.com, port: 16203, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: sg3.zzsspnode.com, skip-cert-verify: true}
-  - {name: 🇸🇬 S-204 | 新加坡, server: sg4.dns.sspa.zzssptop.com, port: 16204, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: sg4.zzsspnode.com, skip-cert-verify: true}
-  - {name: 🇸🇬 V-204 | 新加坡, server: sg4.dns.sspa.zzssptop.com, port: 16204, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: sg4.zzsspnode.com, skip-cert-verify: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -54,8 +52,6 @@ proxy-groups:
       - 🇸🇬 V-202 | 新加坡
       - 🇸🇬 S-203 | 新加坡
       - 🇸🇬 V-203 | 新加坡
-      - 🇸🇬 S-204 | 新加坡
-      - 🇸🇬 V-204 | 新加坡
   - name: FBACK
     type: fallback
     url: https://www.gstatic.com/generate_204
@@ -69,8 +65,6 @@ proxy-groups:
       - 🇭🇰 S-102 | 香港
       - 🇭🇰 V-101 | 香港
       - 🇭🇰 S-101 | 香港
-      - 🇸🇬 V-204 | 新加坡
-      - 🇸🇬 S-204 | 新加坡
       - 🇸🇬 V-203 | 新加坡
       - 🇸🇬 S-203 | 新加坡
       - 🇸🇬 V-202 | 新加坡
@@ -107,8 +101,6 @@ proxy-groups:
       - 🇸🇬 V-202 | 新加坡
       - 🇸🇬 S-203 | 新加坡
       - 🇸🇬 V-203 | 新加坡
-      - 🇸🇬 S-204 | 新加坡
-      - 🇸🇬 V-204 | 新加坡
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -129,8 +121,6 @@ proxy-groups:
       - 🇸🇬 V-202 | 新加坡
       - 🇸🇬 S-203 | 新加坡
       - 🇸🇬 V-203 | 新加坡
-      - 🇸🇬 S-204 | 新加坡
-      - 🇸🇬 V-204 | 新加坡
       - REJECT
       - DIRECT
   - name: 🌍 国外媒体
@@ -155,8 +145,6 @@ proxy-groups:
       - 🇸🇬 V-202 | 新加坡
       - 🇸🇬 S-203 | 新加坡
       - 🇸🇬 V-203 | 新加坡
-      - 🇸🇬 S-204 | 新加坡
-      - 🇸🇬 V-204 | 新加坡
   - name: 📲 电报信息
     type: select
     proxies:
@@ -178,8 +166,6 @@ proxy-groups:
       - 🇸🇬 V-202 | 新加坡
       - 🇸🇬 S-203 | 新加坡
       - 🇸🇬 V-203 | 新加坡
-      - 🇸🇬 S-204 | 新加坡
-      - 🇸🇬 V-204 | 新加坡
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -201,8 +187,6 @@ proxy-groups:
       - 🇸🇬 V-202 | 新加坡
       - 🇸🇬 S-203 | 新加坡
       - 🇸🇬 V-203 | 新加坡
-      - 🇸🇬 S-204 | 新加坡
-      - 🇸🇬 V-204 | 新加坡
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -224,8 +208,6 @@ proxy-groups:
       - 🇸🇬 V-202 | 新加坡
       - 🇸🇬 S-203 | 新加坡
       - 🇸🇬 V-203 | 新加坡
-      - 🇸🇬 S-204 | 新加坡
-      - 🇸🇬 V-204 | 新加坡
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -248,8 +230,6 @@ proxy-groups:
       - 🇸🇬 V-202 | 新加坡
       - 🇸🇬 S-203 | 新加坡
       - 🇸🇬 V-203 | 新加坡
-      - 🇸🇬 S-204 | 新加坡
-      - 🇸🇬 V-204 | 新加坡
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -289,8 +269,6 @@ proxy-groups:
       - 🇸🇬 V-202 | 新加坡
       - 🇸🇬 S-203 | 新加坡
       - 🇸🇬 V-203 | 新加坡
-      - 🇸🇬 S-204 | 新加坡
-      - 🇸🇬 V-204 | 新加坡
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -3787,4 +3765,5 @@ rules:
   - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
+
 
