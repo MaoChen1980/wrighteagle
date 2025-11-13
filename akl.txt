@@ -14,6 +14,7 @@ keep-alive-interval: 60
   #tcp-concurrent: true
 
 proxies:
+  - {name: super, server: savycn.online, port: 16100, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: savycn.online, skip-cert-verify: true}
   - {name: 🇭🇰 S-101 | 香港, server: hk.pro.sspa.zzssptop.com, port: 16101, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: hkt1.zzsspnode.com, skip-cert-verify: true}
   - {name: 🇭🇰 V-101 | 香港, server: hk.pro.sspa.zzssptop.com, port: 16101, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: hkt1.zzsspnode.com, skip-cert-verify: true}
   - {name: 🇭🇰 S-102 | 香港, server: hk.pro.sspa.zzssptop.com, port: 16102, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: hkt2.zzsspnode.com, skip-cert-verify: true}
@@ -38,6 +39,7 @@ proxy-groups:
       - ♻️ 自动选择
       - REJECT
       - DIRECT
+      - super
       - 🇭🇰 S-101 | 香港
       - 🇭🇰 V-101 | 香港
       - 🇭🇰 S-102 | 香港
@@ -824,4 +826,5 @@ rules:
   - DOMAIN-SUFFIX,com.cn,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
+
 
