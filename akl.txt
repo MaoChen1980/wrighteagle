@@ -30,6 +30,29 @@ proxies:
   - {name: 🇸🇬 S-203 | 新加坡, server: sg.pro.sspa.zzssptop.com, port: 16203, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: sg3.zzsspnode.com, skip-cert-verify: true}
   - {name: 🇸🇬 V-203 | 新加坡, server: sg.pro.sspa.zzssptop.com, port: 16203, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: sg3.zzsspnode.com, skip-cert-verify: true}
 proxy-groups:
+  - name: AI
+    type: select
+    proxies:
+      - FBACK
+      - HKHKHK
+      - SGSGSG
+      - REJECT
+      - DIRECT
+      - super
+      - 🇭🇰 S-101 | 香港
+      - 🇭🇰 V-101 | 香港
+      - 🇭🇰 S-102 | 香港
+      - 🇭🇰 V-102 | 香港
+      - 🇭🇰 S-103 | 香港
+      - 🇭🇰 V-103 | 香港
+      - 🇭🇰 S-104 | 香港
+      - 🇭🇰 V-104 | 香港
+      - 🇸🇬 S-201 | 新加坡
+      - 🇸🇬 V-201 | 新加坡
+      - 🇸🇬 S-202 | 新加坡
+      - 🇸🇬 V-202 | 新加坡
+      - 🇸🇬 S-203 | 新加坡
+      - 🇸🇬 V-203 | 新加坡
   - name: 🚀 节点选择
     type: select
     proxies:
@@ -487,6 +510,136 @@ rules:
   - DOMAIN-SUFFIX,yt.be,🌍 国外媒体
   - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
   - DOMAIN,music.youtube.com,🌍 国外媒体
+
+  - DOMAIN-KEYWORD,openai, AI
+  - DOMAIN-KEYWORD,chatgpt, AI
+  - DOMAIN-SUFFIX,auth0.com, AI
+  - DOMAIN-SUFFIX,challenges.cloudflare.com, AI
+  - DOMAIN-SUFFIX,client-api.arkoselabs.com, AI
+  - DOMAIN-SUFFIX,events.statsigapi.net, AI
+  - DOMAIN-SUFFIX,featuregates.org, AI
+  - DOMAIN-SUFFIX,identrust.com, AI
+  - DOMAIN-SUFFIX,intercom.io, AI
+  - DOMAIN-SUFFIX,intercomcdn.com, AI
+  - DOMAIN-SUFFIX,openai.com, AI
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net, AI
+  - DOMAIN-SUFFIX,sentry.io, AI
+  - DOMAIN-SUFFIX,chatgpt.com, AI
+
+
+#claude
+  - PROCESS-NAME,Claude, AI
+  - PROCESS-NAME,Claude Helper, AI
+  - DOMAIN-KEYWORD,claude, AI
+  - DOMAIN-SUFFIX,anthropic.com, AI
+  - DOMAIN-SUFFIX,claude.ai, AI
+  - DOMAIN-SUFFIX,usefathom.com, AI
+
+#recraft
+  - DOMAIN-SUFFIX,recraft.ai, AI
+
+#poe
+  - DOMAIN-SUFFIX,poe.com, AI
+
+#aitools
+  - PROCESS-NAME,LM Studio, AI
+  - DOMAIN-SUFFIX,lmsudio.ai, AI
+
+#grok
+  - PROCESS-NAME,grok, AI
+  - DOMAIN-KEYWORD,grok, AI
+  - DOMAIN-SUFFIX,x.ai, AI
+  - DOMAIN-SUFFIX,grok.com, AI
+
+#perplexity.ai
+DOMAIN-SUFFIX,perplexity.ai, AI
+
+
+#bing chat
+  - DOMAIN-KEYWORD,bing, AI
+  - DOMAIN-KEYWORD,copilot, AI
+  - DOMAIN-KEYWORD,edgeassetservice, AI
+  - DOMAIN-SUFFIX,edgeservices.bing.com, AI
+  - DOMAIN-SUFFIX,sydney.bing.com, AI
+  - DOMAIN-SUFFIX,bing.com, AI
+  - DOMAIN-SUFFIX,bing.net, AI
+  - DOMAIN-SUFFIX,bingapis.com, AI
+  - DOMAIN-SUFFIX,azurewebsites.net, AI
+  - DOMAIN-SUFFIX,azureedge.net, AI
+  - DOMAIN-SUFFIX,edge.microsoft.com, AI
+  - DOMAIN-SUFFIX,copilot.microsoft.com, AI
+  - DOMAIN-SUFFIX,www.bing.com, AI
+  - DOMAIN-SUFFIX,www.bingapis.com, AI
+  - DOMAIN-SUFFIX,nav-edge.smartscreen.microsoft.com, AI
+  - DOMAIN-SUFFIX,bat.bing.com, AI
+  - DOMAIN-SUFFIX,designerapp.officeapps.live.com, AI
+  - DOMAIN-SUFFIX,cdn.designerapp.osi.office.net, AI
+  - DOMAIN-SUFFIX,live.com, AI
+  - DOMAIN-SUFFIX,azureedge.net, AI
+  - DOMAIN-SUFFIX,virtualearth.net, AI
+  - DOMAIN-SUFFIX,windows.net, AI
+  - DOMAIN-SUFFIX,onenote, AI
+  - DOMAIN-SUFFIX,hexun.com, AI
+  - DOMAIN-SUFFIX,dict.bing.com.cn, AI
+  - DOMAIN-SUFFIX,msn.com, AI
+  - DOMAIN-SUFFIX,variflight.com, AI
+  - DOMAIN-SUFFIX,bing.net, AI
+  - DOMAIN-SUFFIX,msftoffers.com, AI
+  - DOMAIN-SUFFIX,chinacloudapp.cn, AI
+  - DOMAIN-SUFFIX,cbsnews.com, AI
+  - DOMAIN-SUFFIX,swx.cdn.skype.com, AI
+  - DOMAIN-SUFFIX,swc.cdn.skype.com, AI
+  - DOMAIN-SUFFIX,latest-swx.cdn.skype.com, AI
+  - DOMAIN-SUFFIX,a.config.skype.com, AI
+  - DOMAIN-SUFFIX,b.config.skype.com, AI
+  - DOMAIN-SUFFIX,platform.bing.com, AI
+  - DOMAIN-SUFFIX,microsofttranslator.com, AI
+  - DOMAIN-SUFFIX,facebook.net, AI
+  - DOMAIN-SUFFIX,delve.office.com, AI
+  - DOMAIN-SUFFIX,uservoice.com, AI
+  - DOMAIN-SUFFIX,cdn.office.net, AI
+  - DOMAIN-SUFFIX,platform.twitter.com, AI
+  - DOMAIN-SUFFIX,cdn.syndication.twimg.com, AI
+  - DOMAIN-SUFFIX,spoprod-a.akamaihd.net, AI
+  - DOMAIN-SUFFIX,bingstatic.com, AI
+  - DOMAIN-SUFFIX,yahoo.co.jp, AI
+  - DOMAIN-SUFFIX,youtube.com, AI
+  - DOMAIN-SUFFIX,ytimg.com, AI
+  - DOMAIN-SUFFIX,r.msftstatic.com, AI
+  - DOMAIN-SUFFIX,rafd.bing.com, AI
+  - DOMAIN-SUFFIX,rafd.staging-bing-int.com, AI
+  - DOMAIN-SUFFIX,raka.bing.com, AI
+  - DOMAIN-SUFFIX,r.bing.com, AI
+  - DOMAIN-SUFFIX,r.staging-bing-int.com, AI
+  - DOMAIN-SUFFIX,raka.staging-bing-int.com, AI
+  - DOMAIN-SUFFIX,rcf.staging-bing-int.com, AI
+  - DOMAIN-SUFFIX,rcf.bing.com, AI
+  - DOMAIN-SUFFIX,s.cn.bing.net, AI
+  - DOMAIN-SUFFIX,xpaycdn-int.azureedge.net, AI
+  - DOMAIN-SUFFIX,xpaycdn.azureedge.net, AI
+  - DOMAIN-SUFFIX,ssl.kaptcha.com, AI
+  - DOMAIN-SUFFIX,tst.kaptcha.com, AI
+  - DOMAIN-SUFFIX,snrproxy.binginternal.com, AI
+  - DOMAIN-SUFFIX,snrproxyeast.binginternal.com, AI
+  - DOMAIN-SUFFIX,snrproxync.binginternal.com, AI
+  - DOMAIN-SUFFIX,snrproxysc.binginternal.com, AI
+  - DOMAIN-SUFFIX,snrproxywest.binginternal.com, AI
+  - DOMAIN-SUFFIX,cetonc.binginternal.com, AI
+  - DOMAIN-SUFFIX,cetosc.binginternal.com, AI
+  - DOMAIN-SUFFIX,cetoeast.binginternal.com, AI
+  - DOMAIN-SUFFIX,cetowest.binginternal.com, AI
+  - DOMAIN-SUFFIX,akam.bing.com, AI
+  - DOMAIN-SUFFIX,akam.staging-bing-int.com, AI
+  - DOMAIN-SUFFIX,ewlmaakam.staging-bing-int.com, AI
+  - DOMAIN-SUFFIX,akamproxyeast.staging-bing-int.com, AI
+  - DOMAIN-SUFFIX,akamproxync.staging-bing-int.com, AI
+  - DOMAIN-SUFFIX,akamproxysc.staging-bing-int.com, AI
+  - DOMAIN-SUFFIX,akamproxywest.staging-bing-int.com, AI
+  - DOMAIN-SUFFIX,cjfdbemmaeeohgibnhdhlakiahifjjcf, AI
+  - DOMAIN-SUFFIX,ewlmaakam.staging-bing-int.com, AI
+  - DOMAIN-SUFFIX,bngpiglbalmenaabohcooocpnljgfemj, AI
+  - DOMAIN-SUFFIX,rwww.bing.com, AI
+
   - DOMAIN-SUFFIX,eu,🚀 节点选择
   - DOMAIN-SUFFIX,hk,🚀 节点选择
   - DOMAIN-SUFFIX,jp,🚀 节点选择
@@ -826,6 +979,7 @@ rules:
   - DOMAIN-SUFFIX,com.cn,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
+
 
 
 
