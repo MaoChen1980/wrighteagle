@@ -552,7 +552,7 @@ rules:
   - DOMAIN-SUFFIX,grok.com, AI
 
 #perplexity.ai
-DOMAIN-SUFFIX,perplexity.ai, AI
+  - DOMAIN-SUFFIX,perplexity.ai, AI
 
 
 #bing chat
@@ -979,6 +979,7 @@ DOMAIN-SUFFIX,perplexity.ai, AI
   - DOMAIN-SUFFIX,com.cn,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
+
 
 
 
