@@ -29,6 +29,8 @@ proxies:
   - {name: 🇸🇬 V-202 | 新加坡, server: sg.pro.sspa.zzssptop.com, port: 16202, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: sg2.zzsspnode.com, skip-cert-verify: true}
   - {name: 🇸🇬 S-203 | 新加坡, server: sg.pro.sspa.zzssptop.com, port: 16203, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: sg3.zzsspnode.com, skip-cert-verify: true}
   - {name: 🇸🇬 V-203 | 新加坡, server: sg.pro.sspa.zzssptop.com, port: 16203, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: sg3.zzsspnode.com, skip-cert-verify: true}
+  - {name: vless, server: 43.133.4.242, port: 16101, type: vless, udp: true, uuid: d60c7f40-556a-407d-b3c8-ab39feeeb178, skip-cert-verify: true, cipher: auto, tls: true, xtls: xtls-rprx-vison, sni: google.com, shortId: 44d85d }
+
 proxy-groups:
   - name: AI
     type: select
@@ -979,6 +981,7 @@ rules:
   - DOMAIN-SUFFIX,com.cn,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
+
 
 
 
