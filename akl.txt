@@ -39,7 +39,7 @@ proxy-groups:
       - DIRECT
       - super
       - super22
-  - name: FBACK
+- name: FBACK
     type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 300
@@ -851,9 +851,4 @@ rules:
   - DOMAIN-SUFFIX,com.cn,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
-
-
-
-
-
 
