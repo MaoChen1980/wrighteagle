@@ -16,7 +16,7 @@ keep-alive-interval: 60
 proxies:
   - {name: super, server: savycn.online, port: 16100, type: trojan, password: v97ZueMdM1, sni: savycn.online, skip-cert-verify: true }
   - {name: super22, server: 43.133.4.242, port: 16101, type: vless, uuid: f65ff812-b301-4d5a-99de-bfd22b398df8, tls: true , flow: xtls-rprx-vision, reality-opts: {public-key: 1sAZaXc04z_xJCznntYOf6136DJ1A7QAyJVcFe7z21k, short-id: "b64c", support-x25519mlkem768: false}, servername: www.lovelive-anime.jp, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: super222, server: 43.133.4.242, port: 16103, type: vless, uuid: 90abf417-adff-4ac2-b037-32b19e8b5395, tls: true, tfo: false, skip-cert-verify: true, reality-opts: {public-key: hKsEZbLr_P1DwYyZCM6fG6EDZ78GxT4oOymad9JOP0w, short-id: "4a2a41febbe55a" }, servername: www.microsoft.com, client-fingerprint: chrome, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: /}}
+  - {name: super222, server: 43.133.4.242, port: 16103, type: vless, uuid: 90abf417-adff-4ac2-b037-32b19e8b5395, tls: true, tfo: false, skip-cert-verify: true, reality-opts: {public-key: hKsEZbLr_P1DwYyZCM6fG6EDZ78GxT4oOymad9JOP0w, short-id: "4a2a41febbe55a" }, servername: www.microsoft.com, client-fingerprint: chrome, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: }}
 proxy-groups:
   - name: AI
     type: select
@@ -855,6 +855,7 @@ rules:
   - DOMAIN-SUFFIX,com.cn,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
+
 
 
 
