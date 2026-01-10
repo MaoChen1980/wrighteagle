@@ -48,7 +48,6 @@ proxy-groups:
     proxies:
       - super
       - super22
-      - super222
   - name: HKHKHK
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -57,7 +56,6 @@ proxy-groups:
     proxies:
       - super
       - super22
-      - super222
   - name: SGSGSG
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -855,6 +853,7 @@ rules:
   - DOMAIN-SUFFIX,com.cn,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
+
 
 
 
