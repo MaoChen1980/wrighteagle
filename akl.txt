@@ -14,22 +14,8 @@ keep-alive-interval: 60
   #tcp-concurrent: true
 
 proxies:
-  - {name: super, server: savycn.online, port: 16100, type: trojan, password: v97ZueMdM1, sni: savycn.online, skip-cert-verify: true, tfo: true}
-  - {name: 🇭🇰 S-101 | 香港, server: hk.pro.sspa.zzssptop.com, port: 16101, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: hkt1.zzsspnode.com, skip-cert-verify: true}
-  - {name: 🇭🇰 V-101 | 香港, server: hk.pro.sspa.zzssptop.com, port: 16101, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: hkt1.zzsspnode.com, skip-cert-verify: true}
-  - {name: 🇭🇰 S-102 | 香港, server: hk.pro.sspa.zzssptop.com, port: 16102, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: hkt2.zzsspnode.com, skip-cert-verify: true}
-  - {name: 🇭🇰 V-102 | 香港, server: hk.pro.sspa.zzssptop.com, port: 16102, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: hkt2.zzsspnode.com, skip-cert-verify: true}
-  - {name: 🇭🇰 S-103 | 香港, server: hk.pro.sspa.zzssptop.com, port: 16103, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: hkt3.zzsspnode.com, skip-cert-verify: true}
-  - {name: 🇭🇰 V-103 | 香港, server: hk.pro.sspa.zzssptop.com, port: 16103, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: hkt3.zzsspnode.com, skip-cert-verify: true}
-  - {name: 🇭🇰 S-104 | 香港, server: hk.pro.sspa.zzssptop.com, port: 16104, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: hkt4.zzsspnode.com, skip-cert-verify: true}
-  - {name: 🇭🇰 V-104 | 香港, server: hk.pro.sspa.zzssptop.com, port: 16104, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: hkt4.zzsspnode.com, skip-cert-verify: true}
-  - {name: 🇸🇬 S-201 | 新加坡, server: sg.pro.sspa.zzssptop.com, port: 16201, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: sg1.zzsspnode.com, skip-cert-verify: true}
-  - {name: 🇸🇬 V-201 | 新加坡, server: sg.pro.sspa.zzssptop.com, port: 16201, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: sg1.zzsspnode.com, skip-cert-verify: true}
-  - {name: 🇸🇬 S-202 | 新加坡, server: sg.pro.sspa.zzssptop.com, port: 16202, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: sg2.zzsspnode.com, skip-cert-verify: true}
-  - {name: 🇸🇬 V-202 | 新加坡, server: sg.pro.sspa.zzssptop.com, port: 16202, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: sg2.zzsspnode.com, skip-cert-verify: true}
-  - {name: 🇸🇬 S-203 | 新加坡, server: sg.pro.sspa.zzssptop.com, port: 16203, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: sg3.zzsspnode.com, skip-cert-verify: true}
-  - {name: 🇸🇬 V-203 | 新加坡, server: sg.pro.sspa.zzssptop.com, port: 16203, type: trojan, password: 86aa7360-5065-4623-b776-6efe905dad31, sni: sg3.zzsspnode.com, skip-cert-verify: true}
-  - {name: super22, server: 43.133.4.242, port: 16101, type: vless, uuid: f65ff812-b301-4d5a-99de-bfd22b398df8, tls: true, tfo: true, flow: xtls-rprx-vision, reality-opts: {public-key: 1sAZaXc04z_xJCznntYOf6136DJ1A7QAyJVcFe7z21k, short-id: "b64c", support-x25519mlkem768: false}, servername: www.lovelive-anime.jp, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: super, server: savycn.online, port: 16100, type: trojan, password: v97ZueMdM1, sni: savycn.online, skip-cert-verify: true }
+  - {name: super22, server: 43.133.4.242, port: 16101, type: vless, uuid: f65ff812-b301-4d5a-99de-bfd22b398df8, tls: true , flow: xtls-rprx-vision, reality-opts: {public-key: 1sAZaXc04z_xJCznntYOf6136DJ1A7QAyJVcFe7z21k, short-id: "b64c", support-x25519mlkem768: false}, servername: www.lovelive-anime.jp, client-fingerprint: firefox, network: tcp, udp: true}
 
 proxy-groups:
   - name: AI
@@ -42,20 +28,6 @@ proxy-groups:
       - DIRECT
       - super
       - super22
-      - 🇭🇰 S-101 | 香港
-      - 🇭🇰 V-101 | 香港
-      - 🇭🇰 S-102 | 香港
-      - 🇭🇰 V-102 | 香港
-      - 🇭🇰 S-103 | 香港
-      - 🇭🇰 V-103 | 香港
-      - 🇭🇰 S-104 | 香港
-      - 🇭🇰 V-104 | 香港
-      - 🇸🇬 S-201 | 新加坡
-      - 🇸🇬 V-201 | 新加坡
-      - 🇸🇬 S-202 | 新加坡
-      - 🇸🇬 V-202 | 新加坡
-      - 🇸🇬 S-203 | 新加坡
-      - 🇸🇬 V-203 | 新加坡
   - name: 🚀 节点选择
     type: select
     proxies:
@@ -67,53 +39,21 @@ proxy-groups:
       - DIRECT
       - super
       - super22
-      - 🇭🇰 S-101 | 香港
-      - 🇭🇰 V-101 | 香港
-      - 🇭🇰 S-102 | 香港
-      - 🇭🇰 V-102 | 香港
-      - 🇭🇰 S-103 | 香港
-      - 🇭🇰 V-103 | 香港
-      - 🇭🇰 S-104 | 香港
-      - 🇭🇰 V-104 | 香港
-      - 🇸🇬 S-201 | 新加坡
-      - 🇸🇬 V-201 | 新加坡
-      - 🇸🇬 S-202 | 新加坡
-      - 🇸🇬 V-202 | 新加坡
-      - 🇸🇬 S-203 | 新加坡
-      - 🇸🇬 V-203 | 新加坡
   - name: FBACK
     type: fallback
     url: https://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇭🇰 V-104 | 香港
-      - 🇭🇰 S-104 | 香港
-      - 🇭🇰 V-103 | 香港
-      - 🇭🇰 S-103 | 香港
-      - 🇭🇰 V-102 | 香港
-      - 🇭🇰 S-102 | 香港
-      - 🇭🇰 V-101 | 香港
-      - 🇭🇰 S-101 | 香港
-      - 🇸🇬 V-203 | 新加坡
-      - 🇸🇬 S-203 | 新加坡
-      - 🇸🇬 V-202 | 新加坡
-      - 🇸🇬 S-202 | 新加坡
-      - 🇸🇬 V-201 | 新加坡
-      - 🇸🇬 S-201 | 新加坡
+      - super
+      - super22
   - name: HKHKHK
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 500
     tolerance: 50
     proxies:
-      - 🇭🇰 S-101 | 香港
-      - 🇭🇰 V-101 | 香港
-      - 🇭🇰 S-102 | 香港
-      - 🇭🇰 V-102 | 香港
-      - 🇭🇰 S-103 | 香港
-      - 🇭🇰 V-103 | 香港
-      - 🇭🇰 S-104 | 香港
-      - 🇭🇰 V-104 | 香港
+      - super
+      - super22
   - name: SGSGSG
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -124,34 +64,18 @@ proxy-groups:
     #url: http://www.gstatic.com/generate_204
     #interval: 300
     proxies:
-      - 🇸🇬 S-201 | 新加坡
-      - 🇸🇬 V-201 | 新加坡
-      - 🇸🇬 S-202 | 新加坡
-      - 🇸🇬 V-202 | 新加坡
-      - 🇸🇬 S-203 | 新加坡
-      - 🇸🇬 V-203 | 新加坡
+      - super
+      - super22
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 S-101 | 香港
-      - 🇭🇰 V-101 | 香港
-      - 🇭🇰 S-102 | 香港
-      - 🇭🇰 V-102 | 香港
-      - 🇭🇰 S-103 | 香港
-      - 🇭🇰 V-103 | 香港
-      - 🇭🇰 S-104 | 香港
-      - 🇭🇰 V-104 | 香港
-      - 🇸🇬 S-201 | 新加坡
-      - 🇸🇬 V-201 | 新加坡
-      - 🇸🇬 S-202 | 新加坡
-      - 🇸🇬 V-202 | 新加坡
-      - 🇸🇬 S-203 | 新加坡
-      - 🇸🇬 V-203 | 新加坡
       - REJECT
       - DIRECT
+      - super
+      - super22
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -160,20 +84,8 @@ proxy-groups:
       - 🎯 全球直连
       - REJECT
       - DIRECT
-      - 🇭🇰 S-101 | 香港
-      - 🇭🇰 V-101 | 香港
-      - 🇭🇰 S-102 | 香港
-      - 🇭🇰 V-102 | 香港
-      - 🇭🇰 S-103 | 香港
-      - 🇭🇰 V-103 | 香港
-      - 🇭🇰 S-104 | 香港
-      - 🇭🇰 V-104 | 香港
-      - 🇸🇬 S-201 | 新加坡
-      - 🇸🇬 V-201 | 新加坡
-      - 🇸🇬 S-202 | 新加坡
-      - 🇸🇬 V-202 | 新加坡
-      - 🇸🇬 S-203 | 新加坡
-      - 🇸🇬 V-203 | 新加坡
+      - super
+      - super22
   - name: 📲 电报信息
     type: select
     proxies:
@@ -181,20 +93,8 @@ proxy-groups:
       - DIRECT
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 S-101 | 香港
-      - 🇭🇰 V-101 | 香港
-      - 🇭🇰 S-102 | 香港
-      - 🇭🇰 V-102 | 香港
-      - 🇭🇰 S-103 | 香港
-      - 🇭🇰 V-103 | 香港
-      - 🇭🇰 S-104 | 香港
-      - 🇭🇰 V-104 | 香港
-      - 🇸🇬 S-201 | 新加坡
-      - 🇸🇬 V-201 | 新加坡
-      - 🇸🇬 S-202 | 新加坡
-      - 🇸🇬 V-202 | 新加坡
-      - 🇸🇬 S-203 | 新加坡
-      - 🇸🇬 V-203 | 新加坡
+      - super
+      - super22
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -202,20 +102,8 @@ proxy-groups:
       - REJECT
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 S-101 | 香港
-      - 🇭🇰 V-101 | 香港
-      - 🇭🇰 S-102 | 香港
-      - 🇭🇰 V-102 | 香港
-      - 🇭🇰 S-103 | 香港
-      - 🇭🇰 V-103 | 香港
-      - 🇭🇰 S-104 | 香港
-      - 🇭🇰 V-104 | 香港
-      - 🇸🇬 S-201 | 新加坡
-      - 🇸🇬 V-201 | 新加坡
-      - 🇸🇬 S-202 | 新加坡
-      - 🇸🇬 V-202 | 新加坡
-      - 🇸🇬 S-203 | 新加坡
-      - 🇸🇬 V-203 | 新加坡
+      - super
+      - super22
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -223,20 +111,8 @@ proxy-groups:
       - REJECT
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 S-101 | 香港
-      - 🇭🇰 V-101 | 香港
-      - 🇭🇰 S-102 | 香港
-      - 🇭🇰 V-102 | 香港
-      - 🇭🇰 S-103 | 香港
-      - 🇭🇰 V-103 | 香港
-      - 🇭🇰 S-104 | 香港
-      - 🇭🇰 V-104 | 香港
-      - 🇸🇬 S-201 | 新加坡
-      - 🇸🇬 V-201 | 新加坡
-      - 🇸🇬 S-202 | 新加坡
-      - 🇸🇬 V-202 | 新加坡
-      - 🇸🇬 S-203 | 新加坡
-      - 🇸🇬 V-203 | 新加坡
+      - super
+      - super22
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -245,20 +121,8 @@ proxy-groups:
       - DIRECT
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 S-101 | 香港
-      - 🇭🇰 V-101 | 香港
-      - 🇭🇰 S-102 | 香港
-      - 🇭🇰 V-102 | 香港
-      - 🇭🇰 S-103 | 香港
-      - 🇭🇰 V-103 | 香港
-      - 🇭🇰 S-104 | 香港
-      - 🇭🇰 V-104 | 香港
-      - 🇸🇬 S-201 | 新加坡
-      - 🇸🇬 V-201 | 新加坡
-      - 🇸🇬 S-202 | 新加坡
-      - 🇸🇬 V-202 | 新加坡
-      - 🇸🇬 S-203 | 新加坡
-      - 🇸🇬 V-203 | 新加坡
+      - super
+      - super22
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -266,6 +130,8 @@ proxy-groups:
       - REJECT
       - 🚀 节点选择
       - ♻️ 自动选择
+      - super
+      - super22
   - name: 🛑 全球拦截
     type: select
     proxies:
@@ -283,6 +149,8 @@ proxy-groups:
       - 🎯 全球直连
       - REJECT
       - DIRECT
+      - super
+      - super22
 rules:
   - IP-CIDR,0.0.0.0/8,🎯 全球直连,no-resolve
   - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
@@ -983,6 +851,7 @@ rules:
   - DOMAIN-SUFFIX,com.cn,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
+
 
 
 
