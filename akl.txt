@@ -64,17 +64,17 @@ proxy-groups:
       - super
       - super22
   - name: SGSGSG
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 1300
-    tolerance: 50
-    #type: load-balance
-    #strategy:  consistent-hashing #round-robin # 
+    #type: url-test
     #url: http://www.gstatic.com/generate_204
-    #interval: 300
+    #interval: 1300
+    #tolerance: 50
+    type: load-balance
+    strategy:  round-robin # consistent-hashing #
+    url: http://www.gstatic.com/generate_204
+    interval: 300
     proxies:
-      - super
-      - super22
+      - grpc
+      - ss_grpc
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -860,6 +860,7 @@ rules:
   - DOMAIN-SUFFIX,com.cn,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
+
 
 
 
