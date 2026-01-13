@@ -72,7 +72,7 @@ proxy-groups:
     #interval: 1300
     #tolerance: 50
     type: load-balance
-    strategy:  consistent-hashing #
+    strategy:  round-robin # consistent-hashing #
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
@@ -864,6 +864,7 @@ rules:
   - DOMAIN-SUFFIX,com.cn,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
+
 
 
 
