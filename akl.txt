@@ -26,8 +26,8 @@ proxy-groups:
     type: select
     proxies:
       - FBACK
-      - HKHKHK
-      - SGSGSG
+      - LOADBALANCE2
+      - LOADBALANCE3
       - REJECT
       - DIRECT
       - super
@@ -40,8 +40,8 @@ proxy-groups:
     type: select
     proxies:
       - FBACK
-      - HKHKHK
-      - SGSGSG
+      - LOADBALANCE2
+      - LOADBALANCE3
       - ♻️ 自动选择
       - REJECT
       - DIRECT
@@ -58,15 +58,19 @@ proxy-groups:
     proxies:
       - super
       - super22
-  - name: HKHKHK
-    type: url-test
+      - grpc1
+      - grpc2
+      - grpc3
+      - ss
+  - name: LOADBALANCE2
+    type: load-balance
+    strategy:  round-robin # consistent-hashing #
     url: http://www.gstatic.com/generate_204
-    interval: 500
-    tolerance: 50
+    interval: 300
     proxies:
-      - super
-      - super22
-  - name: SGSGSG
+      - grpc1
+      - grpc2
+  - name: LOADBALANCE3
     #type: url-test
     #url: http://www.gstatic.com/generate_204
     #interval: 1300
@@ -864,6 +868,7 @@ rules:
   - DOMAIN-SUFFIX,com.cn,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
+
 
 
 
