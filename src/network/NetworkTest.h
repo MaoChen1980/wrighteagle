@@ -148,8 +148,6 @@ public:
 
 private:
   COUNTUNIT CU;
-  long InterBase;
-  long Increment;
   int MyID;
   int MissBegin;
   CMDCOUNT CMDSend;    //命令发送计数器

@@ -1233,7 +1233,6 @@ void WorldStateUpdater::UpdateOtherKick() {
   }
 
   double min_dist = 10000;
-  int min_index;
 
   if (mpWorldState->GetBall().GetPosDelay() <= 1 && SelfState().IsKickable()) {
     Vector ball_pos = mpWorldState->GetBall().GetPos();
@@ -1241,13 +1240,11 @@ void WorldStateUpdater::UpdateOtherKick() {
       if (i != mSelfUnum) {
         if (Teammate(i).GetPos().Dist(ball_pos) < min_dist) {
           min_dist = Teammate(i).GetPos().Dist(ball_pos);
-          min_index = i;
         }
       }
 
       if (Opponent(i).GetPos().Dist(ball_pos) < min_dist) {
         min_dist = Opponent(i).GetPos().Dist(ball_pos);
-        min_index = i;
       }
     }
 

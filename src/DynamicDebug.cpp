@@ -60,7 +60,7 @@ void DynamicDebug::Initial(Observer *pObserver) {
         true) // 需要保存server信息
     {
       char file_name[64];
-      sprintf(file_name, "%s/%s-%d-msg.log",
+      snprintf(file_name, sizeof(file_name), "%s/%s-%d-msg.log",
               PlayerParam::instance().logDir().c_str(),
               PlayerParam::instance().teamName().c_str(),
               mpObserver->SelfUnum());

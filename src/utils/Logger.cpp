@@ -60,7 +60,7 @@ SightLogger::SightLogger(Observer *observer, WorldState *world_state) {
   mTeamState_dirty = true;
 
   char file_name[256];
-  sprintf(file_name, "%s/%s-%d-sight.log",
+  snprintf(file_name, sizeof(file_name), "%s/%s-%d-sight.log",
           PlayerParam::instance().logDir().c_str(),
           PlayerParam::instance().teamName().c_str(), mpObserver->SelfUnum());
   os.open(file_name);
@@ -301,7 +301,7 @@ TextLogger::TextLogger(Observer *observer, const char *log_name) {
   Assert(std::string(log_name) != std::string("msg"));
   Assert(std::string(log_name) != std::string("sight"));
 
-  sprintf(file_name, "Logfiles/%s-%d-%s.log",
+  snprintf(file_name, sizeof(file_name), "Logfiles/%s-%d-%s.log",
           PlayerParam::instance().teamName().c_str(), observer->SelfUnum(),
           log_name);
   os.open(file_name);

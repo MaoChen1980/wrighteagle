@@ -86,7 +86,7 @@ StatisticUnit::~StatisticUnit() {}
  */
 void StatisticUnit::Flush() {
   char fileName[128];
-  sprintf(fileName, "Test/%s-%s-%d.txt", BeginName.data(), EndName.data(),
+  snprintf(fileName, sizeof(fileName), "Test/%s-%s-%d.txt", BeginName.data(), EndName.data(),
           MyID);
   FILE *fp = fopen(fileName, "w");
   if (fp != 0) {
@@ -329,7 +329,7 @@ NetworkTest::~NetworkTest() {
 
   WriteRealTimeRecord(); // record RealTime information
   std::for_each(StatUnit.begin(), StatUnit.end(),
-                std::mem_fun_ref(&StatisticUnit::Flush));
+                [](StatisticUnit& unit) { unit.Flush(); });
 }
 
 NetworkTest &NetworkTest::instance() {
@@ -558,7 +558,7 @@ void NetworkTest::WriteRealTimeRecord() {
   if (PlayerParam::instance().NetworkTest()) {
     if (mParserList.size() > 0) {
       char parser_file[128];
-      sprintf(parser_file, "Test/RealTime-Parser-%d.txt", mUnum);
+      snprintf(parser_file, sizeof(parser_file), "Test/RealTime-Parser-%d.txt", mUnum);
       std::ofstream out_parser(parser_file);
       if (out_parser.good() == true) {
         for (unsigned i = 0; i < mParserList.size(); ++i) {
@@ -573,7 +573,7 @@ void NetworkTest::WriteRealTimeRecord() {
 
     if (mDecisionList.size() > 0) {
       char decision_file[128];
-      sprintf(decision_file, "Test/RealTime-Decision-%d.txt", mUnum);
+      snprintf(decision_file, sizeof(decision_file), "Test/RealTime-Decision-%d.txt", mUnum);
       std::ofstream out_decision(decision_file);
       if (out_decision.good() == true) {
         for (unsigned i = 0; i < mDecisionList.size(); ++i) {
@@ -588,7 +588,7 @@ void NetworkTest::WriteRealTimeRecord() {
 
     if (mCommandSendList.size() > 0) {
       char commandsend_file[128];
-      sprintf(commandsend_file, "Test/RealTime-CommandSend-%d.txt", mUnum);
+      snprintf(commandsend_file, sizeof(commandsend_file), "Test/RealTime-CommandSend-%d.txt", mUnum);
       std::ofstream out_commandsend(commandsend_file);
       if (out_commandsend.good() == true) {
         for (unsigned i = 0; i < mCommandSendList.size(); ++i) {

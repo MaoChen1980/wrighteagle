@@ -59,7 +59,7 @@ TimeTest::~TimeTest() {
   TimeCost *pTimeCost;
 
   for (unsigned i = 0; i < mEventQueue.size(); ++i) {
-    sprintf(file_name, "Test/TimeTest-%s-%d.txt", mEventQueue[i].data(), mUnum);
+    snprintf(file_name, 256, "Test/TimeTest-%s-%d.txt", mEventQueue[i].data(), mUnum);
     out_file.open(file_name);
     if (out_file.good() == false) {
       PRINT_ERROR("open file error  " << file_name);

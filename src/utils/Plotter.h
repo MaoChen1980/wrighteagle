@@ -126,7 +126,6 @@ private:
 
 private:
   bool mIsDisplayOk;
-  bool mIsGnuplotOk;
 
   FILE *mpGnupolot; // pointer to gnuplot process stdin
 

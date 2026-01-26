@@ -379,14 +379,14 @@ bool Trainer::Condition::CheckState(const WorldState &state) {
     break;
   case ET_BallYbt: //球的y坐标。。
     if ((state.GetBall().GetPos().Y() > mArg1 && !mConverse) ||
-        (!state.GetBall().GetPos().Y() > mArg1 && mConverse)) {
+        (!(state.GetBall().GetPos().Y() > mArg1) && mConverse)) {
       std::cout << "Trigger Ball's Y larger than " << mArg1 << std::endl;
       result = true;
     }
     break;
   case ET_BallYlt: //。。
     if ((state.GetBall().GetPos().Y() < mArg1 && !mConverse) ||
-        (!state.GetBall().GetPos().Y() < mArg1 && mConverse)) {
+        (!(state.GetBall().GetPos().Y() < mArg1) && mConverse)) {
       std::cout << "Trigger Ball's Y less than " << mArg1 << std::endl;
       result = true;
     }
@@ -463,7 +463,7 @@ bool Trainer::Condition::CheckState(const WorldState &state) {
 void Trainer::ReadConfigFile() {
   //读取配置文件
   char train_file[128];
-  sprintf(train_file, "./%s", PlayerParam::instance().trainDataFile().c_str());
+  snprintf(train_file, sizeof(train_file), "./%s", PlayerParam::instance().trainDataFile().c_str());
 
   ifstream fin(train_file);
 
@@ -846,28 +846,28 @@ void Trainer::Condition::Report(ofstream &os) const {
   case ET_Null:
     return;
   case ET_Time: //过x个周期自然终止
-    sprintf(name, "After %4.0f Cycle Stop", mArg1);
+    snprintf(name, sizeof(name), "After %4.0f Cycle Stop", mArg1);
     break;
   case ET_BallXbt: //球的x坐标大于某值停止
-    sprintf(name, "Ball.X > %5.2f", mArg1);
+    snprintf(name, sizeof(name), "Ball.X > %5.2f", mArg1);
     break;
   case ET_BallXlt: //球的x坐标小于某值停止
-    sprintf(name, "Ball.X < %5.2f", mArg1);
+    snprintf(name, sizeof(name), "Ball.X < %5.2f", mArg1);
     break;
   case ET_BallYbt: //球的y坐标。。
-    sprintf(name, "Ball.Y > %5.2f", mArg1);
+    snprintf(name, sizeof(name), "Ball.Y > %5.2f", mArg1);
     break;
   case ET_BallYlt: //。。
-    sprintf(name, "Ball.Y < %5.2f", mArg1);
+    snprintf(name, sizeof(name), "Ball.Y < %5.2f", mArg1);
     break;
   case ET_Ball2Playerbt: //球到某人的距离大于某值
-    sprintf(name, "Ball to %2.0f 's Distance > %5.2f", mArg2, mArg1);
+    snprintf(name, sizeof(name), "Ball to %2.0f 's Distance > %5.2f", mArg2, mArg1);
     break;
   case ET_Ball2Playerlt: //球到某人的距离小于某值
-    sprintf(name, "Ball to %2.0f 's Distance < %5.2f", mArg2, mArg1);
+    snprintf(name, sizeof(name), "Ball to %2.0f 's Distance < %5.2f", mArg2, mArg1);
     break;
   case ET_NonPlayOn:
-    sprintf(name, "NonPlayOn");
+    snprintf(name, sizeof(name), "NonPlayOn");
     break;
   }
   os << name << endl;

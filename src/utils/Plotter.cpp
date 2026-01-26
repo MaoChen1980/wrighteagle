@@ -35,7 +35,7 @@
 #include <cstdarg>
 #include <cstdio>
 
-Plotter::Plotter() : mIsDisplayOk(false), mIsGnuplotOk(false), mpGnupolot(0) {
+Plotter::Plotter() : mIsDisplayOk(false), mpGnupolot(0) {
   Init();
 }
 
@@ -80,7 +80,7 @@ void Plotter::GnuplotExecute(const char *cmd, ...) {
   char local_cmd[GP_CMD_SIZE];
 
   va_start(ap, cmd);
-  vsprintf(local_cmd, cmd, ap);
+  vsnprintf(local_cmd, sizeof(local_cmd), cmd, ap);
   va_end(ap);
 
   strcat(local_cmd, "\n");
@@ -92,13 +92,13 @@ void Plotter::GnuplotExecute(const char *cmd, ...) {
 
 void Plotter::SetXLabel(char *label) {
   char cmd[GP_CMD_SIZE];
-  sprintf(cmd, "set xlabel \"%s\"", label);
+  snprintf(cmd, sizeof(cmd), "set xlabel \"%s\"", label);
   GnuplotExecute(cmd);
 }
 
 void Plotter::SetYLabel(char *label) {
   char cmd[GP_CMD_SIZE];
-  sprintf(cmd, "set ylabel \"%s\"", label);
+  snprintf(cmd, sizeof(cmd), "set ylabel \"%s\"", label);
   GnuplotExecute(cmd);
 }
 
