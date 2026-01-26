@@ -1,6 +1,6 @@
 #include "DynamicDebug.h"
 #include <cstring>
-#include <memory> // for std::auto_ptr
+#include <memory>
 
 //==============================================================================
 DynamicDebug::DynamicDebug() {
@@ -49,7 +49,7 @@ void DynamicDebug::Initial(Observer *pObserver) {
 
   if (PlayerParam::instance().DynamicDebugMode() == true) // 动态调试
   {
-    mpFileStream = std::auto_ptr<std::ifstream>(new std::ifstream("dynamicdebug.txt"));
+    mpFileStream = std::make_unique<std::ifstream>("dynamicdebug.txt");
 
     if (mpFileStream->is_open()) {
       std::cin.rdbuf(mpFileStream->rdbuf());
@@ -208,7 +208,7 @@ MessageType DynamicDebug::Run(char *msg) {
       long long size;
 
       size = mFileHead.mIndexTableSize;
-      mpIndex = std::auto_ptr<MessageIndexTableUnit>(new MessageIndexTableUnit[size]);
+      mpIndex = std::unique_ptr<MessageIndexTableUnit[]>(new MessageIndexTableUnit[size]);
 
       fseek(mpFile, mFileHead.mIndexTableOffset, SEEK_SET);
       if (size > 0 &&
@@ -217,7 +217,7 @@ MessageType DynamicDebug::Run(char *msg) {
       }
 
       size = mFileHead.mParserTableSize;
-      mpParserTime = std::auto_ptr<timeval>(new timeval[size]);
+      mpParserTime = std::unique_ptr<timeval[]>(new timeval[size]);
 
       fseek(mpFile, mFileHead.mParserTableOffset, SEEK_SET);
       if (size > 0 &&
@@ -226,7 +226,7 @@ MessageType DynamicDebug::Run(char *msg) {
       }
 
       size = mFileHead.mDecisionTableSize;
-      mpDecisionTime = std::auto_ptr<timeval>(new timeval[size]);
+      mpDecisionTime = std::unique_ptr<timeval[]>(new timeval[size]);
 
       fseek(mpFile, mFileHead.mDecisionTableOffset, SEEK_SET);
       if (size > 0 &&
@@ -235,7 +235,7 @@ MessageType DynamicDebug::Run(char *msg) {
       }
 
       size = mFileHead.mCommandSendTableSize;
-      mpCommandSendTime = std::auto_ptr<timeval>(new timeval[size]);
+      mpCommandSendTime = std::unique_ptr<timeval[]>(new timeval[size]);
 
       fseek(mpFile, mFileHead.mCommandSendTableOffset, SEEK_SET);
       if (size > 0 &&
@@ -439,7 +439,7 @@ void DynamicDebug::Flush() {
 
       // index table
       mFileHead.mIndexTableOffset = ftell(mpFile);
-      mpIndex = std::auto_ptr<MessageIndexTableUnit>(new MessageIndexTableUnit[size]);
+      mpIndex = std::unique_ptr<MessageIndexTableUnit[]>(new MessageIndexTableUnit[size]);
       MessageIndexTableUnit* pIndex = mpIndex.get();
 
       for (i = 0; i < size; ++i) {
@@ -450,7 +450,7 @@ void DynamicDebug::Flush() {
       // observer time
       mFileHead.mParserTableOffset = ftell(mpFile);
       size = mFileHead.mParserTableSize;
-      mpParserTime = std::auto_ptr<timeval>(new timeval[size]);
+      mpParserTime = std::unique_ptr<timeval[]>(new timeval[size]);
       timeval* pParserTime = mpParserTime.get();
 
       for (i = 0; i < size; ++i) {
@@ -461,7 +461,7 @@ void DynamicDebug::Flush() {
       // decision time
       mFileHead.mDecisionTableOffset = ftell(mpFile);
       size = mFileHead.mDecisionTableSize;
-      mpDecisionTime = std::auto_ptr<timeval>(new timeval[size]);
+      mpDecisionTime = std::unique_ptr<timeval[]>(new timeval[size]);
       timeval* pDecisionTime = mpDecisionTime.get();
 
       for (i = 0; i < size; ++i) {
@@ -472,7 +472,7 @@ void DynamicDebug::Flush() {
       // commandsend time
       mFileHead.mCommandSendTableOffset = ftell(mpFile);
       size = mFileHead.mCommandSendTableSize;
-      mpCommandSendTime = std::auto_ptr<timeval>(new timeval[size]);
+      mpCommandSendTime = std::unique_ptr<timeval[]>(new timeval[size]);
       timeval* pCommandSendTime = mpCommandSendTime.get();
 
       for (i = 0; i < size; ++i) {
