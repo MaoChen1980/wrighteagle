@@ -34,7 +34,6 @@ proxy-groups:
       - grpc1
       - grpc2
       - grpc3
-      - ss
   - name: 🚀 节点选择
     type: select
     proxies:
@@ -49,7 +48,6 @@ proxy-groups:
       - grpc1
       - grpc2
       - grpc3
-      - ss
   - name: FBACK
     type: fallback
     url: https://www.gstatic.com/generate_204
@@ -60,7 +58,6 @@ proxy-groups:
       - grpc1
       - grpc2
       - grpc3
-      - ss
   - name: LOADBALANCE2
     type: load-balance
     strategy:  round-robin # consistent-hashing #
@@ -867,6 +864,7 @@ rules:
   - DOMAIN-SUFFIX,com.cn,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
+
 
 
 
