@@ -16,9 +16,10 @@ keep-alive-interval: 60
 proxies:
   - {"type":"vless","name":"super","server":"savycn.online","port":16100,"uuid":"ad09ec80-5f54-4ac7-8872-863b1426fc33","network":"tcp","tls":true,"servername":"www.tesla.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"aA4aIkKr16UDRUv69kUABQtm7XS8bF_3CWIc7TPCxgU","short-id":"6e76b5"},"client-fingerprint":"ios"}
   - {"type":"vless","name":"super22","server":"savycn.online","port":16100,"uuid":"7184f0e5-6957-4ae6-9971-6b09a79f3959","network":"tcp","tls":true,"servername":"www.tesla.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"aA4aIkKr16UDRUv69kUABQtm7XS8bF_3CWIc7TPCxgU","short-id":"6e76b5"},"client-fingerprint":"ios"}
-  - {"type":"vless","name":"grpc1","server":"savycn.online","port":16100,"uuid":"88279ec4-e61b-4aa8-8bc9-4624a70bf315","network":"tcp","tls":true,"servername":"www.tesla.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"aA4aIkKr16UDRUv69kUABQtm7XS8bF_3CWIc7TPCxgU","short-id":"6e76b5"},"client-fingerprint":"ios"}
-  - {"type":"vless","name":"grpc2","server":"savycn.online","port":16100,"uuid":"1d1ed0db-c177-488e-8592-81aa3f06023e","network":"tcp","tls":true,"servername":"www.tesla.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"aA4aIkKr16UDRUv69kUABQtm7XS8bF_3CWIc7TPCxgU","short-id":"6e76b5"},"client-fingerprint":"ios"}
-  - {"type":"vless","name":"grpc3","server":"savycn.online","port":16100,"uuid":"1a79836f-4bfe-44a1-959c-800079e426f3","network":"tcp","tls":true,"servername":"www.tesla.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"aA4aIkKr16UDRUv69kUABQtm7XS8bF_3CWIc7TPCxgU","short-id":"6e76b5"},"client-fingerprint":"ios"}
+  - {"type":"ss","name":"grpc1","server":"43.133.4.242","port":16105,"cipher":"2022-blake3-aes-256-gcm","password":"tiMVGpcFOdHKtDHORZ4AwJ36LKVfayQiPBl17VArT4c=:olFR7mkk7XlUgXBpbqxckzmW/8aYR2FUv+vsO6niV40="}
+  - {"type":"ss","name":"grpc2","server":"43.133.4.242","port":16105,"cipher":"2022-blake3-aes-256-gcm","password":"tiMVGpcFOdHKtDHORZ4AwJ36LKVfayQiPBl17VArT4c=:ZX75cMPNn/RGSA2A5lPghk0dPgSg4ixhqI0X5j0papc="}
+  - {"type":"ss","name":"grpc3","server":"43.133.4.242","port":16105,"cipher":"2022-blake3-aes-256-gcm","password":"tiMVGpcFOdHKtDHORZ4AwJ36LKVfayQiPBl17VArT4c=:VFjnGaDnj7WFRw08sdNWNW6G1Dvy6wKTwVdmJ4tgbto="}
+
 
 proxy-groups:
   - name: AI
@@ -86,7 +87,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - REJECT
-      - DIRECT
       - super
       - super22
   - name: 🌍 国外媒体
@@ -864,6 +864,7 @@ rules:
   - DOMAIN-SUFFIX,com.cn,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
+
 
 
 
